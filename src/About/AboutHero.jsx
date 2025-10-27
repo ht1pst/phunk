@@ -47,7 +47,9 @@ const [lastScrollY, setLastScrollY] = useState(0);
   const fadeLeft = { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } };
   const fadeRight = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } };
   return(
-   <section className="lg:h-250 h-270 w-full  bg-black">
+   <section className="lg:h-screen h-270 w-full  bg-black">
+   <div className="absolute bottom-0 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
+       <main className="lg:pt-35 pt-40 relative">
     {/* ======== Header (Responsive) ======== */}
  <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
    <div className="flex items-center justify-between px-6 md:px-20 py-6">
@@ -287,8 +289,10 @@ const [lastScrollY, setLastScrollY] = useState(0);
  </header>
 
 
-       <main className="lg:pt-35 pt-40 relative">
-        <div className="absolute bottom-0 lg:bottom-25 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[90%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
+  
+       
+
+       
         <div className="flex flex-col lg:flex-row justify-center lg:gap-20 gap-5 items-center">
           {/* Text Content */}
           <div className="flex flex-col lg:flex-row gap-20">
@@ -311,7 +315,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              className="text-gray-300 lg:mt-10  lg:text-5xl w-[90%] lg:w-105 lg:text-6xl text-4xl font-medium"
+              className="text-gray-300 lg:mt-10  lg:text-5xl w-[90%] lg:w-135 lg:text-6xl text-4xl font-medium"
             >
               Everything you need to know{" "}
               <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">

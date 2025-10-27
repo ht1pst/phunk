@@ -323,7 +323,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
           hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
           hover:scale-105 transition-all duration-300">
         Make an Enquiry</button>
-<p className="flex justify-center w-70 text-center lg:text-start text-sm pt-3">By pressing submit you agree to the Phunk privacy policy</p>
+<p className="flex justify-center w-70 text-center lg:w-full  text-sm pt-3">By pressing submit you agree to the Phunk privacy policy</p>
 </div>
     </form>
 

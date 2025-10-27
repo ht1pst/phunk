@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 import phunk from "../assets/phunk.png";
 import partner from "../assets/partner.png";
 import phunk2 from "../assets/phunk2.svg";
@@ -40,6 +40,12 @@ const [lastScrollY, setLastScrollY] = useState(0);
   window.addEventListener("scroll", handleScroll);
   return () => window.removeEventListener("scroll", handleScroll);
 }, [lastScrollY]);
+
+ // Animation variants
+  const fadeUp = { hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } };
+  const fadeLeft = { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } };
+  const fadeRight = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } } };
+  
       return(
         
        <section className="h-150 lg:h-200 bg-black">
@@ -285,14 +291,36 @@ const [lastScrollY, setLastScrollY] = useState(0);
                    <main className="lg:pt-60 pt-35 relative">
                      
                     <div>
-                         <p className="border-1 border-blue-500 text-white w-35 h-7 items-center flex mx-auto  justify-center text-sm rounded-full">
+                         <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeLeft}
+             
+             className="border-1 border-blue-500 text-white w-35 h-7 items-center flex mx-auto  justify-center text-sm rounded-full">
           Our Case Studies
-        </p>
+        </motion.p>
 
-        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl font-medium ">Dive into{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">the work.</span></h1>
+        <motion.h1
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeUp} className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl font-medium ">Dive into{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">the work.</span></motion.h1>
 
-        <p className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-75 md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</p>
-<div className="mx-auto flex justify-center">
+        <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeUp}
+              transition={{ delay: 0.2 }} className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-75 md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</motion.p>
+
+
+<motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeUp}
+              transition={{ delay: 0.4 }} className="mx-auto flex justify-center">
         <Link to="/talk" className="mt-10 flex justify-center items-center mx-auto  w-28 h-10 rounded-full text-white font-semibold 
           bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
           shadow-[0_0_20px_rgba(0,209,255,0.5)] 
@@ -300,7 +328,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
           hover:scale-105 transition-all duration-300">
           Launch 
         </Link>
-        </div>
+        </motion.div>
                     </div>
                    </main>
 
