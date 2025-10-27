@@ -140,24 +140,7 @@ function App() {
   
   />
 
-   <Route path="/webflow" element={
-<>
-
-<WebflowHero/>
-<WebflowSection2/>
-<WebflowSection3/>
-<WebflowSection4/>
-<WebflowSection5/>
-<WebflowSection6/>
-<Section7/>
-<Section8 />
-<Footer />
-
-</>
-
-}
   
-  />
 
 
    <Route path="/services" element={

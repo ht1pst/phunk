@@ -63,10 +63,10 @@ function AboutSection7() {
 
   return (
     <motion.section
-      className="bg-black relative overflow-hidden h-210 md:h-150 lg:h-170 pt-20"
+      className="bg-black relative overflow-hidden h-200 md:h-150 lg:h-170 pt-20"
       
     >
-      <motion.div   className="flex lg:flex-row relative lg:w-330 md:w-170 w-90 lg:h-115 h-200 border  border-gray-700 mx-auto rounded-b-2xl relative px-6 
+      <motion.div   className="flex lg:flex-row relative lg:w-330 md:w-170 w-80 lg:h-115 h-200 border  border-gray-700 mx-auto rounded-b-2xl relative px-6 
         lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent 
         opacity-95 rounded-t-[40px] overflow-hidden "
       >
@@ -97,16 +97,16 @@ function AboutSection7() {
 
       {/* Buttons */}
       <motion.div
-        className="flex absolute lg:right-30 lg:top-70 top-29 right-10 flex-row"
+        className="flex absolute lg:right-30 lg:top-70 top-23 right-10 flex-row"
         variants={buttonVariants}
       >
-        <button onClick={prevSlide} className="mr-4">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <button onClick={prevSlide} className="">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3">
             <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
           </svg>
         </button>
         <button onClick={nextSlide}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3">
             <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
           </svg>
         </button>

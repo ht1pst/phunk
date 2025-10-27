@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Section8(){
     return(
         <section className="relative h-100 bg-black">
-      <div className="absolute bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-1 border-b-white w-[95%] max-w-[2100px] h-[350px] bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
+      <div className="absolute bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-1 border-b-white w-[90%] max-w-[2100px] h-[350px] bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
 
       
       
@@ -28,7 +28,7 @@ function Section8(){
                 </div>
       
       
-                 <div className="absolute  lg:bottom-15 bottom-15 lg:right-10 right-2  lg:z-30">
+                 <div className="absolute  lg:bottom-15 bottom-15 lg:right-10 right-5  lg:z-30">
                   <img src={stuff1} alt="" className="lg:w-100 w-70 rounded-b-xl opacity-50" />
                 </div>
       
@@ -37,7 +37,7 @@ function Section8(){
        
 <div className="relative">
     <h1 className="text-white lg:text-7xl text-4xl font-medium mx-auto text-center pt-10 w-50 lg:w-200">Lets's get to <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">work.</span></h1>
-    <p  className="text-gray-200   font-semibold flex justify-center mx-auto w-80 lg:w-200 text-center pt-10">We’re ready to get started on your next creative project. All you need to do is hit the button below</p>
+    <p  className="text-gray-200 text-sm   font-semibold flex justify-center mx-auto w-60 lg:w-200 text-center pt-10">We’re ready to get started on your next creative project. All you need to do is hit the button below</p>
     <div className="flex justify-center pt-4 lg:z-0 ">
     <Link to="/talk" className="bg-white flex justify-center items-center text-black h-10 w-30 rounded-full" >Talk to us</Link>
     </div>

@@ -27,7 +27,7 @@ function Section2() {
         {/* Left text section */}
         <div className="mx-auto lg:mx-0">
           <motion.h1
-            className="lg:text-6xl w-88 lg:w-150 text-4xl md:text-5xl md:w-100 text-white leading-tight px-2"
+            className="lg:text-6xl w-88 lg:w-150 text-4xl md:text-5xl md:w-100 text-white leading-tight px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -41,7 +41,7 @@ function Section2() {
           </motion.h1>
 
           <motion.p
-            className="text-sm lg:w-170 md:w-100 w-90 text-gray-400 mt-10 px-2"
+            className="text-sm lg:w-170 md:w-100 w-90 text-gray-400 mt-10 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -54,7 +54,7 @@ function Section2() {
           </motion.p>
 
           <motion.p
-            className="text-sm lg:w-170 md:w-100 w-90 text-gray-400 mt-10 px-3"
+            className="text-sm lg:w-170 md:w-100 w-90 text-gray-400 mt-10 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -64,21 +64,22 @@ function Section2() {
             a brand identity that stands out from the crowd, then you’re exactly
             where you need to be.
           </motion.p>
-
-          <motion.Link
-            to="/talk"
-            className="w-28 md:w-25 md:h-9 h-12 flex justify-center items-center rounded-full text-white font-semibold 
+<motion.div initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} className="px-4 lg:px-0">
+          <Link 
+           to="/talk"
+            className="w-28  md:w-25 md:h-9 h-12 flex justify-center items-center rounded-full text-white font-semibold 
               bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
               shadow-[0_0_20px_rgba(0,209,255,0.5)] 
               hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
               hover:scale-105 transition-all duration-300 mt-8"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
+            
           >
             Hire Us
-          </motion.Link>
+          </Link>
+        </motion.div>
         </div>
 
         {/* Robot image with motion */}

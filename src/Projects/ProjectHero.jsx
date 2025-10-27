@@ -289,9 +289,9 @@ const [lastScrollY, setLastScrollY] = useState(0);
           Our Case Studies
         </p>
 
-        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl font-medium ">Dive into{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">the work.</span></h1>
+        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl font-medium ">Dive into{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">the work.</span></h1>
 
-        <p className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-85 md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</p>
+        <p className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-75 md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</p>
 <div className="mx-auto flex justify-center">
         <Link to="/talk" className="mt-10 flex justify-center items-center mx-auto  w-28 h-10 rounded-full text-white font-semibold 
           bg-gradient-to-r from-[#00d1ff] to-[#004cff] 

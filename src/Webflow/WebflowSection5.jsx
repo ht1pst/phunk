@@ -63,7 +63,7 @@ function WebflowSection5() {
          <div className="flex lg:flex-row flex-col lg:items-center px-5 justify-center gap-10">
             <h1 className="text-gray-300 lg:w-130 w-80   mt-7 lg:text-6xl text-4xl font-medium  ">What can you use {" "}
 <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Webflow for?</span></h1>
-<p className="text-gray-200 flex justify-center  mt-10 w-90 md:w-170 lg:w-120">There’s almost no limit to what you can achieve with a platform like Webflow and a team like Phunk. But if you’re new to the idea, here’s a quick overview of some of the more common use cases where our Webflow-based sites really shine.</p>
+<p className="text-gray-200 flex justify-center  mt-10 w-80 md:w-170 lg:w-120">There’s almost no limit to what you can achieve with a platform like Webflow and a team like Phunk. But if you’re new to the idea, here’s a quick overview of some of the more common use cases where our Webflow-based sites really shine.</p>
         </div>
       <div className="relative  mx-auto rounded-2xl pt-20">
         {/* ---------- IMAGE ---------- */}
@@ -78,7 +78,7 @@ function WebflowSection5() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="absolute w-full h-full object-cover rounded-2xl"
+              className="absolute w-90 h-50 object-cover rounded-2xl"
             />
           </AnimatePresence>
 
@@ -104,8 +104,8 @@ function WebflowSection5() {
           key={i}
           className={i === 1 ? "hidden lg:block" : "block"} // ✅ responsive: hide second card on small screens
         >
-          <h3 className="text-3xl font-semibold mb-3 px-20 lg:px-0 text-white">{slide.title}</h3>
-          <p className="text-sm text-white w-140 mt-6 px-20 lg:px-0 font-semibold">{slide.text}</p>
+          <h3 className="text-3xl font-semibold mb-3  lg:px-0 text-white">{slide.title}</h3>
+          <p className="text-sm text-white lg:w-140 w-80 mt-6  lg:px-0 font-semibold">{slide.text}</p>
         </motion.div>
       ))}
     </motion.div>

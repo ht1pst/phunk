@@ -287,10 +287,11 @@ const [lastScrollY, setLastScrollY] = useState(0);
       )}
     </header>
 
-                  <div className="absolute bottom-10 lg:bottom-5 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[350px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
-                  <main className="lg:pt-70 pt-25 px-10 lg:px-0 relative">
+                 
+                  <main className="lg:pt-70 pt-25 px-6 lg:px-0 relative">
                     <div className="flex flex-col  lg:flex-row justify-center lg:gap-30 gap-10">
 <div>
+   <div className="absolute bottom-10 lg:bottom-5 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[350px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
   <motion.img initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
@@ -299,12 +300,12 @@ const [lastScrollY, setLastScrollY] = useState(0);
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUp} className="text-gray-300  lg:mt-10 mt-7 lg:text-6xl  gap-3 text-4xl w-80 font-medium "><span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Webflow</span> @ Phunk</motion.h1>
+              variants={fadeUp} className="text-gray-300  lg:mt-10 mt-7 lg:text-6xl  gap-3 text-4xl w-70 font-medium "><span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Webflow</span> @ Phunk</motion.h1>
   < motion.p
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                variants={fadeUp} className="text-gray-200 mt-10 w-80 md:w-170 lg:w-120">We’re official Webflow partners — and it’s the foundation on which we build our world-beating sites. Read on to find out why we picked Webflow, and how it benefits our clients — or get in touch if you have specific questions about the platform.</motion.p>
+                variants={fadeUp} className="text-gray-200 mt-8 w-70 md:w-170 text-sm  lg:w-120">We’re official Webflow partners — and it’s the foundation on which we build our world-beating sites. Read on to find out why we picked Webflow, and how it benefits our clients — or get in touch if you have specific questions about the platform.</motion.p>
 
   <motion.div  initial="hidden"
               whileInView="visible"
@@ -323,7 +324,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 <motion.div initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            variants={fadeRight} className="mx-auto lg:mx-0"><img src={img} alt="" className="w-90 h-75 lg:w-100" /></motion.div>
+            variants={fadeRight} className="mx-auto lg:mx-0 pb-20 lg:pb-0"><img src={img} alt="" className="relative w-90 h-75 lg:w-100" /></motion.div>
                     </div>
                   </main>
 

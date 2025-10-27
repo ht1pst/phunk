@@ -286,10 +286,12 @@ const [lastScrollY, setLastScrollY] = useState(0);
    )}
  </header>
 
-<div className="absolute bottom-10 lg:bottom-25 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
+
        <main className="lg:pt-35 pt-40 relative">
+        <div className="absolute bottom-0 lg:bottom-25 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[90%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
         <div className="flex flex-col lg:flex-row justify-center lg:gap-20 gap-5 items-center">
           {/* Text Content */}
+          <div className="flex flex-col lg:flex-row gap-20">
           <div className="px-5 flex flex-col gap-5">
 
             {/* Top small p */}
@@ -309,7 +311,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              className="text-gray-300 lg:mt-10 mt-7 lg:text-5xl w-[90%] lg:w-105 lg:text-6xl text-4xl font-medium"
+              className="text-gray-300 lg:mt-10  lg:text-5xl w-[90%] lg:w-105 lg:text-6xl text-4xl font-medium"
             >
               Everything you need to know{" "}
               <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
@@ -324,7 +326,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
               transition={{ delay: 0.2 }}
-              className="text-gray-200 lg:mt-10 mt-5 w-[100%] sm:w-[80%] sm:w-10 font-semibold text-sm md:w-170 lg:w-120 flex"
+              className="text-gray-200 lg:mt-10 mt-5 w-[100%] sm:w-[80%] sm:w-10  text-sm md:w-170 lg:w-120 flex"
             >
               Find out more about what makes us tick as a company, why we do what we do, and who’s behind the unique work we create. Or, if you prefer, give us a call and we’ll tell you ourselves.
             </motion.p>
@@ -339,7 +341,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
             >
               <Link
                 to="/talk"
-                className="mt-10 flex justify-center items-center w-28 h-10 rounded-full text-white font-semibold 
+                className="lg:mt-10 relative flex justify-center items-center w-28 h-10 rounded-full text-white font-semibold 
                   bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
                   shadow-[0_0_20px_rgba(0,209,255,0.5)] 
                   hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
@@ -356,10 +358,11 @@ const [lastScrollY, setLastScrollY] = useState(0);
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeRight}
-            className="mx-auto lg:mx-0"
+            className="mx-auto lg:mx-0 relative pb-10 lg:pb-0"
           >
             <img src={abouthero} alt="" className="w-70 lg:w-100" />
           </motion.div>
+          </div>
         </div>
       </main>
    </section>

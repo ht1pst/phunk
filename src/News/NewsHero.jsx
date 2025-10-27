@@ -336,7 +336,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
   </span>
 </h1>
 
-        <p className="text-gray-200 flex justify-center mx-auto lg:mt-10 mt-5 w-90 md:w-170 lg:w-140 text-center">Check out our latest news stories, new case studies, Webflow resources and more below. Or give us your email address and get a weekly or monthly digest delivered directly — just that, no spam or marketing emails.</p>
+        <p className="text-gray-200 text-sm flex justify-center mx-auto lg:mt-10 mt-5 w-70 md:w-170 lg:w-140 text-center">Check out our latest news stories, new case studies, Webflow resources and more below. Or give us your email address and get a weekly or monthly digest delivered directly — just that, no spam or marketing emails.</p>
         <div className="mx-auto relative flex justify-center mt-10">
             <button onClick={() => setIsOpen(!isOpen)} className="w-40 text-sm rounded-full h-11 hover:bg-black hover:text-white text-black bg-white transition-all duration-200 ">Join Newsletter</button>
         </div>

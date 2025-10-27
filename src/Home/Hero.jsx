@@ -284,7 +284,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
       <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2  border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
 
       {/* Stars & Logo Circle */}
-      <div className="absolute lg:bottom-28 bottom-58 md:bottom-40 w-70 md:w-150 lg:w-200 left-1/2 -translate-x-1/2 z-30">
+      <div className="absolute lg:bottom-28 bottom-60 md:bottom-40 w-50 md:w-150 lg:w-200 left-1/2 -translate-x-1/2 z-30">
         <img src={star} alt="" className="w-200" />
       </div>
       <div className="absolute lg:bottom-15 bottom-10 w-180 left-1/2 -translate-x-1/2 z-20">
@@ -306,7 +306,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </div>
 
       {/* ======== Main Hero Text ======== */}
-      <main className="lg:pt-50 pt-28 relative z-10 text-center w-full z-40">
+      <main className="lg:pt-50 pt-35 relative z-10 text-center w-full z-40">
         <p className="border-1 border-blue-500 text-white w-50 text-sm flex mx-auto justify-center rounded-xl">
           Introducing Phunk Creative
         </p>
@@ -319,7 +319,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
           </span>
         </h1>
 
-        <p className="text-gray-200 mt-7 w-90 md:w-170 lg:leading-normal px-10 lg:w-150 text-center text-sm  mx-auto ">
+        <p className="text-gray-200 mt-7 w-85 md:w-170 lg:leading-normal px-10 lg:w-150 text-center text-sm  mx-auto ">
           We transform your brand vision into tangible web, graphic and video
           experiences that stop prospective clients in their tracks.
         </p>

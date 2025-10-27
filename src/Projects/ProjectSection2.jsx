@@ -808,7 +808,7 @@ function ProjectSection2(){
 
       <div className="flex flex-col lg:flex-row justify-center pt-20 lg:px-80 gap-10">
         <div className="mx-auto lg:mx-0">
-          <p className="lg:text-3xl text-2xl w-90 lg:w-70 lg:pt-8 text-center lg:text-start text-white leading-loose">
+          <p className="lg:text-3xl text-2xl w-70 lg:w-70 lg:pt-8 text-center lg:text-start text-white leading-loose">
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               Graphic Design{" "}
             </span>
@@ -826,7 +826,7 @@ function ProjectSection2(){
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
                 variants={faqFade}
-                className="border border-gray-300 bg-black lg:rounded-4xl rounded-2xl w-100 lg:w-140 overflow-hidden transition-all duration-300"
+                className="border border-gray-300 bg-black lg:rounded-4xl rounded-2xl w-80 lg:w-140 overflow-hidden transition-all duration-300"
               >
                 {/* Header */}
                 <button

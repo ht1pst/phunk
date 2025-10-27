@@ -43,7 +43,7 @@ function Section5() {
         </motion.p>
       </div>
 
-      <div className="px-3 gap-120 md:gap-20 pt-0 lg:pt-0 flex flex-col">
+      <div className="px-4 gap-120 md:gap-20 pt-0 lg:pt-0 flex flex-col">
 
         {/* ---------- DRIVELLODGE ---------- */}
         <motion.div

@@ -27,9 +27,9 @@ function NewsSection2(){
 
     <div className="flex flex-col lg:flex-row justify-center  gap-10 mt-10">
 
-<div className="lg:h-150 h-115 bg-[#201f1fff] border border-white mx-auto lg:mx-0 #201f1fff lg:w-135 w-90 rounded-xl">
+<div className="lg:h-150 h-115 bg-[#201f1fff] border border-white mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
-<img src={img1} alt="" className="lg:w-135 w-90 object-cover rounded-t-xl" />
+<img src={img1} alt="" className="lg:w-135 w-80 object-cover rounded-t-xl" />
 </div>
 
 <div className="pt-10 px-6">
@@ -48,9 +48,9 @@ function NewsSection2(){
 
 
 
-<div className="lg:h-150 h-110 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-90 rounded-xl">
+<div className="lg:h-150 h-110 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
-<img src={img2} alt="" className="lg:w-135 w-90 object-cover rounded-t-xl" />
+<img src={img2} alt="" className="lg:w-135 w-80 object-cover rounded-t-xl" />
 </div>
 
 <div className="pt-10 px-6">
@@ -75,9 +75,9 @@ function NewsSection2(){
     
  <div className="flex flex-col lg:flex-row justify-center gap-10 mt-20">
 
-<div className="lg:h-150 h-125 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-90 rounded-xl">
+<div className="lg:h-150 h-125 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
-<img src={img3} alt="" className="lg:w-135 w-90 object-cover rounded-t-xl" />
+<img src={img3} alt="" className="lg:w-135 w-80 object-cover rounded-t-xl" />
 </div>
 
 <div className="pt-10 px-6">
@@ -96,9 +96,9 @@ function NewsSection2(){
 
 
 
-<div className="lg:h-150 h-160 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-90 rounded-xl">
+<div className="lg:h-150 h-160 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
-<img src={img4} alt="" className="lg:w-135 w-90 h-85 object-cover rounded-t-xl" />
+<img src={img4} alt="" className="lg:w-135 w-80 h-85 object-cover rounded-t-xl" />
 </div>
 
 <div className="pt-10 px-6">

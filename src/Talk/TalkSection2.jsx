@@ -46,7 +46,7 @@ function TalkSection2() {
         <div className="relative flex flex-col lg:flex-row justify-center pt-34 lg:gap-60">
           <div className="px-3 lg:px-0">
             <h1 className="text-white lg:text-7xl text-6xl">Visit Phunk</h1>
-            <p className="text-[#969696] lg:w-130 w-100 mt-5">
+            <p className="text-[#969696] lg:w-130 w-80 mt-5">
               Find out more about what makes us tick as a company, why we do what we do,
               and who’s behind the unique work we create.
             </p>

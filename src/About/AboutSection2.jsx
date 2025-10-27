@@ -39,7 +39,7 @@ function AboutSection2() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
           transition={{ delay: 0 }}
-          className="text-gray-900 mt-10 px-3 lg:text-6xl w-85 lg:w-120 text-4xl font-medium"
+          className="text-gray-900 mt-10 px-4 lg:px-0 lg:text-6xl w-85 lg:w-120 text-4xl font-medium"
         >
           The origin{" "}
           <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
@@ -66,12 +66,12 @@ function AboutSection2() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
           transition={{ delay: 0.6 }}
-          className="mt-10 mx-auto flex justify-center px-2"
+          className="mt-10 mx-auto flex justify-center px-4 lg:px-0"
         >
           <img
             src={img}
             alt=""
-            className="lg:w-260 w-100 h-60 lg:h-90 rounded-xl object-cover"
+            className="lg:w-260 w-100 h-50 lg:h-90 rounded-xl object-cover"
           />
         </motion.div>
       </div>

@@ -61,7 +61,7 @@ function Section4() {
   const { title, text, img } = slides[index];
 
   return (
-    <section className="bg-black relative overflow-hidden h-240 md:h-150 lg:h-170 pt-20">
+    <section className="bg-black relative overflow-hidden h-255 md:h-150 lg:h-170 pt-20">
 
       {/* === Heading === */}
       <motion.div
@@ -89,12 +89,13 @@ function Section4() {
         variants={fadeUp}
       >
         <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2  border-b-white w-[100%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
+       
 
         {/* Background gradient overlay */}
         <div className="absolute inset-0 lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-95 rounded-xl z-0"></div>
 
         {/* Stuff1 image behind content */}
-        <div className="absolute left-0 bottom-0 lg:bottom-0 lg:left-0 md:left-11 z-0">
+         <div className="absolute left-0 bottom-0 lg:bottom-0 lg:left-0 md:left-11 z-0">
           <img src={stuff1} alt="" className="w-100 rounded-b-xl pointer-events-none" />
         </div>
 
@@ -106,8 +107,9 @@ function Section4() {
         >
           {/* Text */}
           <div className="transition-all duration-500 ease-in-out pt-10 lg:pt-0">
+            
             <h1 className="lg:text-7xl text-4xl text-white">{title}</h1>
-            <p className="lg:text-sm text-sm md:text-sm lg:w-100 font-semibold md:w-100 w-80 text-gray-400 mt-7">
+            <p className="lg:text-sm text-sm md:text-sm lg:w-100 font-semibold md:w-100 w-70 text-gray-400 mt-7">
               {text}
             </p>
             <Link
@@ -134,7 +136,7 @@ function Section4() {
       </motion.div>
 
       {/* === Slide buttons === */}
-      <div className="flex absolute lg:right-30 lg:top-70 top-70 right-13 flex-row gap-5">
+      <div className="flex absolute z-30 lg:right-30 lg:top-70 top-70 right-13 flex-row gap-5">
         <button onClick={prevSlide}>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
         </button>

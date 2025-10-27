@@ -292,7 +292,7 @@ function ServicesHero(){
                     <div>
                       
 
-        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl font-medium ">Our{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Services</span></h1>
+        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl w-70 lg:w-120 font-medium ">Our{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Services</span></h1>
 
         <p className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-80 md:w-170 lg:w-135 text-center font-semibold">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.
 
@@ -301,13 +301,13 @@ function ServicesHero(){
                     </div>
 
                     <div className="flex justify-center block lg:hidden">
-                        <img src={img} alt="" className="w-150 object-cover " />
+                        <img src={img} alt="" className="lg:w-150 w-90 object-cover " />
                         
                     </div>
 
                     <div className="flex flex-col lg:flex-row justify-center  gap-10 pt-50">
 
-<div className=" flex border mx-auto lg:mx-0 lg:w-105 w-90 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
+<div className=" flex border mx-auto lg:mx-0 lg:w-105 w-85 bg-[#101110] rounded-xl px-2 lg:gap-8 gap-5 border-white h-30 items-center">
     <div>
     <svg class="services_icon" className="w-15" viewBox="0 0 68 51" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M57.4294 40.1729C55.3466 42.3134 52.8183 43.9492 50.0315 44.9594C49.137 45.2632 48.3357 45.4722 47.4227 45.7763C46.0791 46.1021 44.704 46.2741 43.323 46.289H42.9316C38.2201 46.3226 33.6479 44.6614 30.0194 41.5976C29.5164 41.1987 29.0131 40.6859 28.51 40.268L27.5037 39.2423L25.2117 36.906L18.9132 30.4858C18.0188 29.5741 18.0188 28.1496 18.9132 27.1238C19.1154 26.8953 19.3627 26.7128 19.6388 26.5885C19.915 26.4641 20.2138 26.4006 20.5157 26.4021C20.8189 26.3914 21.1206 26.4507 21.3981 26.5757C21.6756 26.7007 21.9218 26.8881 22.1182 27.1238L31.6217 36.8109C32.5176 37.6801 33.4912 38.4622 34.5297 39.1471C36.9901 40.7025 39.8337 41.5128 42.7288 41.4834C44.0423 41.4698 45.3496 41.2977 46.6234 40.9706C47.4069 40.7588 48.1732 40.4857 48.9154 40.1538C50.7805 39.3269 52.4751 38.1474 53.9095 36.6777C60.0031 30.4664 60.0031 20.2666 53.9095 14.0364C51.3311 11.4045 47.9331 9.77126 44.3007 9.41784C40.6682 9.06442 37.0285 10.0129 34.0081 12.1001C32.6847 11.0385 31.2392 10.1455 29.7035 9.44091C33.4038 6.3655 38.0264 4.67579 42.8008 4.65343C46.8384 4.65125 50.7866 5.86511 54.1496 8.14258C57.5127 10.4201 60.1406 13.6596 61.7034 17.4544C63.2662 21.2492 63.6942 25.4301 62.9337 29.472C62.1732 33.5139 60.258 37.2367 57.4287 40.1729H57.4294ZM21.3161 46.2893C16.8065 46.2893 12.7071 44.3529 9.61357 41.0849C3.11009 34.4557 3.11009 23.7429 9.61357 17.2275C12.7123 14.0495 16.9204 12.2529 21.3161 12.2314H21.4099C22.2152 12.2403 23.0187 12.3101 23.8138 12.4403C24.7082 12.6492 25.5096 12.7441 26.4226 13.0482C27.9886 13.5709 29.4705 14.3261 30.8203 15.2895C31.4167 15.8023 32.1247 16.2013 32.6277 16.8281L33.1308 17.3408L34.3233 18.5564L39.9323 24.2738C40.8268 25.1856 40.8268 26.6101 39.9323 27.6358C39.7302 27.8644 39.4829 28.0468 39.2067 28.1712C38.9306 28.2955 38.6318 28.359 38.3299 28.3575C38.0267 28.3683 37.725 28.3089 37.4475 28.1839C37.17 28.0589 36.9238 27.8716 36.7274 27.6358L31.1184 21.9184L29.9258 20.7029C29.7209 20.4939 29.5344 20.399 29.4228 20.1901C27.8269 18.7796 25.8906 17.8288 23.8138 17.436C23.0937 17.264 22.3538 17.1937 21.6149 17.2271H21.3168C18.1736 17.3205 15.193 18.6724 13.0206 20.9899C10.8482 23.3075 9.65901 26.404 9.71048 29.6089C9.76196 32.8139 11.05 35.8691 13.2956 38.1129C15.5413 40.3567 18.5637 41.6084 21.7082 41.5969H23.814L25.8074 43.5332C26.8138 44.559 27.8009 45.5652 29.0126 46.2873L21.3161 46.2893ZM60.6346 7.44579C55.9308 2.67695 49.5663 0 42.932 0C36.2977 0 29.9332 2.67695 25.2293 7.44579L24.7263 7.95855C23.5695 7.75295 22.3973 7.65128 21.223 7.65472C18.4281 7.64507 15.6598 8.20848 13.0828 9.31142C10.5058 10.4144 8.17278 12.0343 6.2224 14.0749C3.2525 17.0987 1.22937 20.9526 0.409054 25.1489C-0.411263 29.3452 0.0081063 33.6952 1.61409 37.6484C3.22007 41.6017 5.94048 44.9804 9.43102 47.3571C12.9216 49.7338 17.0254 51.0016 21.223 51H43.434C49.9396 50.9297 56.1574 48.2558 60.7465 43.555C70.4364 33.544 70.4364 17.3418 60.6346 7.44555V7.44579Z" fill="white"></path>
@@ -322,7 +322,7 @@ function ServicesHero(){
 
 
 
-<div className=" flex border mx-auto lg:mx-0 lg:w-105 w-90 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
+<div className=" flex border mx-auto lg:mx-0 lg:w-105 w-85 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
     <div >
   <svg class="services_icon" viewBox="0 0 56 56" className="w-15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1545_144)">
@@ -338,15 +338,15 @@ function ServicesHero(){
 </div>
 
 <div>
-    <h1 className="text-white  text-xl">Graphic Design</h1>
-    <p  className="text-[#969696] w-65 text-sm">Add as many design requests to your board  as you'd like.</p>
+    <h1 className="text-white  text-xl">Web Design</h1>
+    <p  className="text-[#969696] w-60 text-sm">Stunning, engaging and high-conversion websites</p>
 </div>
 </div>
 
 
 
 
-<div  className=" flex border mx-auto lg:mx-0 lg:w-105 w-90 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
+<div  className=" flex border mx-auto lg:mx-0 lg:w-105 w-85 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
     <div >
     <svg class="services_icon" className="w-15" viewBox="0 0 61 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.8848 26.9443C35.8848 29.9382 33.4577 32.3652 30.4639 32.3652C27.47 32.3652 25.043 29.9382 25.043 26.9443C25.043 23.9505 27.47 21.5234 30.4639 21.5234C33.4577 21.5234 35.8848 23.9505 35.8848 26.9443Z" fill="white"></path>
@@ -357,7 +357,7 @@ function ServicesHero(){
 </div>
 
 <div>
-    <h1 className="text-white  text-xl">Graphic Design</h1>
+    <h1 className="text-white  text-xl">Software Development</h1>
     <p className="text-[#969696] w-65 text-sm">Add as many design requests to your board  as you'd like.</p>
 </div>
 </div>

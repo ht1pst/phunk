@@ -113,12 +113,8 @@ function Section7() {
             className="flex gap-10 overflow-x-auto no-scrollbar scroll-smooth"
           >
             {testimonials.map((t, idx) => (
-              <motion.div
-                key={idx}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={cardFade}
+              <div
+               
                 className="min-w-[250px] sm:min-w-[300px] lg:min-w-[35%] bg-gradient-to-b from-[#1a1a1a] via-[#111] to-black rounded-xl border border-white"
               >
                 <div className="p-6">
@@ -133,7 +129,7 @@ function Section7() {
                   </div>
                   <p className="text-gray-400 text-sm mt-4">{t.text}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 

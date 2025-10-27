@@ -59,7 +59,7 @@ function TalkSection3() {
   };
 
   return(
-     <section className="bg-black lg:h-170 h-210 pt-10 lg:pt-20">
+     <section className="bg-black lg:h-170 h-270 pt-10 lg:pt-20">
    <div className="pt-30 px-5 lg:px-0">
       <h1 className="text-white flex justify-center text-5xl">
         Frequently asked questions
@@ -71,7 +71,7 @@ function TalkSection3() {
 
       <div className="flex flex-col lg:flex-row justify-center pt-20 lg:px-80 gap-10">
         <div className="mx-auto lg:mx-0">
-          <p className="lg:text-3xl text-2xl w-90 lg:w-70 lg:pt-8 text-center lg:text-start text-white leading-loose">
+          <p className="lg:text-3xl text-2xl w-70 lg:w-70 lg:pt-8 text-center lg:text-start text-white leading-loose">
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               Graphic Design{" "}
             </span>
@@ -89,7 +89,7 @@ function TalkSection3() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
                 variants={faqFade}
-                className="border border-gray-300 bg-black lg:rounded-4xl rounded-2xl w-100 lg:w-140 overflow-hidden transition-all duration-300"
+                className="border border-gray-300 bg-black lg:rounded-4xl rounded-2xl w-80 lg:w-140 overflow-hidden transition-all duration-300"
               >
                 {/* Header */}
                 <button
@@ -120,7 +120,6 @@ function TalkSection3() {
         </div>
       </div>
     </div>
-
     </section>
   )
 }
