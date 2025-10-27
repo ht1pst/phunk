@@ -82,17 +82,19 @@ function Section4() {
 
       {/* === Slide container with border === */}
       <motion.div
-        className={`flex lg:w-330 md:w-170 w-100 lg:h-115 h-200 border border-gray-700 mx-auto rounded-xl relative px-6 overflow-hidden`}
+        className={`flex lg:w-330 md:w-170 w-80 lg:h-115 h-200 border border-gray-700 mx-auto rounded-xl relative px-6 overflow-hidden`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeUp}
       >
+        <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2  border-b-white w-[100%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
+
         {/* Background gradient overlay */}
         <div className="absolute inset-0 lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-95 rounded-xl z-0"></div>
 
         {/* Stuff1 image behind content */}
-        <div className="absolute left-6 bottom-0 lg:bottom-0 lg:left-0 md:left-11 z-0">
+        <div className="absolute left-0 bottom-0 lg:bottom-0 lg:left-0 md:left-11 z-0">
           <img src={stuff1} alt="" className="w-100 rounded-b-xl pointer-events-none" />
         </div>
 
