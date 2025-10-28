@@ -50,7 +50,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
         
        <section className="h-250 bg-black">
 
-        <div className="absolute bottom-0 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
+        <div className="hidden lg:block absolute bottom-0 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
        <main className="lg:pt-35 pt-40 relative"></main>
         {/* ======== Header (Responsive) ======== */}
     <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
@@ -291,7 +291,8 @@ const [lastScrollY, setLastScrollY] = useState(0);
     </header>
 
                  
-                  <main className="lg:pt-10 pt-10 px-6 lg:px-0 relative">
+                  <main className="lg:pt-10  px-6 lg:px-0 relative">
+                     <div className="lg:hidden block absolute bottom-0 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
                     <div className="flex flex-col  lg:flex-row justify-center items-center lg:gap-20 gap-10">
 <div>
    
@@ -327,7 +328,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 <motion.div initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            variants={fadeRight} className="mx-auto lg:mx-0 "><img src={img} alt="" className="relative w-90 lg:w-105" /></motion.div>
+            variants={fadeRight} className="mx-auto lg:mx-0 "><img src={img} alt="" className="relative w-70 lg:w-105 pb-10 lg:pb-0" /></motion.div>
                     </div>
                   </main>
 

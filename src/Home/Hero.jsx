@@ -41,7 +41,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 
   return (
     <section className="bg-black lg:h-screen h-[750px] md:h-160 relative overflow-hidden">
-      <div className="absolute bottom-0 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
+      <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
        <main className="lg:pt-35 pt-40 relative"></main>
       {/* ======== Header (Responsive) ======== */}
   <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
@@ -308,7 +308,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </div>
 
       {/* ======== Main Hero Text ======== */}
-      <main className="lg:pt-20 pt-35 relative z-10 text-center w-full z-40">
+      <main className="lg:pt-20 pt- relative z-10 text-center w-full z-40">
         <p className="border-1 border-blue-500 text-white w-50 text-sm flex mx-auto justify-center rounded-xl">
           Introducing Phunk Creative
         </p>
