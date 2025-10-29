@@ -79,7 +79,7 @@ function AboutSection7() {
           
 
            <motion.div
-        className="flex absolute gap-3 lg:right-30 lg:top-70 top-10 right-10 z-10 flex-row"
+        className="flex absolute gap-3 lg:right-30 lg:top-10 top-10 right-10 z-10 flex-row"
         variants={buttonVariants}
       >
         <button onClick={prevSlide} className="">
