@@ -125,23 +125,29 @@ function Section4() {
           </div>
 
           {/* Image */}
-          <div className="md:w-100 lg:w-200">
+          <div className="md:w-100 lg:w-200 w-90 bottom-0 left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0  absolute lg:relative  ">
             <img
               src={img}
               alt={title}
-              className="lg:w-120 w-100 lg:h-105 md:h-70 md:w-150 transition-all duration-500"
+              className="lg:w-120   lg:h-105 md:h-70 md:w-150 transition-all duration-500"
             />
           </div>
         </div>
       </motion.div>
 
       {/* === Slide buttons === */}
-      <div className="flex absolute z-30 lg:right-30 lg:top-70 top-70 right-13 flex-row gap-5">
+      <div className="flex absolute z-30 lg:right-30 lg:top-70 top-70 right-13 flex-row gap-3">
         <button onClick={prevSlide}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12.5" cy="12.5" r="12.5" transform="rotate(-180 12.5 12.5)" fill="white"></circle>
+<path d="M8.0002 12.0001C8.0002 12.2152 8.08418 12.4304 8.25186 12.5942L13.5321 17.7538C13.868 18.0821 14.4126 18.0821 14.7483 17.7538C15.0839 17.4258 15.0839 16.8936 14.7483 16.5654L10.0763 11.9999L14.7483 7.43464C15.0839 7.10639 15.0839 6.57444 14.7483 6.24645C14.4126 5.9182 13.868 5.9182 13.5321 6.24645L8.25186 11.406C8.08418 11.5702 8.0002 11.785 8.0002 12.0001Z" fill="black"></path>
+</svg>
         </button>
         <button onClick={nextSlide}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12.5" cy="12.5" r="12.5" fill="white"></circle>
+<path d="M16.9998 12.9999C16.9998 12.7848 16.9158 12.5696 16.7481 12.4058L11.4679 7.24619C11.132 6.91794 10.5874 6.91794 10.2517 7.24619C9.91609 7.57417 9.91609 8.10638 10.2517 8.43464L14.9237 13.0001L10.2517 17.5654C9.91609 17.8936 9.91609 18.4256 10.2517 18.7535C10.5874 19.0818 11.132 19.0818 11.4679 18.7535L16.7481 13.594C16.9158 13.4298 16.9998 13.215 16.9998 12.9999Z" fill="black"></path>
+</svg>
         </button>
       </div>
     </section>

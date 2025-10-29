@@ -10,18 +10,18 @@ function NewsSection2(){
 
  <div className="pt-6">
     
-    <div className="flex gap-3 justify-center ">
-        <div>
-          <button className="border-1 border-blue-500 text-white w-25 h-7 items-center flex mx-auto  justify-center text-sm rounded-full">
-          Latest
-        </button>
+    <div className="flex px-10 lg:px-155 justify-center ">
+         <div className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-30 h-8 mx-auto">
+  <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
+    Latest
+  </p>
 </div>
 
-<div>
-         <button className="border-1 border-blue-500 text-white w-25 h-7 items-center flex mx-auto  justify-center text-sm rounded-full">
-          All time
-        </button>
-        </div>
+ <div className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-30 h-8 mx-auto">
+  <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
+    All time
+  </p>
+</div>
     </div>
     
 
@@ -57,7 +57,7 @@ function NewsSection2(){
 <a href="#" className="text-white lg:text-3xl text-2xl ">The Evolution of Web Design</a>
 </div>
 
- <div className="mt-19 px-6">
+ <div className="mt-29 px-6">
                 <a href="#" className="text-white text-sm underline underline-offset-7 decoration-1">
                   Read more{" "}
                   <span className="material-symbols-outlined text-sm">

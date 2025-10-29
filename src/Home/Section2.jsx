@@ -15,7 +15,7 @@ function Section2() {
 
   return (
     <section
-      className="bg-black lg:pt-40 pt-10 lg:h-[800px] h-320 md:h-160 relative overflow-hidden"
+      className="bg-black lg:pt-40 pt-20 lg:h-[800px] h-320 md:h-160 relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Glowing background dots */}

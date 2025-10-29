@@ -40,18 +40,20 @@ const [lastScrollY, setLastScrollY] = useState(0);
 }, [lastScrollY]);
 
   return (
-    <section className="bg-black lg:h-screen h-[750px] md:h-160 relative overflow-hidden">
-      <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
+    <section className="bg-black lg:h-screen h-[680px] md:h-160 relative overflow-hidden">
+      <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[90%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
        <main className="lg:pt-35 pt-40 relative"></main>
       {/* ======== Header (Responsive) ======== */}
   <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
-    <div className="flex items-center justify-between px-6 md:px-20 py-6">
+    <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4">
       {/* Logo */}
-      <div   className={`flex items-center gap-2 transition-all duration-500 ${
+      <div   className={`flex items-center lg:gap-2 transition-all duration-500 ${
       showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
     }`}>
-        <img src={phunk} alt="phunk logo" className="w-10" />
-        <h1 className="font-semibold text-2xl">phunk</h1>
+      <div className="bg-transparent">
+        <img src={phunk} alt="phunk logo" className="w-10 bg-transparent" />
+        </div>
+        <h1 className="font-semibold lg:text-2xl text-sm">phunk</h1>
       </div>
   
       {/* Desktop Nav */}
@@ -170,7 +172,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
         onClick={() => setMenuOpen(!menuOpen)}
         className="block lg:hidden focus:outline-none"
       >
-        <span className="inline-block  text-sm items-center bg-black flex justify-center rounded-full border border-gray-700 w-20 h-6 ">
+        <span className="inline-block  text-sm items-center py-[5px] bg-black flex justify-center rounded-full border border-gray-700 w-20 h-8 ">
           {menuOpen ? "Close" : "Menu"}
         </span>
       </button>
@@ -300,7 +302,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
       <div className="absolute bottom-10 lg:bottom-15 lg:left-10 md:left-5 left-3 opacity-70 z-30">
         <img src={stuff1} alt="" className="lg:w-100 w-50 md:w-80 rounded-b-xl" />
       </div>
-      <div className="absolute bottom-10 lg:bottom-15 lg:right-10 md:right-5 right-3 opacity-70 z-30">
+      <div className="absolute bottom-10 lg:bottom-15 lg:right-10 md:right-5 right-4 opacity-70 z-30">
         <img src={stuff2} alt="" className="lg:w-100 w-50 md:w-80 rounded-b-xl" />
       </div>
       <div className="md:fixed lg:fixed lg:block hidden bottom-1/2 left-0 z-30">
@@ -308,10 +310,13 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </div>
 
       {/* ======== Main Hero Text ======== */}
-      <main className="lg:pt-20 pt- relative z-10 text-center w-full z-40">
-        <p className="border-1 border-blue-500 text-white w-50 text-sm flex mx-auto justify-center rounded-xl">
-          Introducing Phunk Creative
-        </p>
+      <main className="lg:pt-20  relative z-10 text-center w-full z-40">
+    <div className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-52 h-8 mx-auto">
+  <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
+    Introducing Phunk Creative
+  </p>
+</div>
+
     
 
         <h1 className="text-gray-300 mt-7 lg:text-8xl w-70 lg:w-250 text-5xl font-medium text-center mx-auto">

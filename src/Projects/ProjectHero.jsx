@@ -50,256 +50,258 @@ const [lastScrollY, setLastScrollY] = useState(0);
         
        <section className="h-150 lg:h-200 bg-black">
         {/* ======== Header (Responsive) ======== */}
-  <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
-    <div className="flex items-center justify-between px-6 md:px-20 py-6">
-      {/* Logo */}
-      <div   className={`flex items-center gap-2 transition-all duration-500 ${
-      showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-    }`}>
-        <img src={phunk} alt="phunk logo" className="w-10" />
-        <h1 className="font-semibold text-2xl">phunk</h1>
-      </div>
-  
-      {/* Desktop Nav */}
-      <nav   className="hidden lg:flex gap-6 bg-black justify-center border-1 border-gray-600 rounded-full px-6 py-2 group transition-all duration-500">
-        <Link
-          to="/"
-          className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-        >
-          Home
-        </Link>
-  
-        <Link
-          to="/about"
-          className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-        >
-          About Us
-        </Link>
-  
-        {/* Services Dropdown */}
-        <div className="relative">
-          <button
-            onClick={() => setServicesOpen(!servicesOpen)}
-            className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white flex items-center gap-1"
+   <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
+      <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4">
+        {/* Logo */}
+        <div   className={`flex items-center lg:gap-2 transition-all duration-500 ${
+        showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+      }`}>
+          <img src={phunk} alt="phunk logo" className="w-10" />
+          <h1 className="font-semibold lg:text-2xl text-sm">phunk</h1>
+        </div>
+    
+        {/* Desktop Nav */}
+        <nav   className="hidden lg:flex gap-6 bg-black justify-center border-1 border-gray-600 rounded-full px-6 py-2 group transition-all duration-500">
+          <Link
+            to="/"
+            className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
           >
-            Services
-          </button>
-          {servicesOpen && (
-            <div className="fixed left-1/2 -translate-x-1/2 mt-10 w-220 h-50 bg-white border border-gray-700 rounded-lg shadow-lg z-50">
-              <div className="flex text-black justify-between px-8 mt-8">
-                <h1>Services</h1>
-                <Link
-                  to="/services"
-                  className="underline text-gray-500 text-sm hover:text-black transition-all duration-500"
-                >
-                  All services
-                </Link>
-              </div>
-              <div className="flex justify-center gap-13 text-black mt-8">
-                <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
-                  <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
-                    <img src={service2} alt="" className="h-5" />
-                  </div>
-                  <a href="#" className="font-semibold text-sm">Web Design</a>
-                </div>
-  
-                <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
-                  <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
-                    <img src={service2} alt="" className="h-5" />
-                  </div>
-                  <a href="#" className="font-semibold text-sm">Web Design</a>
-                </div>
-  
-                <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
-                  <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
-                    <img src={service2} alt="" className="h-5" />
-                  </div>
-                  <a href="#" className="font-semibold text-sm">Web Design</a>
-                </div>
-              </div>
-  
-              <div className="group">
-                <div className="bg-gray-200 transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#2d8fc8ff] to-[#2ad5d5ff] h-20 flex items-center mt-8 rounded-b-lg">
-                  <a
-                    href="#"
-                    className="text-black transition-all duration-500 ease-in-out group-hover:text-white px-8"
+            Home
+          </Link>
+    
+          <Link
+            to="/about"
+            className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+          >
+            About Us
+          </Link>
+    
+          {/* Services Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white flex items-center gap-1"
+            >
+              Services
+            </button>
+            {servicesOpen && (
+              <div className="fixed left-1/2 -translate-x-1/2 mt-10 w-220 h-50 bg-white border border-gray-700 rounded-lg shadow-lg z-50">
+                <div className="flex text-black justify-between px-8 mt-8">
+                  <h1>Services</h1>
+                  <Link
+                    to="/services"
+                    className="underline text-gray-500 text-sm hover:text-black transition-all duration-500"
                   >
-                    Ready to start a project?
-                  </a>
+                    All services
+                  </Link>
+                </div>
+                <div className="flex justify-center gap-13 text-black mt-8">
+                  <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
+                    <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
+                      <img src={service2} alt="" className="h-5" />
+                    </div>
+                    <a href="#" className="font-semibold text-sm">Web Design</a>
+                  </div>
+    
+                  <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
+                    <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
+                      <img src={service2} alt="" className="h-5" />
+                    </div>
+                    <a href="#" className="font-semibold text-sm">Web Design</a>
+                  </div>
+    
+                  <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
+                    <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
+                      <img src={service2} alt="" className="h-5" />
+                    </div>
+                    <a href="#" className="font-semibold text-sm">Web Design</a>
+                  </div>
+                </div>
+    
+                <div className="group">
+                  <div className="bg-gray-200 transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#2d8fc8ff] to-[#2ad5d5ff] h-20 flex items-center mt-8 rounded-b-lg">
+                    <a
+                      href="#"
+                      className="text-black transition-all duration-500 ease-in-out group-hover:text-white px-8"
+                    >
+                      Ready to start a project?
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
+    
+          <Link
+            to="/projects"
+            className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+          >
+            Projects
+          </Link>
+    
+          <Link
+            to="/news"
+            className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+          >
+            News
+          </Link>
+    
+          <Link
+            to="/webflow"
+            className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+          >
+            Webflow
+          </Link>
+        </nav>
+    
+        {/* Talk Button */}
+        <div  className={`hidden md:hidden lg:block transition-all duration-500 ${
+        showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+      }`}>
+          <Link
+            to="/talk"
+            className="w-32 h-12 rounded-full font-semibold 
+              bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
+              shadow-[0_0_20px_rgba(0,209,255,0.5)] 
+              hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
+              hover:scale-105 transition-all duration-300
+              flex items-center justify-center text-white"
+          >
+            Talk to us
+          </Link>
         </div>
-  
-        <Link
-          to="/projects"
-          className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+    
+        {/* Hamburger Menu (Mobile) */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="block lg:hidden focus:outline-none"
         >
-          Projects
-        </Link>
-  
-        <Link
-          to="/news"
-          className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-        >
-          News
-        </Link>
-  
-        <Link
-          to="/webflow"
-          className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-        >
-          Webflow
-        </Link>
-      </nav>
-  
-      {/* Talk Button */}
-      <div  className={`hidden md:hidden lg:block transition-all duration-500 ${
-      showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-    }`}>
-        <Link
-          to="/talk"
-          className="w-32 h-12 rounded-full font-semibold 
-            bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
-            shadow-[0_0_20px_rgba(0,209,255,0.5)] 
-            hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
-            hover:scale-105 transition-all duration-300
-            flex items-center justify-center text-white"
-        >
-          Talk to us
-        </Link>
+          <span className="inline-block  text-sm items-center py-[5px] bg-black flex justify-center rounded-full border border-gray-700 w-20 h-8 ">
+            {menuOpen ? "Close" : "Menu"}
+          </span>
+        </button>
       </div>
-  
-      {/* Hamburger Menu (Mobile) */}
-      <button
-        onClick={() => setMenuOpen(!menuOpen)}
-        className="block lg:hidden focus:outline-none"
-      >
-        <span className="inline-block  text-sm items-center bg-black flex justify-center rounded-full border border-gray-700 w-20 h-6 ">
-          {menuOpen ? "Close" : "Menu"}
-        </span>
-      </button>
-    </div>
-  
-    {/* Mobile Menu */}
-    {menuOpen !== null && (
-      <div
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${
-          menuOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <div className="px-3">
-          <nav className="flex px-4 rounded-lg flex-col items-center gap-4 py-4 border-t border-gray-800 bg-white lg:hidden">
-            {/* Home */}
-            <Link to="/" className="flex items-center justify-center gap-10 text-black">
-              <div className="bg-gray-200 w-22 rounded-xl h-15">
-                <img src={home} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">Home</span>
-                <p className="text-gray-500 text-sm">
-                  We transform your brand vision into tangible experiences
-                </p>
-              </div>
-            </Link>
-  
-            {/* About */}
-            <Link to="/about" className="flex items-center gap-10 text-black">
-              <div className="bg-gray-200 w-20 rounded-xl h-15">
-                <img src={img2} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">About Us</span>
-                <p className="text-gray-500 text-sm">
-                  Find out more about what makes us tick and work
-                </p>
-              </div>
-            </Link>
-  
-            {/* Services */}
-            <Link to="/services" className="flex items-center justify-center gap-10 text-black">
-              <div className="bg-gray-200 w-20 rounded-xl h-15">
-                <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">Services</span>
-                <p className="text-gray-500 text-sm">
-                  Focusing on what we're good at means we can deliver
-                </p>
-              </div>
-            </Link>
-  
-            {/* Projects */}
-            <Link to="/projects" className="flex items-center gap-10 text-black">
-              <div className="bg-gray-200 w-25 rounded-xl h-15">
-                <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">Projects</span>
-                <p className="text-gray-500 text-sm">
-                  Check out our latest news stories, case studies, resources and more
-                </p>
-              </div>
-            </Link>
-  
-            {/* News */}
-            <Link to="/news" className="flex items-center justify-center gap-10 text-black">
-              <div className="bg-gray-200 w-25 rounded-xl h-15">
-                <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">News</span>
-                <p className="text-gray-500 text-sm">
-                  Check out our latest news stories, case studies, resources and more
-                </p>
-              </div>
-            </Link>
-  
-            {/* Webflow */}
-            <Link to="/webflow" className="flex items-center justify-center gap-10 text-black">
-              <div className="bg-gray-200 w-23 rounded-xl h-15">
-                <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">Webflow</span>
-                <p className="text-gray-500 text-sm">
-                  The foundation on which we build our world-beating websites
-                </p>
-              </div>
-            </Link>
-  
-            {/* Contact */}
-            <Link to="/talk" className="flex items-center justify-center gap-10 text-black">
-              <div className="bg-gray-200 w-20 rounded-xl h-15">
-                <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-              </div>
-              <div>
-                <span className="font-semibold">Contact Us</span>
-                <p className="text-gray-500 text-sm">
-                  Get in touch and let's transform your ideas into reality
-                </p>
-              </div>
-            </Link>
-          </nav>
+    
+      {/* Mobile Menu */}
+      {menuOpen !== null && (
+        <div
+          className={`transition-all duration-500 ease-in-out overflow-hidden ${
+            menuOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="px-3">
+            <nav className="flex px-4 rounded-lg flex-col items-center gap-4 py-4 border-t border-gray-800 bg-white lg:hidden">
+              {/* Home */}
+              <Link to="/" className="flex items-center justify-center gap-10 text-black">
+                <div className="bg-gray-200 w-22 rounded-xl h-15">
+                  <img src={home} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">Home</span>
+                  <p className="text-gray-500 text-sm">
+                    We transform your brand vision into tangible experiences
+                  </p>
+                </div>
+              </Link>
+    
+              {/* About */}
+              <Link to="/about" className="flex items-center gap-10 text-black">
+                <div className="bg-gray-200 w-20 rounded-xl h-15">
+                  <img src={img2} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">About Us</span>
+                  <p className="text-gray-500 text-sm">
+                    Find out more about what makes us tick and work
+                  </p>
+                </div>
+              </Link>
+    
+              {/* Services */}
+              <Link to="/services" className="flex items-center justify-center gap-10 text-black">
+                <div className="bg-gray-200 w-20 rounded-xl h-15">
+                  <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">Services</span>
+                  <p className="text-gray-500 text-sm">
+                    Focusing on what we're good at means we can deliver
+                  </p>
+                </div>
+              </Link>
+    
+              {/* Projects */}
+              <Link to="/projects" className="flex items-center gap-10 text-black">
+                <div className="bg-gray-200 w-25 rounded-xl h-15">
+                  <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">Projects</span>
+                  <p className="text-gray-500 text-sm">
+                    Check out our latest news stories, case studies, resources and more
+                  </p>
+                </div>
+              </Link>
+    
+              {/* News */}
+              <Link to="/news" className="flex items-center justify-center gap-10 text-black">
+                <div className="bg-gray-200 w-25 rounded-xl h-15">
+                  <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">News</span>
+                  <p className="text-gray-500 text-sm">
+                    Check out our latest news stories, case studies, resources and more
+                  </p>
+                </div>
+              </Link>
+    
+              {/* Webflow */}
+              <Link to="/webflow" className="flex items-center justify-center gap-10 text-black">
+                <div className="bg-gray-200 w-23 rounded-xl h-15">
+                  <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">Webflow</span>
+                  <p className="text-gray-500 text-sm">
+                    The foundation on which we build our world-beating websites
+                  </p>
+                </div>
+              </Link>
+    
+              {/* Contact */}
+              <Link to="/talk" className="flex items-center justify-center gap-10 text-black">
+                <div className="bg-gray-200 w-20 rounded-xl h-15">
+                  <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                </div>
+                <div>
+                  <span className="font-semibold">Contact Us</span>
+                  <p className="text-gray-500 text-sm">
+                    Get in touch and let's transform your ideas into reality
+                  </p>
+                </div>
+              </Link>
+            </nav>
+          </div>
         </div>
-      </div>
-    )}
-  </header>
+      )}
+    </header>
 
                    <div className="absolute top-50 left-1/2 hidden md:hidden lg:block -translate-x-1/2 w-80 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-70"></div>
                    <main className="lg:pt-60 pt-35 relative">
                      
                     <div>
-                         <motion.p
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeLeft}
+                      
              
-             className="border-1 border-blue-500 text-white w-35 h-7 items-center flex mx-auto  justify-center text-sm rounded-full">
-          Our Case Studies
-        </motion.p>
+                       <motion.div   
+                        initial="hidden"
+                       whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeLeft} className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-35 h-8 mx-auto">
+  <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
+    Our Case Studies 
+  </p>
+</motion.div>
 
         <motion.h1
               initial="hidden"

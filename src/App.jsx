@@ -142,6 +142,7 @@ function App() {
             element={
               <>
                 <ServicesHero />
+                <Section7 />
                 <Section8 />
                 <Footer />
               </>

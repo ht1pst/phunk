@@ -122,7 +122,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500">
+      <p className="text-[#969696]">
         Founded as a passion project by enthusiasts David and 
         Joanne, Drivelodge has built on its reputation for crafting 
         high-quality high-top and elevating camper van roofs to 
@@ -201,7 +201,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500 w-80">
+      <p className="text-[#969696] w-80">
        Majenta Solutions is a digital engineering consultancy  working across industries like automotive, manufacturing, construction, and engineering. They provide tailored digital  solutions to improve efficiency, streamline processes, and enhance integration within complex technical environments.
 
       </p>
@@ -239,7 +239,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#0d0d0d] p-3 lg:p-0 lg:w-120 w-90 mx-auto lg:mx-0 group p-5 rounded-2xl">
+  <div className="bg-[#0d0d0d] p-2 lg:p-0 lg:w-120 w-90 mx-auto lg:mx-0 group rounded-2xl">
     
     <div className="relative lg:w-110 w-85 h-80 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -281,7 +281,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500 w-80">
+      <p className="text-[#969696] w-80">
        Dropship.io is a leading platform in the ecommerce space, offering tools for entrepreneurs to find and sell profitable products. With over 500,000 monthly visitors, their site needed a robust digital infrastructure to support this high traffic while delivering a seamless user experience.
       </p>
     </div>
@@ -356,7 +356,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500 w-80">
+      <p className="text-[#969696] w-80">
       Hacien Tequila is a premium tequila brand that combines bold design with smooth, high-quality spirits. Phunk partnered with Hacien to deliver a visually engaging and technically sound digital experience, handling packaging, 3D models, and digital design assets to strengthen their brand identity.
 
       </p>
@@ -444,7 +444,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <a href="#" className="text-gray-500">
+      <a href="#" className="text-[#969696]">
       Custom campervan brand Bay2 approached Phunk to develop an updated brand identity, new website and merchandise designs to help their growing company stand out from their competitors and communicate the quality of their product range. 
 
 ‍
@@ -523,7 +523,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500 w-80">
+      <p className="text-[#969696] w-80">
     BOXiQ Performance Center in Dubai is a globally recognised boxing gym — hosting icons like Tyson Fury and Oleksandr Usyk. Working with Phunk, they now have a high-quality digital presence to match the prestige of their brand.
 ‍
       </p>
@@ -612,7 +612,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500 w-80">
+      <p className="text-[#969696] w-80">
       Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.
 ‍
       </p>
@@ -690,7 +690,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-gray-500 w-80">
+      <p className="text-[#969696] w-80">
     BOXiQ Performance Center in Dubai is a globally recognised boxing gym — hosting icons like Tyson Fury and Oleksandr Usyk. Working with Phunk, they now have a high-quality digital presence to match the prestige of their brand.
 ‍
       </p>
@@ -769,7 +769,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <a href="#" className="text-gray-500">
+      <a href="#" className="text-[#969696]">
        Fresh & Go is a challenger brand in the dental alignment industry, providing a range of supporting products for users of orthodontic alignment appliances including cleaning tablets and solutions, specialist toothbrushes and protective storage cases.
       </a>
     </div>
@@ -798,7 +798,7 @@ function ProjectSection2(){
 
 
 <div className="pt-30 px-5 lg:px-0">
-      <h1 className="text-white flex justify-center text-5xl">
+      <h1 className="text-white flex justify-center text-4xl text-center lg:text-start">
         Frequently asked questions
       </h1>
       <p className="text-[#969696] mt-8 flex justify-center text-center lg:text-left">

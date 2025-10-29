@@ -57,24 +57,33 @@ function Section5() {
             <img src={img1} alt="" className="w-120 h-110 md:w-90 md:h-90 object-cover" />
           </div>
           <div className="bg-black">
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start items-center gap-5 bg-black">
-              <button className="border border-blue-500 text-white w-[200px] md:w-[220px] lg:w-[250px] text-sm flex justify-center rounded-full">
-                Web Design/Development
-              </button>
-              <button className="border border-blue-500 text-white w-[110px] md:w-[130px] lg:w-[100px] text-sm flex justify-center rounded-full">
+            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-5 bg-black">
+            <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+  <button className="border flex justify-center items-center border-none text-white w-[200px] h-7 md:w-[220px] lg:w-[200px] text-sm rounded-full bg-black">
+    Web Design/Development
+  </button>
+</div>
+
+
+<div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[110px] h-7 md:w-[130px] lg:w-[100px] text-sm bg-black rounded-full">
                 UI/UX Design
               </button>
-              <button className="border border-blue-500 text-white w-[100px] md:w-[120px] text-sm flex justify-center rounded-full">
+              </div>
+
+            <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center h-7  text-white w-[110px] md:w-[130px] lg:w-[100px] text-sm bg-black rounded-full">
                 Configurator
               </button>
+              </div>
             </div>
 
             <div className="mt-10">
-              <a href="#" className="text-white lg:text-6xl text-3xl">
+              <a href="#" className="text-[#969696] lg:text-6xl text-3xl">
                 Drivelodge
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-gray-400 mt-6">
+            <p className="text-md md:text-sm md:w-70 w-75 lg:w-140 text-[#969696] mt-6">
               Founded as a passion project by enthusiasts David and Joanne,
               Drivelodge has built on its reputation for crafting high-quality
               high-top and elevating camper van roofs to become a 30-strong
@@ -104,30 +113,42 @@ function Section5() {
             <img src={img2} alt="" className="w-120 h-110 md:w-90 md:h-90 object-cover" />
           </div>
           <div className="bg-black">
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start items-center gap-5 bg-black">
-              <button className="border border-blue-500 text-white w-[200px] md:w-[200px] text-sm flex justify-center rounded-full">
-                Web Design/Development
-              </button>
-              <button className="border border-blue-500 text-white w-[130px] md:w-[130px] text-sm flex justify-center rounded-full">
+            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-5 bg-black">
+               <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+ 
+ 
+  <button className="border flex justify-center items-center border-none text-white w-[200px] h-7 md:w-[220px] lg:w-[200px] text-sm rounded-full bg-black">
+    Web Design/Development
+  </button>
+</div>
+
+             <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[110px] h-7 md:w-[130px] lg:w-[100px] text-sm bg-black rounded-full">
                 UI/UX Design
               </button>
-              <button className="border border-blue-500 text-white w-[160px] md:w-[160px] text-sm flex justify-center rounded-full">
+              </div>
+
+
+            <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Webflow Training
               </button>
+              </div>
             </div>
 
-            <div className="pt-3 hidden lg:block">
-              <button className="border-1 border-blue-500 text-white w-30 flex justify-center rounded-full text-sm h-8 items-center">
+ <div className="p-[1px] mt-4 rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Graphic Design
               </button>
-            </div>
+              </div>
+
 
             <div className="mt-10">
-              <a href="#" className="text-white lg:text-6xl text-3xl">
+              <a href="#" className="text-[#969696] lg:text-6xl text-3xl">
                 Hacien
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-gray-400 mt-6">
+            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               HACIEN is a premium tequila brand supplying high-end hospitality
               and retail locations worldwide. They approached Phunk to
               undertake a comprehensive design project comprising web,
@@ -157,33 +178,47 @@ function Section5() {
             <img src={img3} alt="" className="w-120 h-110 md:w-90 md:h-90 object-cover" />
           </div>
           <div className="bg-black">
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start items-center gap-5 bg-black">
-              <button className="border-1 border-blue-500 text-white w-40 md:text-sm flex justify-center rounded-full">
-                Splash Screens
+            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-5 bg-black">
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
+               Splash Screens
               </button>
-              <button className="border-1 border-blue-500 text-white w-27 md:text-sm flex justify-center rounded-full">
+              </div>
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
                 Illustrations
               </button>
-              <button className="border-1 border-blue-500 text-white w-30 md:text-sm flex justify-center rounded-full">
+              </div>
+
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
                 Graphic Design
               </button>
+              </div>
             </div>
 
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start gap-2 pt-3">
-              <button className="border-1 border-blue-500 text-white w-35 md:text-sm flex justify-center rounded-full">
+            <div className="flex  md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start gap-2 pt-3">
+ <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[130px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Lottie Animations
               </button>
-              <button className="border-1 border-blue-500 text-white w-35 md:text-sm flex justify-center rounded-full">
+              </div>
+              
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Webflow Training
               </button>
+              </div>
             </div>
 
             <div className="mt-10">
-              <a href="#" className="text-white lg:text-6xl text-3xl">
+              <a href="#" className="text-[#969696] lg:text-6xl text-3xl">
                 Mobilleo
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-gray-400 mt-6">
+            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               Mobilleo is a SaaS solution making it easy for organisations to
               manage global business travel for their employees. The team at
               Mobilleo approached Phunk to provide a range of design and
@@ -213,30 +248,44 @@ function Section5() {
             <img src={img4} alt="" className="w-120 h-110 md:w-90 md:h-90 object-cover" />
           </div>
           <div className="bg-black">
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start items-center gap-5 bg-black">
-              <button className="border-1 border-blue-500 text-white w-50 md:text-sm flex justify-center rounded-full">
-                Webflow Development
+            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-5 bg-black">
+              
+              
+ <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[200px] h-7 md:w-[130px] lg:w-[211px] text-sm bg-black rounded-full">
+               Website Design/Development
               </button>
-              <button className="border-1 border-blue-500 text-white w-27 md:text-sm flex justify-center rounded-full">
-                UI/UX Design
-              </button>
-              <button className="border-1 border-blue-500 text-white w-35 md:text-sm flex justify-center rounded-full">
-                Webflow Training
-              </button>
-            </div>
+              </div>
 
-            <div className="pt-3 hidden lg:block">
-              <button className="border-1 border-blue-500 text-white w-40 flex justify-center rounded-full h-8 items-center">
-                Graphic Design
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[100px] text-sm bg-black rounded-full">
+               UI/UX Design
               </button>
+              </div>
+
+
+               <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[130px] h-7 md:w-[130px] lg:w-[100px] text-sm bg-black rounded-full">
+               Webflow Training
+              </button>
+
+              </div>
+
             </div>
+             <div className="p-[1px] mt-3 rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
+               Graphic Design
+              </button>
+              </div>
+
+           
 
             <div className="mt-10">
-              <a href="#" className="text-white lg:text-6xl text-3xl">
+              <a href="#" className="text-[#969696] lg:text-6xl text-3xl">
                 Mannson Freight
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-gray-400 mt-6">
+            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.
             </p>
             <div className="mt-10">
@@ -262,30 +311,42 @@ function Section5() {
             <img src={img5} alt="" className="w-120 h-110 md:w-90 md:h-90 object-cover" />
           </div>
           <div className="bg-black">
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start items-center gap-5 bg-black">
-              <button className="border-1 border-blue-500 text-white w-50 md:text-sm flex justify-center rounded-full">
-                Webflow Development
+            
+            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-5 bg-black">
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[200px] h-7 md:w-[130px] lg:w-[210px] text-sm bg-black rounded-full">
+               Website Design/Development
               </button>
-              <button className="border-1 border-blue-500 text-white w-27 md:text-sm flex justify-center rounded-full">
-                UI/UX Design
+              </div>
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
+               UI/UX Design
               </button>
-              <button className="border-1 border-blue-500 text-white w-35 md:text-sm flex justify-center rounded-full">
-                Webflow Training
+              </div>
+
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
+               Graphic Design
               </button>
+              </div>
+
             </div>
 
-            <div className="pt-3 hidden lg:block">
-              <button className="border-1 border-blue-500 text-white w-40 flex justify-center rounded-full h-8 items-center">
-                Graphic Design
+             <div className="p-[1px] mt-5 rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[130px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
+               Webflow Training
               </button>
-            </div>
+              </div>
 
             <div className="mt-10">
-              <a href="#" className="text-white lg:text-6xl text-3xl">
+              <a href="#" className="text-[#969696] lg:text-6xl text-3xl">
                 Box iQ
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-gray-400 mt-6">
+            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.
             </p>
             <div className="mt-10">
@@ -311,29 +372,41 @@ function Section5() {
             <img src={img6} alt="" className="w-120 h-110 md:w-90 md:h-90 object-cover" />
           </div>
           <div className="bg-black">
-            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start items-center gap-5 bg-black">
-              <button className="border-1 border-blue-500 text-white w-50 md:text-sm flex justify-center rounded-full">
-                Webflow Development
+            <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-5 bg-black">
+
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[180px] h-7 md:w-[130px] lg:w-[200px] text-sm bg-black rounded-full">
+               Webflow Development
               </button>
-              <button className="border-1 border-blue-500 text-white w-27 md:text-sm flex justify-center rounded-full">
-                Visual identity
+              </div>
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
+              Visual Identity
               </button>
-              <button className="border-1 border-blue-500 text-white w-25 md:text-sm flex justify-center rounded-full">
-                Packaging
+              </div>
+
+
+              <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
+              Packaging
               </button>
+              </div>
+
             </div>
-            <div className="pt-3 flex flex-wrap md:flex-wrap lg:flex-nowrap justify-center md:justify-center lg:justify-start">
-              <button className="border-1 border-blue-500 text-white w-45 md:text-sm flex justify-center rounded-full">
-                Apparel & Merchandise
+             <div className="p-[1px] mt-5 rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <button className=" flex items-center justify-center  text-white w-[200px] h-7 md:w-[130px] lg:w-[170px] text-sm bg-black rounded-full">
+              Apparel & Merchandise
               </button>
-            </div>
+              </div>
 
             <div className="mt-10">
-              <a href="#" className="text-white lg:text-6xl text-3xl">
+              <a href="#" className="text-[#969696] lg:text-6xl text-3xl">
                 The Honest Watch <br /> Dealer
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-gray-400 mt-6">
+            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               The Honest Watch Dealer is a luxury watch expert renowned for his popular YouTube channel, as well as founding The Luxury Watch Company. Charlie (his real name) engaged Phunk to develop a brand identity for his channel, with applications across a range of merchandise.
             </p>
             <div className="mt-10">

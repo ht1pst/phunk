@@ -19,7 +19,7 @@ const fadeUp = {
 
 function Section3() {
   return (
-    <section className="bg-black lg:h-370 h-690 md:h-350">
+    <section className="bg-black lg:h-370 h-650 md:h-350">
       {/* Title */}
       <motion.h1
         className="text-4xl lg:text-6xl md:text-5xl md:w-175 md:text-center pt-10 text-white lg:w-210 px-3 mx-auto lg:text-center"
@@ -117,10 +117,10 @@ function Section3() {
       </motion.div>
 
       {/* Buttons */}
-      <motion.div className="flex flex-col lg:flex-row md:flex-row justify-center gap-4 mt-10">
+      <motion.div className="flex  lg:flex-row md:flex-row justify-center lg:gap-4 px-6 mt-10">
         <MotionLink
           to="/talk"
-          className="w-42 mx-auto flex justify-center items-center lg:mx-0 md:mx-0 h-12 rounded-full text-white bg-gradient-to-r from-[#00d1ff] to-[#004cff] shadow-[0_0_20px_rgba(0,209,255,0.5)] transition-all duration-300"
+          className="lg:w-42 w-35 mx-auto flex justify-center text-sm items-center lg:mx-0 md:mx-0 lg:h-12 h-10 rounded-full text-white bg-gradient-to-r from-[#00d1ff] to-[#004cff] shadow-[0_0_20px_rgba(0,209,255,0.5)] transition-all duration-300"
           custom={0.9}
           variants={fadeUp}
           initial="hidden"
@@ -132,7 +132,7 @@ function Section3() {
 
         <MotionLink
           to="/talk"
-          className="w-42 mx-auto flex justify-center items-center lg:mx-0 md:mx-0 h-12 bg-white text-black rounded-full hover:bg-black hover:text-white transition"
+          className="lg:w-42 w-35 mx-auto flex justify-center text-sm items-center lg:mx-0 md:mx-0 lg:h-12 h-10 bg-white text-black rounded-full hover:bg-black hover:text-white transition"
           custom={1.0}
           variants={fadeUp}
           initial="hidden"

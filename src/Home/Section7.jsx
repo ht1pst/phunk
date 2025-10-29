@@ -115,19 +115,20 @@ function Section7() {
             {testimonials.map((t, idx) => (
               <div
                
-                className="min-w-[250px] sm:min-w-[300px] lg:min-w-[35%] bg-gradient-to-b from-[#1a1a1a] via-[#111] to-black rounded-xl border border-white"
+                className="min-w-[300px] h-60 sm:min-w-[300px] lg:min-w-[35%] bg-gradient-to-b from-[#1a1a1a] via-[#111] to-black rounded-xl border border-white"
               >
-                <div className="p-6">
-                  <div className="flex gap-4 items-center">
-                    <img src={t.img} alt={t.name} className="w-12 h-12 rounded-full" />
+                <div className="py-6 px-4">
+                  <div className="flex lg:gap-4 gap-15  lg:items-center">
+                   
                     <div>
-                      <h1 className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-lg sm:text-xl font-bold">
+                      <h1 className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-2xl  ">
                         {t.name}
                       </h1>
-                      <p className="text-sm text-gray-400">{t.company}</p>
+                      <p className="text-sm text-white font-semibold">{t.company}</p>
                     </div>
+                     <img src={t.img} alt={t.name} className="w-12 h-12 rounded-full" />
                   </div>
-                  <p className="text-gray-400 text-sm mt-4">{t.text}</p>
+                  <p className="text-[#969696] text-sm mt-4">{t.text}</p>
                 </div>
               </div>
             ))}

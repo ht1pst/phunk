@@ -47,9 +47,11 @@ function AboutSection8() {
               Joe Crabtree
             </h1>
             <div className="px-4">
-              <p className="border-1 border-blue-500 mt-7 text-white w-45 h-8 flex items-center justify-center text-sm rounded-full">
-                Co Founder / Director
-              </p>
+            <div className="p-[2px] mt-3 rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-42 h-8">
+  <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
+   Co Founder/Director
+  </p>
+</div>
             </div>
             <p className="text-gray-400 lg:w-120 w-80 mt-7 px-4">
               Meet Joe, our lead designer here at Phunk. Joe has 10 years of experience in graphic design, working with some of the world’s biggest brands. Specialising in branding and graphics, Joe relishes the challenge of building a brand from the ground up.
@@ -67,9 +69,11 @@ function AboutSection8() {
               Joe Murray
             </h1>
             <div className="px-4">
-              <p className="border-1 border-blue-500 mt-7 text-white w-45 h-8 flex items-center justify-center text-sm rounded-full">
-                Co Founder / Director
-              </p>
+               <div className="p-[2px] mt-3 rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-42 h-8">
+  <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
+   Co Founder/Director
+  </p>
+</div>
             </div>
             <p className="text-gray-400 lg:w-120 w-80 mt-7 px-4 ">
               Meet Joe, Creative Director. He is a designer with over 10 years experience in the field. Branding, UX and animation are his main skills and, when he’s not working his creative magic, he is usually mountain biking, playing basketball, and getting away into the outdoors in his campervan.
