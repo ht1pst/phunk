@@ -41,7 +41,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 }, [lastScrollY]);
       return(
         
-       <section className="lg:h-200 h-170 bg-black">
+       <section className="lg:h-200 h-150 bg-black">
         {/* ======== Header (Responsive) ======== */}
   <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
      <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4">
@@ -280,7 +280,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
      )}
    </header>
                   
-<main className="pt-40 relative">
+<main className="lg:pt-40 pt-30 relative">
 
 <div>
     <svg class="image_contain" className="absolute w-90 top-60 lg:left-30 left-0 opacity-40 lg:opacity-100" viewBox="0 0 394 394" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -329,14 +329,14 @@ const [lastScrollY, setLastScrollY] = useState(0);
 
 
     <div>
-        <h1 className="text-gray-300 mx-auto lg:w-150 w-75 font-semibold lg:leading-normal  lg:text-7xl text-5xl font-medium text-center ">
+        <h1 className="text-gray-300 mx-auto lg:w-150 w-70 font-semibold lg:leading-normal  lg:text-7xl text-5xl font-medium text-center ">
   Latest Updates from{" "}
   <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
     Phunk.
   </span>
 </h1>
 
-        <p className="text-gray-200 text-sm flex justify-center mx-auto lg:mt-10 mt-5 w-70 md:w-170 lg:w-140 text-center">Check out our latest news stories, new case studies, Webflow resources and more below. Or give us your email address and get a weekly or monthly digest delivered directly — just that, no spam or marketing emails.</p>
+        <p className="text-[#fff] text-sm flex leading-normal justify-center mx-auto lg:mt-10 mt-5 w-65 md:w-170 lg:w-140 text-center">Check out our latest news stories, new case studies, Webflow resources and more below. Or give us your email address and get a weekly or monthly digest delivered directly — just that, no spam or marketing emails.</p>
         <div className="mx-auto relative flex justify-center mt-10">
             <button onClick={() => setIsOpen(!isOpen)} className="w-40 text-sm rounded-full h-11 hover:bg-black hover:text-white text-black bg-white transition-all duration-200 ">Join Newsletter</button>
         </div>

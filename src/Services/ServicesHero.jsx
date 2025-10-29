@@ -46,7 +46,7 @@ function ServicesHero(){
    }, [lastScrollY]);
       return(
         
-       <section className="lg:h-200 h-380 bg-black lg">
+       <section className="lg:h-200 h-300 bg-black lg">
         {/* ======== Header (Responsive) ======== */}
   <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
      <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4">

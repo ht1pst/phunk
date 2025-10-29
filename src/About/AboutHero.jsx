@@ -292,7 +292,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
   
        
 
-          <main className="lg:pt-35 pt-30 relative">
+          <main className="lg:pt-35 pt-38 relative">
             <div className="absolute  block lg:hidden bottom-0 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[95%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
         <div className="flex flex-col lg:flex-row justify-center lg:gap-20 gap-5 items-center">
           {/* Text Content */}
@@ -305,7 +305,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
             <motion.div   initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              variants={fadeLeft}  className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-52 h-8 ">
+              variants={fadeLeft}  className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-42 h-8 ">
             <p
              
             className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1"
@@ -320,7 +320,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              className="text-gray-300 lg:mt-10  lg:text-5xl w-[90%] lg:w-135 lg:text-6xl text-4xl font-medium"
+              className="text-gray-300 lg:mt-10  lg:text-5xl w-[90%] lg:w-135 lg:text-6xl text-4xl font-semibold"
             >
               Everything you need to know{" "}
               <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">

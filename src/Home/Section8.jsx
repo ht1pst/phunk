@@ -36,7 +36,7 @@ function Section8(){
       
        
 <div className="relative">
-    <h1 className="text-white lg:text-7xl text-4xl font-medium mx-auto text-center pt-10 w-50 lg:w-200">Lets's get to <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">work.</span></h1>
+    <h1 className="text-white lg:text-7xl text-4xl font-medium mx-auto text-center pt-10 w-50 lg:w-200">Let's get to <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">work.</span></h1>
     <p  className="text-gray-200 text-sm   font-semibold flex justify-center mx-auto w-60 lg:w-200 text-center pt-10">We’re ready to get started on your next creative project. All you need to do is hit the button below</p>
     <div className="flex justify-center pt-4 lg:z-0 ">
     <Link to="/talk" className="bg-white flex justify-center items-center text-black h-10 w-30 rounded-full" >Talk to us</Link>

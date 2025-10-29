@@ -156,9 +156,9 @@ function AboutSection6() {
           <h1 className="text-white lg:text-6xl text-4xl">@</h1>
           <img src={phunk} alt="" className="w-38"  />
         </div>
-        <p className="text-gray-500 lg:w-120 w-[90%] sm:w-[90%] text-center mx-auto lg:pt-5 pt-10">
+        <p className="text-[#969696] lg:w-120 w-[90%] sm:w-[90%] text-center mx-auto lg:pt-5 pt-10">
           We’re immensely proud to be official{" "}
-          <span className="text-[#6e6d6dff] #6e6d6dff font-semibold">Webflow partners</span> — we’ve been avid users of the platform since the early days, and it’s amazing to be part of its development. Check out our Webflow page to learn why we (and our clients) love it so much. For now, here are the basics.
+          <span className="text-white #383737ff font-semibold">Webflow partners</span> — we’ve been avid users of the platform since the early days, and it’s amazing to be part of its development. Check out our Webflow page to learn why we (and our clients) love it so much. For now, here are the basics.
         </p>
         <div className="flex justify-center pt-5">
           <img src={partner} alt="" className="lg:w-60 w-60 pt-5" />

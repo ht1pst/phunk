@@ -85,13 +85,13 @@ function Section7() {
           viewport={{ once: true, amount: 0.3 }}
           variants={textFade}
         >
-          <h1 className="lg:text-5xl md:text-5xl text-4xl text-center text-white px-4 lg:w-[900px] mx-auto">
+          <h1 className="lg:text-5xl md:text-5xl text-4xl lg:text-center text-start text-white px-4 lg:w-[900px] mx-auto font-semibold ">
             What our clients think of{" "}
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               Phunk.
             </span>
           </h1>
-          <p className="text-sm text-gray-400 font-semibold mt-5 text-center px-4">
+          <p className="text-sm text-[#969696] font-semibold mt-5 lg:text-center text-start px-4">
             We’re honest about our skills and abilities — and we’re delighted that our clients agree.
           </p>
         </motion.div>

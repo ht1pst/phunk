@@ -299,10 +299,10 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </div>
 
       {/* Side decorations */}
-      <div className="absolute bottom-10 lg:bottom-15  lg:left-10 md:left-5 left-5 opacity-70 z-30">
+      <div className="absolute bottom-10 lg:bottom-15  lg:left-19 md:left-5 left-5 opacity-70 z-30">
         <img src={stuff1} alt="" className="lg:w-100 w-50 md:w-80 rounded-b-xl" />
       </div>
-      <div className="absolute bottom-10 lg:bottom-15 lg:right-10 md:right-5 right-5 opacity-70 z-30">
+      <div className="absolute bottom-10 lg:bottom-15 lg:right-19 md:right-5 right-5 opacity-70 z-30">
         <img src={stuff2} alt="" className="lg:w-100 w-50 md:w-80 rounded-b-xl" />
       </div>
       <div className="md:fixed lg:fixed lg:block hidden bottom-1/2 left-0 z-30">

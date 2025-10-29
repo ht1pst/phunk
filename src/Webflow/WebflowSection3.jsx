@@ -8,7 +8,7 @@ function WebflowSection3() {
 
   return (
     <section
-      className="bg-black lg:pt-40 pt-10 lg:h-[800px] h-320 md:h-160 relative overflow-hidden"
+      className="bg-black lg:pt-40 pt-10 lg:h-[800px] h-240 md:h-160 relative overflow-hidden"
       
     >
       {/* Glowing background dots */}
@@ -22,7 +22,7 @@ function WebflowSection3() {
           <motion.h1 initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="lg:text-6xl w-88 lg:w-100 text-4xl md:text-5xl md:w-100 text-white leading-tight px-2">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="lg:text-6xl font-semibold w-88 lg:w-100 text-4xl md:text-5xl md:w-100 text-white leading-tight px-2">
            Our history
 with {" "}
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
@@ -34,7 +34,7 @@ with {" "}
           <motion.p  initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} className="text-sm leading-relaxed  lg:w-120 md:w-100 w-90 text-gray-400 mt-10 px-2">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} className="text-sm leading-relaxed  lg:w-120 md:w-100 w-90 text-[#969696] mt-10 px-2">
            At Phunk, we’ve been working with Webflow since — well basically — since it launched. Once we realised it was clearly the best choice for a whole range of our clients’ use cases, we made the relationship official by becoming a Webflow partner. Since then, our deeper involvement with the platform has given us the tools and skills to utilise it in new and innovative ways. 
 
           </motion.p>
@@ -42,7 +42,7 @@ with {" "}
           <motion.p initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} className="text-sm leading-relaxed lg:w-120 md:w-100 w-90 text-gray-400 mt-10 px-3">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }} className="text-sm leading-relaxed lg:w-120 md:w-100 w-90 text-[#969696] mt-10 px-3">
            Basically, we’re massive Webflow geeks, so whatever you want to do with the platform, we can make it happen.
           </motion.p>
 <div className="px-2">
@@ -65,7 +65,7 @@ with {" "}
         {/* Robot image with motion */}
         
         <div>
-          <img src={img} alt="Robot" className=" md:w-90 lg:w-120 select-none pointer-events-none " />
+          <img src={img} alt="Robot" className=" md:w-90 w-65 lg:w-120 select-none pointer-events-none " />
        </div>
       </div>
     </section>

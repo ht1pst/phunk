@@ -344,12 +344,12 @@ function WebflowSection4() {
   ];
 
   return (
-    <section className=" lg:h-300 h-650 bg-black pt-10 ">
+    <section className=" lg:h-300 h-750 bg-black pt-10 ">
       <div>
         <motion.h1 initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-gray-300 mx-auto  font-semibold leading-normal  lg:text-6xl text-3xl font-medium text-center ">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-gray-300 mx-auto  font-semibold   lg:text-6xl text-4xl font-medium text-center px-4 lg:px-0">
           Why choose{" "}
           <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
             Webflow?
@@ -358,7 +358,7 @@ function WebflowSection4() {
         <motion.p initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-sm leading-relaxed mx-auto lg:w-120 md:w-100 w-90 text-gray-400 mt-10 px-3 text-center">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-sm leading-relaxed mx-auto lg:w-120 md:w-100 w-80 text-[#969696] mt-10 px-3 text-center">
           As an official Webflow partner it should be no surprise that we’re huge
           evangelists for the platform. Here’s a rundown of why we believe it’s
           the best option for any client project.
@@ -377,7 +377,7 @@ function WebflowSection4() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               key={index}
-              className="border lg:w-160 w-80 h-65 lg:h-46 h-60 border-white rounded-2xl p-6 transition-all duration-300"
+              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-75 border-white rounded-2xl p-6 transition-all duration-300"
             >
                 <div className=" flex items-center gap-4">
               {/* SVG ICON (if exists) */}
@@ -387,7 +387,7 @@ function WebflowSection4() {
                 {service.title}
               </a>
               </div>
-              <p className="text-[#969696] text-sm pt-5">{service.text}</p>
+              <p className="text-[#969696] text-sm font-semibold pt-5">{service.text}</p>
             </motion.div>
           ))}
         </div>

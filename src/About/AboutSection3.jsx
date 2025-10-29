@@ -10,7 +10,7 @@ function AboutSection3() {
 
   return (
     <section>
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-40 gap-20 lg:pt-44 h-200">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-40 gap-20 lg:pt-44 lg:h-200 h-180">
         {/* Text Content */}
         <div className="px-4 flex flex-col">
           <motion.p
@@ -19,7 +19,7 @@ function AboutSection3() {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             transition={{ delay: 0 }}
-            className="text-gray-900 mt-10 lg:text-4xl lg:w-105 text-3xl sm:w-[95%] font-medium"
+            className="text-gray-900 mt-10 lg:text-4xl lg:w-105 text-3xl w-80 font-semibold"
           >
             After graduating, the Joes took different paths,
           </motion.p>

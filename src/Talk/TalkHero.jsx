@@ -294,7 +294,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
                     <div>
                      
 
-        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl w-80 lg:w-150 font-medium ">Talk to{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">phunk</span></h1>
+        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl w-80 lg:w-150 font-semibold ">Talk to{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">phunk</span></h1>
 
         <p className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-80 md:w-170 lg:w-135 text-center font-semibold">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.</p>
                     </div>
@@ -330,13 +330,13 @@ const [lastScrollY, setLastScrollY] = useState(0);
     </div>
 
 
-    <div className="border border-white rounded-xl mx-auto lg:mx-0 lg:px-8 px-3 py-5 lg:w-120 w-80 h-55 bg-gradient-to-b from-[#191919] to-[#030303]">
+    <div className="border border-white rounded-xl mx-auto lg:mx-0 lg:px-8 px-3 py-5 lg:w-120 w-85 h-55 bg-gradient-to-b from-[#191919] to-[#030303]">
         <div className="flex lg:gap-45 gap-35">
-            <h1 className="text-white text-2xl ">Book a call</h1>
+            <h1 className="text-white text-3xl ">Book a call</h1>
             <img src={phone} alt="" />
         </div>
 
-        <p className="text-white lg:w-95 w-80 pt-10">Pick a time and a date that suite you, and we'll set up a voice or video call, whichever works best.</p>
+        <p className="text-white lg:w-95 w-75 pt-10">Pick a time and a date that suite you, and we'll set up a voice or video call, whichever works best.</p>
     </div>
 </div>
 

@@ -25,7 +25,7 @@ function NewsSection2(){
     </div>
     
 
-    <div className="flex flex-col lg:flex-row justify-center  gap-10 mt-10">
+    <div className="flex flex-col lg:flex-row justify-center  gap-10 lg:mt-10 mt-25">
 
 <div className="lg:h-150 h-115 bg-[#201f1fff] border border-white mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
@@ -57,7 +57,7 @@ function NewsSection2(){
 <a href="#" className="text-white lg:text-3xl text-2xl ">The Evolution of Web Design</a>
 </div>
 
- <div className="mt-29 px-6">
+ <div className="lg:mt-29 mt-20 px-6">
                 <a href="#" className="text-white text-sm underline underline-offset-7 decoration-1">
                   Read more{" "}
                   <span className="material-symbols-outlined text-sm">
@@ -84,7 +84,7 @@ function NewsSection2(){
 <a href="#" className="text-white lg:text-3xl text-2xl ">Awwwards.com gives Phunk the <br /> thumbs-up!</a>
 </div>
 
- <div className="mt-19 px-6">
+ <div className="lg:mt-19 mt-25 px-6">
                 <a href="#" className="text-white text-sm underline underline-offset-7 decoration-1">
                   Read more{" "}
                   <span className="material-symbols-outlined text-sm">
@@ -105,7 +105,7 @@ function NewsSection2(){
 <a href="#" className="text-white lg:text-3xl text-2xl ">Webflow is 10 years old — here’s why  it’s our first choice platform.</a>
 </div>
 
- <div className="mt-19 px-6">
+ <div className="lg:mt-19 mt-25 px-6">
                 <a href="#" className="text-white text-sm underline underline-offset-7 decoration-1">
                   Read more{" "}
                   <span className="material-symbols-outlined text-sm">
