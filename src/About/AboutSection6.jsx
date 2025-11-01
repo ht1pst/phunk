@@ -40,7 +40,7 @@ function AboutSection6() {
         >
           <div className="lg:px-5 lg:py-5 p-5">
         
-            <div className="flex gap-[40%] sm:gap-[35px] lg:gap-70 items-end text-4xl">
+            <div className="flex gap-30 lg:gap-70 items-end text-4xl">
                 <div>
                       <svg width="20" className="" height="20" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1446_2018)">
@@ -86,7 +86,7 @@ function AboutSection6() {
         >
           <div className="lg:px-5 lg:py-5 p-5">
      
-            <div className="flex gap-[28%] sm:gap-[35px] lg:gap-60 items-end text-4xl">
+            <div className="flex  gap-19 lg:gap-60 items-end text-4xl">
                 <div>
                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.5164 6.34L17.8964 5.26C17.3664 4.35 16.1964 4.03 15.2864 4.56C14.3864 5.09 13.2164 4.8 12.6864 3.89C12.6864 3.89 12.6864 3.89 12.6864 3.88C12.5264 3.6 12.4364 3.29 12.4264 2.97C12.4564 1.91 11.6264 1.03 10.5764 1C10.5564 1 10.5364 1 10.5164 1H9.26636C8.21636 1 7.36636 1.85 7.36636 2.9C7.36636 2.9 7.36636 2.9 7.36636 2.91C7.35636 3.96 6.49636 4.8 5.44636 4.8C5.12636 4.8 4.80636 4.71 4.53636 4.54C3.62636 4.01 2.45636 4.33 1.92636 5.24L1.25636 6.34C0.726356 7.25 1.04636 8.42 1.95636 8.95C2.54636 9.29 2.91636 9.92 2.91636 10.61C2.91636 11.29 2.55636 11.93 1.95636 12.27C1.04636 12.79 0.726356 13.95 1.25636 14.86L1.88636 15.95C2.39636 16.88 3.55636 17.21 4.48636 16.7C4.48636 16.7 4.48636 16.7 4.49636 16.7C5.39636 16.17 6.55636 16.48 7.08636 17.38C7.08636 17.38 7.08636 17.39 7.08636 17.4C7.24636 17.68 7.33636 17.99 7.34636 18.32C7.34636 19.38 8.20636 20.23 9.25636 20.23H10.5064C11.5564 20.23 12.4164 19.38 12.4164 18.33C12.4164 17.28 13.2564 16.42 14.3064 16.42C14.3064 16.42 14.3264 16.42 14.3364 16.42C14.6564 16.42 14.9764 16.52 15.2464 16.68C16.1564 17.21 17.3264 16.89 17.8564 15.98L18.5164 14.88C19.0464 13.97 18.7364 12.81 17.8364 12.28C17.8364 12.28 17.8264 12.28 17.8164 12.27C16.9064 11.75 16.5864 10.59 17.1064 9.68C17.1064 9.68 17.1064 9.67 17.1164 9.66C17.2864 9.37 17.5264 9.13 17.8164 8.96C18.7264 8.43 19.0364 7.27 18.5164 6.36V6.34Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -107,7 +107,7 @@ function AboutSection6() {
   02
 </p>
             </div>
-            <p className="text-[#d7d7d7] lg:w-125 w-70 sm:w-[90%] text-md pt-5 font-semibold">
+            <p className="text-[#d7d7d7] lg:w-125 w-70  text-md pt-5 font-semibold">
               It’s important to us that you can trust we’ll deliver what we promise — whether that’s meeting a tight deadline, returning a call, or reworking a draft ahead of an important presentation. In every interaction, we go the extra mile for our clients to reinforce that trust.
             </p>
           </div>
@@ -126,7 +126,7 @@ function AboutSection6() {
         >
           <div className="lg:px-5 lg:py-5 p-5">
   
-            <div className="flex gap-[28%] sm:gap-[35px] lg:gap-60 items-center text-4xl">
+            <div className="flex gap-20 lg:gap-60 items-center text-4xl">
                 <div>
          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.7656 18.434H19.0156" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -148,7 +148,7 @@ function AboutSection6() {
   03
 </p>
             </div>
-            <p className="text-[#d7d7d7] lg:w-125 w-70 sm:w-[90%] text-md pt-5 font-semibold">
+            <p className="text-[#d7d7d7] lg:w-125 w-70  text-md pt-5 font-semibold">
               Each member of the team at Phunk has built their creative career on the principle that the work only matters if it’s original, effective and exciting — we’re not interested in building anything substandard, derivative or boring.
             </p>
           </div>
@@ -164,7 +164,7 @@ function AboutSection6() {
         >
           <div className="lg:px-5 lg:py-5 p-5">
          
-            <div className="flex gap-[28%] sm:gap-[35px] lg:gap-60 items-center text-4xl">
+            <div className="flex gap-22 lg:gap-60 items-center text-4xl">
                 <div>
                       <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.46973 13.5L8.45973 9.61001L11.8697 12.29L14.7997 8.51001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -186,7 +186,7 @@ function AboutSection6() {
   04
 </p>
             </div>
-            <p className="text-[#d7d7d7] lg:w-125 w-70 sm:w-[90%] text-md pt-5 font-semibold">
+            <p className="text-[#d7d7d7] lg:w-125 w-70  text-md pt-5 font-semibold">
               We’re in the creative industry because we want to push boundaries, find new ways to communicate and innovate at every stage of our process. If we’re not always striving to outdo our previous work, and motivating each other to do better, we’re doing it wrong.
             </p>
           </div>
@@ -207,7 +207,7 @@ function AboutSection6() {
           <h1 className="text-white lg:text-6xl text-4xl">@</h1>
           <img src={phunk} alt="" className="w-38"  />
         </div>
-        <p className="text-[#969696] lg:w-120 w-[100%] sm:w-[90%] text-center mx-auto lg:pt-5 pt-10 font-semibold text-md px-4 leading-normal">
+        <p className="text-[#969696] lg:w-120 w-[100%]  text-center mx-auto lg:pt-5 pt-10 font-semibold text-md px-4 leading-normal">
           We’re immensely proud to be official{" "}
           <span className="text-white #383737ff font-semibold">Webflow partners</span> — we’ve been avid users of the platform since the early days, and it’s amazing to be part of its development. Check out our Webflow page to learn why we (and our clients) love it so much. For now, here are the basics.
         </p>
