@@ -34,7 +34,7 @@ function TalkSection2() {
   };
 
   return (
-    <section className="h-200 lg:h-200 bg-black">
+    <section className="h-160 lg:h-200 bg-black">
       <div
         className="relative bg-cover bg-center bg-no-repeat h-150"
         style={{ backgroundImage: `url(${img2})` }}

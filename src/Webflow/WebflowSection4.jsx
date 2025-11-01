@@ -344,7 +344,7 @@ function WebflowSection4() {
   ];
 
   return (
-    <section className=" lg:h-300 h-840 bg-black pt-10 ">
+    <section className=" lg:h-300 h-860 bg-black pt-10 ">
       <div>
         <motion.h1 initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
