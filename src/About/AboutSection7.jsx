@@ -72,12 +72,12 @@ function AboutSection7() {
 
   return (
     <motion.section
-      className="bg-black relative overflow-hidden h-200 md:h-150 lg:h-170 pt-20"
+      className="bg-black relative overflow-hidden h-180 md:h-150 lg:h-170 pt-20"
       
     >
 
       
-      <motion.div   className="flex flex-col  lg:flex-row relative lg:w-330 md:w-170 w-80 lg:h-115 h-183 rounded-xl border  border-gray-700 mx-auto  relative px-6 pt-13 
+      <motion.div   className="flex flex-col  lg:flex-row relative lg:w-330 md:w-170 w-80 lg:h-115 h-180 rounded-xl border  border-gray-700 mx-auto  relative px-6 pt-13 
         lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent 
         opacity-95  overflow-hidden "
       >

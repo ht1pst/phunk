@@ -202,12 +202,12 @@ function AboutSection6() {
         variants={fadeUp}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        <div className="flex flex-wrap items-center gap-5 justify-center">
-          <h1 className="text-white lg:text-6xl text-4xl">Webflow</h1>
+        <div className="flex flex-wrap items-center gap-5 justify-center w-60 lg:full mx-auto">
+          <h1 className="text-white lg:text-6xl text-4xl font-semibold">Webflow</h1>
           <h1 className="text-white lg:text-6xl text-4xl">@</h1>
           <img src={phunk} alt="" className="w-38"  />
         </div>
-        <p className="text-[#969696] lg:w-120 w-[100%] sm:w-[90%] text-center mx-auto lg:pt-5 pt-10 font-semibold text-md px-2 leading-normal">
+        <p className="text-[#969696] lg:w-120 w-[100%] sm:w-[90%] text-center mx-auto lg:pt-5 pt-10 font-semibold text-md px-4 leading-normal">
           We’re immensely proud to be official{" "}
           <span className="text-white #383737ff font-semibold">Webflow partners</span> — we’ve been avid users of the platform since the early days, and it’s amazing to be part of its development. Check out our Webflow page to learn why we (and our clients) love it so much. For now, here are the basics.
         </p>

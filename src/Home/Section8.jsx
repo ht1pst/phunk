@@ -22,7 +22,7 @@ function Section8(){
                   <img src={herocir} alt="" className=" object-cover w-100 h-[350px]   " />
                 </div>
 
-                 <div className="absolute lg:bottom-15 bottom-15 left-1/2 -translate-x-1/2      object-cover      right- z-0">
+                 <div className="absolute hidden  lg:block lg:bottom-15 bottom-15 left-1/2 -translate-x-1/2      object-cover      right- z-0">
                   <img src={herocir} alt="" className=" object-cover h-80    " />
                 </div>
       

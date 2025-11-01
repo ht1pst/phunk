@@ -43,7 +43,7 @@ function Section5() {
         </motion.p>
       </div>
 
-      <div className="px-4 gap-35 md:gap-20 lg:gap-50  lg:pt-0 flex flex-col">
+      <div className="px-4 gap-30 md:gap-20 lg:gap-50  lg:pt-0 flex flex-col">
 
         {/* ---------- DRIVELLODGE ---------- */}
         <motion.div
@@ -56,7 +56,7 @@ function Section5() {
           <div>
             <img src={img1} alt="" className="w-120 h-55 md:w-90 md:h-90 object-cover lg:w-140 lg:h-120" />
           </div>
-          <div className="bg-black pt-20 ">
+          <div className="bg-black  ">
             <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-4 bg-black">
             <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
   <button className="border flex justify-center items-center border-none text-white w-[200px] h-7 md:w-[220px] lg:w-[200px] text-sm rounded-full bg-black">
@@ -112,7 +112,7 @@ function Section5() {
           <div>
             <img src={img2} alt="" className="w-120 h-55 md:w-90 md:h-90 object-cover lg:w-140 lg:h-120" />
           </div>
-          <div className="bg-black pt-20">
+          <div className="bg-black ">
             <div className="flex flex-wrap   md:flex-wrap l  justify-start md:justify-center lg:justify-start items-center gap-3 bg-black">
                <div className="p-[1px] lg:hidden block rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
   <button className="border flex justify-center items-center border-none text-white w-[200px] h-7 md:w-[220px] lg:w-[200px] text-sm rounded-full bg-black">
@@ -148,7 +148,7 @@ function Section5() {
               </div>
             </div>
 
-  <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit mt-3 ">
+  <div className="p-[1px] hidden lg:block rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit mt-3 ">
               <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Graphic Design
               </button>
@@ -190,7 +190,7 @@ function Section5() {
           <div>
             <img src={img3} alt="" className="w-120 h-55 md:w-90 md:h-90 object-cover lg:w-140 lg:h-120" />
           </div>
-          <div className="bg-black pt-20">
+          <div className="bg-black ">
             <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-3 bg-black">
               <div className="p-[1px] rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
               <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
@@ -217,7 +217,7 @@ function Section5() {
               </button>
               </div>
               
-              <div className="p-[1px] rounded-full block lg:hidden bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+              <div className="p-[1px] lg:block hidden rounded-full block lg:hidden bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
               <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Webflow Training
               </button>
@@ -225,7 +225,7 @@ function Section5() {
 
             </div>
 
-<div className="flex gap-3 mt-3 ">
+<div className="flex gap-3 mt-3  ">
     <div className="p-[1px] lg:block hidden rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
               <button className=" flex items-center justify-center  text-white w-[130px] h-7 md:w-[130px] lg:w-[130px] text-sm bg-black rounded-full">
                 Lottie Animations
@@ -276,7 +276,7 @@ function Section5() {
           <div>
             <img src={img4} alt="" className="w-120 h-55 md:w-90 md:h-90 object-cover lg:w-140 lg:h-120" />
           </div>
-          <div className="bg-black pt-20">
+          <div className="bg-black ">
             <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-3 bg-black">
               
               
@@ -307,7 +307,7 @@ function Section5() {
               </div>
             </div>
             
-            <div className="p-[1px] mt-3  rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+            <div className="p-[1px] mt-3 lg:block hidden  rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
               <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
                Graphic Design
               </button>
@@ -345,7 +345,7 @@ function Section5() {
           <div>
             <img src={img5} alt="" className="w-120 h-55 lg:w-140 lg:h-120 md:w-90 md:h-90 object-cover lg:w-140 lg:h-120" />
           </div>
-          <div className="bg-black pt-20">
+          <div className="bg-black ">
             
             <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-3 bg-black">
 
@@ -356,7 +356,7 @@ function Section5() {
               </div>
 
  <div className="p-[1px]  rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
-              <button className=" flex items-center justify-center  text-white w-[200px] h-7 md:w-[130px] lg:w-[180px] text-sm bg-black rounded-full">
+              <button className=" flex items-center justify-center  text-white w-[180px] h-7 md:w-[130px] lg:w-[180px] text-sm bg-black rounded-full">
                Webflow Development
               </button>
               </div>
@@ -383,7 +383,7 @@ function Section5() {
               </div>
 
             </div>
- <div className="p-[1px] hidde lg:block mt-3  rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
+ <div className="p-[1px] lg:block hidden mt-3  rounded-full bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-fit ">
               <button className=" flex items-center justify-center  text-white w-[120px] h-7 md:w-[130px] lg:w-[120px] text-sm bg-black rounded-full">
                Graphic Design
               </button>
@@ -419,7 +419,7 @@ function Section5() {
           <div>
             <img src={img6} alt="" className="w-120 h-55 md:w-90 md:h-90 object-cover lg:w-140 lg:h-120" />
           </div>
-          <div className="bg-black pt-20">
+          <div className="bg-black ">
             <div className="flex flex-wrap md:flex-wrap lg:flex-nowrap justify-start md:justify-center lg:justify-start items-center gap-3 bg-black">
 
 

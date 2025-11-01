@@ -20,7 +20,7 @@ function WebflowSection2() {
               Webflow?
             </span>
           </h1>
-          <p className="text-[#969696] px-3 font-semibold mt-6 lg:w-210 w-90 text-center lg:flex lg:mx-auto lg:justify-center">
+          <p className="text-[#969696] px-4 font-semibold mt-6 lg:w-210 w-90 text-center lg:flex lg:mx-auto lg:justify-center">
             Webflow is a cutting-edge web design tool that seamlessly merges design and code. It empowers us as creators, allowing responsive website construction, parallel workflows and rapid prototyping — allowing us to craft sites that both captivate and perform. For our clients, it offers intuitive interfaces, unmatched flexibility — and exceptional performance, scalability and reliability.
           </p>
         </motion.div>
