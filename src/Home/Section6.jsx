@@ -22,7 +22,7 @@ function Section6(){
   variants={projectFade}>
                 <div>
                     <h1 className="lg:text-6xl lg:w-200 text-4xl md:text-5xl text-white font-semibold px-4 ">Trusted by leading <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">brands.</span></h1>
-                    <p className="text-md  text-gray-400 mt-10 px-4">We’re proud to have worked with some of the most innovative, creative and inventive brands around. If you come on board you’ll be in great company</p>
+                    <p className="text-md  text-[#969696] mt-10 px-4">We’re proud to have worked with some of the most innovative, creative and inventive brands around. If you come on board you’ll be in great company</p>
                 </div>
 
                 <div className="flex flex-col md:flex-row lg:flex-row lg:gap-40 gap-20 items-center justify-center pt-20">

@@ -15,7 +15,7 @@ function Section2() {
 
   return (
     <section
-      className="bg-black lg:pt-40 pt-20 lg:h-[800px] h-320 md:h-160 relative overflow-hidden"
+      className="bg-black lg:pt-40 pt-20 lg:h-[800px] h-280 md:h-160 relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Glowing background dots */}
@@ -23,11 +23,11 @@ function Section2() {
       <div className="absolute hidden lg:block top-0 right-0 w-40 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-70"></div>
 
       {/* Main content */}
-      <div className="flex flex-col items-center lg:flex-row md:flex-row justify-center lg:gap-35 gap-20 relative z-10 md:px-5">
+      <div className="flex flex-col items-center lg:flex-row md:flex-row justify-center lg:gap-35 gap-15 relative z-10 md:px-5">
         {/* Left text section */}
         <div className="mx-auto lg:mx-0">
           <motion.h1
-            className="lg:text-6xl w-88 lg:w-150 text-4xl md:text-5xl md:w-100 text-white leading-tight px-4"
+            className="lg:text-6xl w-88 lg:w-150 text-4xl md:text-5xl md:w-100 text-white font-semibold leading-tight px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -41,7 +41,7 @@ function Section2() {
           </motion.h1>
 
           <motion.p
-            className="text-sm lg:w-170 md:w-100 w-90 text-gray-400 mt-10 px-4"
+            className="text-md lg:w-170 md:w-100 w-95 text-[#969696] mt-10 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -54,7 +54,7 @@ function Section2() {
           </motion.p>
 
           <motion.p
-            className="text-sm lg:w-170 md:w-100 w-90 text-gray-400 mt-10 px-4"
+            className="text-md lg:w-170 md:w-100 w-90 text-[#969696] mt-5 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -67,10 +67,10 @@ function Section2() {
 <motion.div initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} className="px-4 lg:px-0">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }} className="px-4 lg:px-2 mt-12">
           <Link 
            to="/talk"
-            className="w-28  md:w-25 md:h-9 h-12 flex justify-center items-center rounded-full text-white font-semibold 
+            className="w-27  md:w-25 md:h-9 h-11 text-sm flex justify-center items-center rounded-full text-white font-semibold 
               bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
               shadow-[0_0_20px_rgba(0,209,255,0.5)] 
               hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
@@ -95,7 +95,7 @@ function Section2() {
           <img
             src={robot}
             alt="Robot"
-            className="w-80 md:w-90 select-none pointer-events-none"
+            className="lg:w-80 md:w-90 w-65 select-none pointer-events-none"
           />
         </motion.div>
       </div>

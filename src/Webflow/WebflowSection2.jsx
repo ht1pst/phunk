@@ -3,7 +3,7 @@ import img from "../assets/webflowsec2img2.webp";
 
 function WebflowSection2() {
   return (
-    <section className="bg-black lg:h-200 h-200 pt-20 px-5 lg:px-20 overflow-hidden">
+    <section className="bg-black lg:h-200 h-170 pt-20 px-5 lg:px-20 overflow-hidden">
       <div className="flex flex-col  items-center lg:justify-between gap-10">
 
         {/* Left Content */}
@@ -20,7 +20,7 @@ function WebflowSection2() {
               Webflow?
             </span>
           </h1>
-          <p className="text-[#969696] font-semibold mt-6 lg:w-200 w-85 text-center lg:flex lg:mx-auto lg:justify-center">
+          <p className="text-[#969696] px-3 font-semibold mt-6 lg:w-210 w-90 text-center lg:flex lg:mx-auto lg:justify-center">
             Webflow is a cutting-edge web design tool that seamlessly merges design and code. It empowers us as creators, allowing responsive website construction, parallel workflows and rapid prototyping — allowing us to craft sites that both captivate and perform. For our clients, it offers intuitive interfaces, unmatched flexibility — and exceptional performance, scalability and reliability.
           </p>
         </motion.div>
@@ -33,7 +33,7 @@ function WebflowSection2() {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           className="lg:w-1/2 flex justify-center lg:justify-center mt-10 lg:mt-0"
         >
-          <img src={img} alt="Webflow illustration" className="w-90 lg:w-500" />
+          <img src={img} alt="Webflow illustration" className="w-90 lg:w-full " />
         </motion.div>
 
       </div>

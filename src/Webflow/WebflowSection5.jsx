@@ -61,9 +61,9 @@ function WebflowSection5() {
   return (
     <section className="bg-[#0f0f0f] text-white lg:py-20 overflow-hidden h-250">
          <div className="flex lg:flex-row flex-col lg:items-center px-5 justify-center gap-10">
-            <h1 className="text-gray-300 lg:w-130 w-80   mt-7 lg:text-6xl text-4xl font-medium  ">What can you use {" "}
+            <h1 className="text-gray-300 lg:w-130 w-80   mt-7 lg:text-6xl text-4xl font-semibold  ">What can you use {" "}
 <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Webflow for?</span></h1>
-<p className="text-gray-200 flex justify-center  mt-10 w-80 md:w-170 lg:w-120">There’s almost no limit to what you can achieve with a platform like Webflow and a team like Phunk. But if you’re new to the idea, here’s a quick overview of some of the more common use cases where our Webflow-based sites really shine.</p>
+<p className="text-gray-200 flex justify-center   w-80 md:w-170 lg:w-120">There’s almost no limit to what you can achieve with a platform like Webflow and a team like Phunk. But if you’re new to the idea, here’s a quick overview of some of the more common use cases where our Webflow-based sites really shine.</p>
         </div>
       <div className="relative  mx-auto rounded-2xl pt-20">
         {/* ---------- IMAGE ---------- */}

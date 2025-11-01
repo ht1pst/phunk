@@ -21,15 +21,15 @@ function WebflowSection6() {
   const { title, text, img: slideImg } = slides[0];
 
   return (
-    <section className="bg-black relative overflow-hidden h-240 md:h-150 lg:h-170 pt-20">
+    <section className="bg-black relative overflow-hidden h-180 md:h-150 lg:h-170 pt-20">
      
      
 
       <div>
         {/* === Section Header === */}
         <div className="flex items-center flex-col mb-10">
-          <a href="#"><img src={phunk} alt="" className="w-10" /></a>
-          <p className="lg:text-6xl md:text-5xl text-4xl w-50 lg:w-140 md:w-200 text-center text-white">
+          <a href="#"><img src={phunk} alt="" className="w-10 hidden lg:block" /></a>
+          <p className="lg:text-6xl md:text-5xl text-4xl w-50 lg:w-140 md:w-200 text-center  text-white hidden lg:block">
             Why work{" "}
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               with us?
@@ -38,7 +38,7 @@ function WebflowSection6() {
         </div>
 
         {/* === Content Box === */}
-        <div className="flex lg:w-330 md:w-170 w-80 lg:h-105 h-140 border border-gray-700 mx-auto rounded-b-xl relative 
+        <div className="flex lg:w-330 md:w-170 w-80 lg:h-105 h-125 border border-gray-700 mx-auto rounded-b-xl relative 
           lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent 
           opacity-95 rounded-t-[40px] overflow-hidden ">
 
@@ -54,9 +54,9 @@ function WebflowSection6() {
             
             {/* Text */}
             <div className="transition-all duration-500 ease-in-out  pt-10">
-              <h1 className="lg:text-6xl lg:w-140 w-0 text-4xl text-white">{title}</h1>
-              <p className="text-lg md:text-sm lg:w-100 lg:font-semibold md:w-100 w-70 text-white mt-7">{text}</p>
-              <button className=" relative w-35 md:w-32 h-12 md:h-9 rounded-full text-black 
+              <h1 className="lg:text-6xl lg:w-140 w-0 text-4xl text-white font-semibold">{title}</h1>
+              <p className="text-md md:text-sm lg:w-100 lg:font-semibold md:w-100 w-70 text-white mt-7">{text}</p>
+              <button className=" relative w-38 md:w-32 h-10 md:h-9 rounded-full text-black 
                 bg-white hover:bg-transparent hover:text-white
               
                 hover:scale-105 transition-all duration-300 mt-5">

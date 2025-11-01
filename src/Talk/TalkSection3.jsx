@@ -59,9 +59,9 @@ function TalkSection3() {
   };
 
   return(
-     <section className="bg-black lg:h-170 h-270 pt-10 lg:pt-20">
+     <section className="bg-black lg:h-170 h-240 pt-10 lg:pt-20">
    <div className="pt-30 px-5 lg:px-0">
-      <h1 className="text-white flex justify-center text-5xl">
+      <h1 className="text-white flex justify-center text-4xl font-semibold text-center">
         Frequently asked questions
       </h1>
       <p className="text-[#969696] mt-8 flex justify-center text-center lg:text-left">
@@ -71,7 +71,7 @@ function TalkSection3() {
 
       <div className="flex flex-col lg:flex-row justify-center pt-20 lg:px-80 gap-10">
         <div className="mx-auto lg:mx-0">
-          <p className="lg:text-3xl text-2xl w-70 lg:w-70 lg:pt-8 text-center lg:text-start text-white leading-loose">
+          <p className="lg:text-3xl text-2xl w-70 lg:w-70 lg:pt-8 text-center lg:text-start gap-10 text-white leading-loose">
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               Graphic Design{" "}
             </span>
@@ -96,7 +96,7 @@ function TalkSection3() {
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center px-4 py-3 bg-black transition"
                 >
-                  <span className="font-medium text-[#969696] lg:text-xl text-sm bg-black">
+                  <span className="font-medium text-[#969696] lg:text-xl text-md text-start bg-black">
                     {faq.question}
                   </span>
                   <span className="transition-all duration-300 text-2xl font-bold text-white">

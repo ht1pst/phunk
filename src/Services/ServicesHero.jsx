@@ -29,261 +29,283 @@ function ServicesHero(){
         const [showDesktopNav, setShowDesktopNav] = useState(true);
    const [lastScrollY, setLastScrollY] = useState(0);
    
-     useEffect(() => {
-     const handleScroll = () => {
-       if (window.scrollY > lastScrollY) {
-         // scrolling down → hide
-         setShowDesktopNav(false);
-       } else {
-         // scrolling up → show
-         setShowDesktopNav(true);
-       }
-       setLastScrollY(window.scrollY);
-     };
-   
-     window.addEventListener("scroll", handleScroll);
-     return () => window.removeEventListener("scroll", handleScroll);
-   }, [lastScrollY]);
+    useEffect(() => {
+  const handleScroll = () => {
+    // Only apply the fade/hide effect on desktop screens
+    if (window.innerWidth >= 1024) { // 1024px = Tailwind "lg"
+      if (window.scrollY > lastScrollY) {
+        setShowDesktopNav(false); // scrolling down → hide
+      } else {
+        setShowDesktopNav(true); // scrolling up → show
+      }
+      setLastScrollY(window.scrollY);
+    } else {
+      // Always show header on mobile
+      setShowDesktopNav(true);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScrollY]);
+
+
       return(
         
-       <section className="lg:h-200 h-300 bg-black lg">
+       <section className="lg:h-200 h-320 bg-black lg">
         {/* ======== Header (Responsive) ======== */}
-  <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent">
-     <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4">
-       {/* Logo */}
-       <div   className={`flex items-center lg:gap-2 transition-all duration-500 ${
-       showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-     }`}>
-         <img src={phunk} alt="phunk logo" className="w-10" />
-         <h1 className="font-semibold lg:text-2xl text-sm">phunk</h1>
-       </div>
-   
-       {/* Desktop Nav */}
-       <nav   className="hidden lg:flex gap-6 bg-black justify-center border-1 border-gray-600 rounded-full px-6 py-2 group transition-all duration-500">
-         <Link
-           to="/"
-           className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-         >
-           Home
-         </Link>
-   
-         <Link
-           to="/about"
-           className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-         >
-           About Us
-         </Link>
-   
-         {/* Services Dropdown */}
-         <div className="relative">
-           <button
-             onClick={() => setServicesOpen(!servicesOpen)}
-             className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white flex items-center gap-1"
+    <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent bg-gradient-to-t from-transparent via-[#000000ff] #000000ff to-black">
+       <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4"> 
+         {/* Logo */}
+         <div   className={`flex items-center lg:gap-2 transition-all duration-500 ${
+         showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+       }`}>
+         <svg width="80" height="41" viewBox="0 0 121 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <g clip-path="url(#clip0_210_1796)">
+   <path d="M50.1772 32.6499V14.4308H53.645V16.1109C54.1232 15.4873 54.739 14.9829 55.4443 14.6372C56.1497 14.2914 56.9253 14.1136 57.7107 14.1177C61.0957 14.1177 63.5517 16.631 63.5517 21.0224C63.5517 25.4138 61.0957 27.9593 57.7107 27.9593C56.9226 27.9627 56.1446 27.7818 55.4387 27.431C54.7328 27.0801 54.1186 26.5691 53.645 25.9386V32.6591L50.1772 32.6499ZM56.6161 17.188C56.0397 17.2026 55.4737 17.3451 54.959 17.6055C54.4444 17.8658 53.994 18.2373 53.6404 18.6932V23.3608C53.9989 23.8118 54.4511 24.1793 54.9658 24.4376C55.4805 24.696 56.0452 24.839 56.6207 24.8568C58.6122 24.8568 59.9505 23.301 59.9505 21.004C59.9505 18.7071 58.6122 17.188 56.6207 17.188H56.6161Z" fill="white"></path>
+   <path d="M73.7022 19.5956C73.7022 17.7544 72.7502 17.1882 71.2462 17.1882C70.6606 17.2021 70.0859 17.35 69.5662 17.6205C69.0464 17.891 68.5954 18.2769 68.2476 18.7486V27.6188H64.7798V9.4043H68.2476V16.1525C68.828 15.4979 69.5426 14.9761 70.3425 14.6227C71.1425 14.2692 72.0092 14.0923 72.8835 14.1041C75.7764 14.1041 77.17 15.6876 77.17 18.2469V27.6188H73.7022V19.5956Z" fill="white"></path>
+   <path d="M88.139 25.9569C87.5499 26.5982 86.8319 27.1075 86.032 27.451C85.2322 27.7945 84.3687 27.9646 83.4984 27.95C80.6055 27.95 79.2441 26.3666 79.2441 23.8072V14.4307H82.7073V22.4355C82.7073 24.2767 83.664 24.8659 85.1403 24.8659C85.721 24.8568 86.2922 24.7167 86.8114 24.4561C87.3306 24.1955 87.7843 23.8211 88.139 23.3607V14.4307H91.6067V27.6186H88.139V25.9569Z" fill="white"></path>
+   <path d="M102.562 19.6461C102.562 17.8049 101.61 17.188 100.133 17.188C99.5459 17.1953 98.9682 17.3403 98.4466 17.6112C97.9251 17.8822 97.4742 18.2717 97.1302 18.7485V27.6187H93.667V14.4308H97.1302V16.1523C97.7041 15.4994 98.4122 14.9783 99.206 14.6248C99.9998 14.2712 100.861 14.0936 101.729 14.1039C104.622 14.1039 106.016 15.7427 106.016 18.3112V27.6187H102.562V19.6461Z" fill="white"></path>
+   <path d="M113.163 22.5554L111.581 24.2494V27.6188H108.118V9.4043H111.581V20.3045L116.576 14.4309H120.834L115.619 20.415L121 27.6188H116.658L113.163 22.5554Z" fill="white"></path>
+   <path d="M20.172 20.1893H9.78247C9.78004 17.5933 8.7486 15.1044 6.91456 13.2688C5.08052 11.4332 2.59372 10.4009 0 10.3984L0 0C5.34771 0.00730689 10.4743 2.13673 14.2557 5.92138C18.0371 9.70602 20.1647 14.837 20.172 20.1893Z" fill="#00E5D1"></path>
+   <path d="M20.172 41.0001H9.78247C9.78004 38.4041 8.7486 35.9152 6.91456 34.0796C5.08052 32.244 2.59372 31.2117 0 31.2092L0 20.8108C5.34771 20.8181 10.4743 22.9475 14.2557 26.7322C18.0371 30.5168 20.1647 35.6478 20.172 41.0001Z" fill="#00E5D1"></path>
+   <path d="M40.965 41.0001C35.6169 40.994 30.4896 38.865 26.7079 35.08C22.9263 31.2951 20.7991 26.1635 20.793 20.8108H31.1825C31.185 23.4067 32.2164 25.8957 34.0504 27.7313C35.8845 29.5669 38.3713 30.5992 40.965 30.6016V41.0001Z" fill="#00E5D1"></path>
+   <path d="M40.965 20.1893C35.6173 20.182 30.4907 18.0526 26.7093 14.2679C22.9279 10.4833 20.8003 5.35229 20.793 0L31.1825 0C31.185 2.59594 32.2164 5.08487 34.0504 6.92048C35.8845 8.75609 38.3713 9.7884 40.965 9.79084V20.1893Z" fill="#00E5D1"></path>
+   </g>
+   <defs>
+   <clipPath id="clip0_210_1796">
+   <rect width="121" height="41" fill="white"></rect>
+   </clipPath>
+   </defs>
+   </svg>
+         </div>
+     
+         {/* Desktop Nav */}
+         <nav   className="hidden lg:flex gap-6 bg-black justify-center border-1 border-gray-600 rounded-full px-6 py-2 group transition-all duration-500">
+           <Link
+             to="/"
+             className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
            >
-             Services
-           </button>
-           {servicesOpen && (
-             <div className="fixed left-1/2 -translate-x-1/2 mt-10 w-220 h-50 bg-white border border-gray-700 rounded-lg shadow-lg z-50">
-               <div className="flex text-black justify-between px-8 mt-8">
-                 <h1>Services</h1>
-                 <Link
-                   to="/services"
-                   className="underline text-gray-500 text-sm hover:text-black transition-all duration-500"
-                 >
-                   All services
-                 </Link>
-               </div>
-               <div className="flex justify-center gap-13 text-black mt-8">
-                 <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
-                   <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
-                     <img src={service2} alt="" className="h-5" />
-                   </div>
-                   <a href="#" className="font-semibold text-sm">Web Design</a>
-                 </div>
-   
-                 <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
-                   <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
-                     <img src={service2} alt="" className="h-5" />
-                   </div>
-                   <a href="#" className="font-semibold text-sm">Web Design</a>
-                 </div>
-   
-                 <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
-                   <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
-                     <img src={service2} alt="" className="h-5" />
-                   </div>
-                   <a href="#" className="font-semibold text-sm">Web Design</a>
-                 </div>
-               </div>
-   
-               <div className="group">
-                 <div className="bg-gray-200 transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#2d8fc8ff] to-[#2ad5d5ff] h-20 flex items-center mt-8 rounded-b-lg">
-                   <a
-                     href="#"
-                     className="text-black transition-all duration-500 ease-in-out group-hover:text-white px-8"
+             Home
+           </Link>
+     
+           <Link
+             to="/about"
+             className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+           >
+             About Us
+           </Link>
+     
+           {/* Services Dropdown */}
+           <div className="relative">
+             <button
+               onClick={() => setServicesOpen(!servicesOpen)}
+               className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white flex items-center gap-1"
+             >
+               Services
+             </button>
+             {servicesOpen && (
+               <div className="fixed left-1/2 -translate-x-1/2 mt-10 w-220 h-50 bg-white border border-gray-700 rounded-lg shadow-lg z-50">
+                 <div className="flex text-black justify-between px-8 mt-8">
+                   <h1>Services</h1>
+                   <Link
+                     to="/services"
+                     className="underline text-gray-500 text-sm hover:text-black transition-all duration-500"
                    >
-                     Ready to start a project?
-                   </a>
+                     All services
+                   </Link>
+                 </div>
+                 <div className="flex justify-center gap-13 text-black mt-8">
+                   <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
+                     <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
+                       <img src={service2} alt="" className="h-5" />
+                     </div>
+                     <a href="#" className="font-semibold text-sm">Web Design</a>
+                   </div>
+     
+                   <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
+                     <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
+                       <img src={service2} alt="" className="h-5" />
+                     </div>
+                     <a href="#" className="font-semibold text-sm">Web Design</a>
+                   </div>
+     
+                   <div className="flex gap-5 items-center transition-all duration-300 ease-in-out group hover:bg-gray-200 rounded-lg p-2 w-60">
+                     <div className="bg-gray-200 w-15 h-15 flex items-center justify-center rounded-lg transition group-hover:bg-white">
+                       <img src={service2} alt="" className="h-5" />
+                     </div>
+                     <a href="#" className="font-semibold text-sm">Web Design</a>
+                   </div>
+                 </div>
+     
+                 <div className="group">
+                   <div className="bg-gray-200 transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#2d8fc8ff] to-[#2ad5d5ff] h-20 flex items-center mt-8 rounded-b-lg">
+                     <a
+                       href="#"
+                       className="text-black transition-all duration-500 ease-in-out group-hover:text-white px-8"
+                     >
+                       Ready to start a project?
+                     </a>
+                   </div>
                  </div>
                </div>
-             </div>
-           )}
+             )}
+           </div>
+     
+           <Link
+             to="/projects"
+             className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+           >
+             Projects
+           </Link>
+     
+           <Link
+             to="/news"
+             className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+           >
+             News
+           </Link>
+     
+           <Link
+             to="/webflow"
+             className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+           >
+             Webflow
+           </Link>
+         </nav>
+     
+         {/* Talk Button */}
+         <div  className={`hidden md:hidden lg:block transition-all duration-500 ${
+         showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+       }`}>
+           <Link
+             to="/talk"
+             className="w-32 h-12 rounded-full font-semibold 
+               bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
+               shadow-[0_0_20px_rgba(0,209,255,0.5)] 
+               hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
+               hover:scale-105 transition-all duration-300
+               flex items-center justify-center text-white"
+           >
+             Talk to us
+           </Link>
          </div>
-   
-         <Link
-           to="/projects"
-           className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
+     
+         {/* Hamburger Menu (Mobile) */}
+         <button
+           onClick={() => setMenuOpen(!menuOpen)}
+           className="block lg:hidden focus:outline-none"
          >
-           Projects
-         </Link>
-   
-         <Link
-           to="/news"
-           className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-         >
-           News
-         </Link>
-   
-         <Link
-           to="/webflow"
-           className="text-md transition-colors duration-500 ease-in-out group-hover:text-gray-500 hover:text-white"
-         >
-           Webflow
-         </Link>
-       </nav>
-   
-       {/* Talk Button */}
-       <div  className={`hidden md:hidden lg:block transition-all duration-500 ${
-       showDesktopNav ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-     }`}>
-         <Link
-           to="/talk"
-           className="w-32 h-12 rounded-full font-semibold 
-             bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
-             shadow-[0_0_20px_rgba(0,209,255,0.5)] 
-             hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
-             hover:scale-105 transition-all duration-300
-             flex items-center justify-center text-white"
-         >
-           Talk to us
-         </Link>
+           <span className="inline-block  text-sm items-center py-[5px] bg-black flex justify-center rounded-full border border-gray-700 w-20 h-8 ">
+             {menuOpen ? "Close" : "Menu"}
+           </span>
+         </button>
        </div>
-   
-       {/* Hamburger Menu (Mobile) */}
-       <button
-         onClick={() => setMenuOpen(!menuOpen)}
-         className="block lg:hidden focus:outline-none"
-       >
-         <span className="inline-block  text-sm items-center py-[5px] bg-black flex justify-center rounded-full border border-gray-700 w-20 h-8 ">
-           {menuOpen ? "Close" : "Menu"}
-         </span>
-       </button>
-     </div>
-   
-     {/* Mobile Menu */}
-     {menuOpen !== null && (
-       <div
-         className={`transition-all duration-500 ease-in-out overflow-hidden ${
-           menuOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-         }`}
-       >
-         <div className="px-3">
-           <nav className="flex px-4 rounded-lg flex-col items-center gap-4 py-4 border-t border-gray-800 bg-white lg:hidden">
-             {/* Home */}
-             <Link to="/" className="flex items-center justify-center gap-10 text-black">
-               <div className="bg-gray-200 w-22 rounded-xl h-15">
-                 <img src={home} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">Home</span>
-                 <p className="text-gray-500 text-sm">
-                   We transform your brand vision into tangible experiences
-                 </p>
-               </div>
-             </Link>
-   
-             {/* About */}
-             <Link to="/about" className="flex items-center gap-10 text-black">
-               <div className="bg-gray-200 w-20 rounded-xl h-15">
-                 <img src={img2} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">About Us</span>
-                 <p className="text-gray-500 text-sm">
-                   Find out more about what makes us tick and work
-                 </p>
-               </div>
-             </Link>
-   
-             {/* Services */}
-             <Link to="/services" className="flex items-center justify-center gap-10 text-black">
-               <div className="bg-gray-200 w-20 rounded-xl h-15">
-                 <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">Services</span>
-                 <p className="text-gray-500 text-sm">
-                   Focusing on what we're good at means we can deliver
-                 </p>
-               </div>
-             </Link>
-   
-             {/* Projects */}
-             <Link to="/projects" className="flex items-center gap-10 text-black">
-               <div className="bg-gray-200 w-25 rounded-xl h-15">
-                 <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">Projects</span>
-                 <p className="text-gray-500 text-sm">
-                   Check out our latest news stories, case studies, resources and more
-                 </p>
-               </div>
-             </Link>
-   
-             {/* News */}
-             <Link to="/news" className="flex items-center justify-center gap-10 text-black">
-               <div className="bg-gray-200 w-25 rounded-xl h-15">
-                 <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">News</span>
-                 <p className="text-gray-500 text-sm">
-                   Check out our latest news stories, case studies, resources and more
-                 </p>
-               </div>
-             </Link>
-   
-             {/* Webflow */}
-             <Link to="/webflow" className="flex items-center justify-center gap-10 text-black">
-               <div className="bg-gray-200 w-23 rounded-xl h-15">
-                 <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">Webflow</span>
-                 <p className="text-gray-500 text-sm">
-                   The foundation on which we build our world-beating websites
-                 </p>
-               </div>
-             </Link>
-   
-             {/* Contact */}
-             <Link to="/talk" className="flex items-center justify-center gap-10 text-black">
-               <div className="bg-gray-200 w-20 rounded-xl h-15">
-                 <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
-               </div>
-               <div>
-                 <span className="font-semibold">Contact Us</span>
-                 <p className="text-gray-500 text-sm">
-                   Get in touch and let's transform your ideas into reality
-                 </p>
-               </div>
-             </Link>
-           </nav>
+     
+       {/* Mobile Menu */}
+       {menuOpen !== null && (
+         <div
+           className={`transition-all duration-500 ease-in-out overflow-hidden ${
+             menuOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+           }`}
+         >
+           <div className="px-3">
+             <nav className="flex px-4 rounded-lg flex-col items-center gap-4 py-4 border-t border-gray-800 bg-white lg:hidden">
+               {/* Home */}
+               <Link to="/" className="flex items-center justify-center gap-10 text-black">
+                 <div className="bg-gray-200 w-22 rounded-xl h-15">
+                   <img src={home} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">Home</span>
+                   <p className="text-gray-500 text-sm">
+                     We transform your brand vision into tangible experiences
+                   </p>
+                 </div>
+               </Link>
+     
+               {/* About */}
+               <Link to="/about" className="flex items-center gap-10 text-black">
+                 <div className="bg-gray-200 w-20 rounded-xl h-15">
+                   <img src={img2} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">About Us</span>
+                   <p className="text-gray-500 text-sm">
+                     Find out more about what makes us tick and work
+                   </p>
+                 </div>
+               </Link>
+     
+               {/* Services */}
+               <Link to="/services" className="flex items-center justify-center gap-10 text-black">
+                 <div className="bg-gray-200 w-20 rounded-xl h-15">
+                   <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">Services</span>
+                   <p className="text-gray-500 text-sm">
+                     Focusing on what we're good at means we can deliver
+                   </p>
+                 </div>
+               </Link>
+     
+               {/* Projects */}
+               <Link to="/projects" className="flex items-center gap-10 text-black">
+                 <div className="bg-gray-200 w-25 rounded-xl h-15">
+                   <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">Projects</span>
+                   <p className="text-gray-500 text-sm">
+                     Check out our latest news stories, case studies, resources and more
+                   </p>
+                 </div>
+               </Link>
+     
+               {/* News */}
+               <Link to="/news" className="flex items-center justify-center gap-10 text-black">
+                 <div className="bg-gray-200 w-25 rounded-xl h-15">
+                   <img src={img5} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">News</span>
+                   <p className="text-gray-500 text-sm">
+                     Check out our latest news stories, case studies, resources and more
+                   </p>
+                 </div>
+               </Link>
+     
+               {/* Webflow */}
+               <Link to="/webflow" className="flex items-center justify-center gap-10 text-black">
+                 <div className="bg-gray-200 w-23 rounded-xl h-15">
+                   <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">Webflow</span>
+                   <p className="text-gray-500 text-sm">
+                     The foundation on which we build our world-beating websites
+                   </p>
+                 </div>
+               </Link>
+     
+               {/* Contact */}
+               <Link to="/talk" className="flex items-center justify-center gap-10 text-black">
+                 <div className="bg-gray-200 w-20 rounded-xl h-15">
+                   <img src={img6} alt="" className="w-8 mx-auto py-4 flex items-center justify-center" />
+                 </div>
+                 <div>
+                   <span className="font-semibold">Contact Us</span>
+                   <p className="text-gray-500 text-sm">
+                     Get in touch and let's transform your ideas into reality
+                   </p>
+                 </div>
+               </Link>
+             </nav>
+           </div>
          </div>
-       </div>
-     )}
-   </header>
+       )}
+     </header>
 
                   
   <div className="absolute top-50 left-1/2 hidden md:hidden lg:block -translate-x-1/2 w-80 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-70"></div>
@@ -292,9 +314,9 @@ function ServicesHero(){
                     <div>
                       
 
-        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl w-70 lg:w-120 font-medium ">Our{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Services</span></h1>
+        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl w-70 lg:w-120 font-semibold ">Our{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Services</span></h1>
 
-        <p className="text-gray-200 text-sm leading-normal mx-auto mt-10 w-80 md:w-170 lg:w-135 text-center ">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.
+        <p className="text-gray-200 text-md leading-normal mx-auto mt-5 w-85 md:w-170 lg:w-135 text-center px-5 lg:px-0 ">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.
 
 </p>
 
@@ -305,9 +327,10 @@ function ServicesHero(){
                         
                     </div>
 
-                    <div className="flex flex-col lg:flex-row justify-center  gap-10 pt-5">
+                    <div className="flex flex-col lg:flex-row justify-center  gap-10 pt-5 ">
+<div  className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-85 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
 
-<div className=" flex border mx-auto lg:mx-0 lg:w-105 w-85 bg-[#101110] rounded-xl px-2 lg:gap-8 gap-5 border-white h-30 items-center">
+<div className="flex items-center justify-center w-full h-full bg-[#101110] rounded-xl lg:gap-8 gap-5 px-4">
     <div>
     <svg class="services_icon" className="w-15" viewBox="0 0 68 51" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M57.4294 40.1729C55.3466 42.3134 52.8183 43.9492 50.0315 44.9594C49.137 45.2632 48.3357 45.4722 47.4227 45.7763C46.0791 46.1021 44.704 46.2741 43.323 46.289H42.9316C38.2201 46.3226 33.6479 44.6614 30.0194 41.5976C29.5164 41.1987 29.0131 40.6859 28.51 40.268L27.5037 39.2423L25.2117 36.906L18.9132 30.4858C18.0188 29.5741 18.0188 28.1496 18.9132 27.1238C19.1154 26.8953 19.3627 26.7128 19.6388 26.5885C19.915 26.4641 20.2138 26.4006 20.5157 26.4021C20.8189 26.3914 21.1206 26.4507 21.3981 26.5757C21.6756 26.7007 21.9218 26.8881 22.1182 27.1238L31.6217 36.8109C32.5176 37.6801 33.4912 38.4622 34.5297 39.1471C36.9901 40.7025 39.8337 41.5128 42.7288 41.4834C44.0423 41.4698 45.3496 41.2977 46.6234 40.9706C47.4069 40.7588 48.1732 40.4857 48.9154 40.1538C50.7805 39.3269 52.4751 38.1474 53.9095 36.6777C60.0031 30.4664 60.0031 20.2666 53.9095 14.0364C51.3311 11.4045 47.9331 9.77126 44.3007 9.41784C40.6682 9.06442 37.0285 10.0129 34.0081 12.1001C32.6847 11.0385 31.2392 10.1455 29.7035 9.44091C33.4038 6.3655 38.0264 4.67579 42.8008 4.65343C46.8384 4.65125 50.7866 5.86511 54.1496 8.14258C57.5127 10.4201 60.1406 13.6596 61.7034 17.4544C63.2662 21.2492 63.6942 25.4301 62.9337 29.472C62.1732 33.5139 60.258 37.2367 57.4287 40.1729H57.4294ZM21.3161 46.2893C16.8065 46.2893 12.7071 44.3529 9.61357 41.0849C3.11009 34.4557 3.11009 23.7429 9.61357 17.2275C12.7123 14.0495 16.9204 12.2529 21.3161 12.2314H21.4099C22.2152 12.2403 23.0187 12.3101 23.8138 12.4403C24.7082 12.6492 25.5096 12.7441 26.4226 13.0482C27.9886 13.5709 29.4705 14.3261 30.8203 15.2895C31.4167 15.8023 32.1247 16.2013 32.6277 16.8281L33.1308 17.3408L34.3233 18.5564L39.9323 24.2738C40.8268 25.1856 40.8268 26.6101 39.9323 27.6358C39.7302 27.8644 39.4829 28.0468 39.2067 28.1712C38.9306 28.2955 38.6318 28.359 38.3299 28.3575C38.0267 28.3683 37.725 28.3089 37.4475 28.1839C37.17 28.0589 36.9238 27.8716 36.7274 27.6358L31.1184 21.9184L29.9258 20.7029C29.7209 20.4939 29.5344 20.399 29.4228 20.1901C27.8269 18.7796 25.8906 17.8288 23.8138 17.436C23.0937 17.264 22.3538 17.1937 21.6149 17.2271H21.3168C18.1736 17.3205 15.193 18.6724 13.0206 20.9899C10.8482 23.3075 9.65901 26.404 9.71048 29.6089C9.76196 32.8139 11.05 35.8691 13.2956 38.1129C15.5413 40.3567 18.5637 41.6084 21.7082 41.5969H23.814L25.8074 43.5332C26.8138 44.559 27.8009 45.5652 29.0126 46.2873L21.3161 46.2893ZM60.6346 7.44579C55.9308 2.67695 49.5663 0 42.932 0C36.2977 0 29.9332 2.67695 25.2293 7.44579L24.7263 7.95855C23.5695 7.75295 22.3973 7.65128 21.223 7.65472C18.4281 7.64507 15.6598 8.20848 13.0828 9.31142C10.5058 10.4144 8.17278 12.0343 6.2224 14.0749C3.2525 17.0987 1.22937 20.9526 0.409054 25.1489C-0.411263 29.3452 0.0081063 33.6952 1.61409 37.6484C3.22007 41.6017 5.94048 44.9804 9.43102 47.3571C12.9216 49.7338 17.0254 51.0016 21.223 51H43.434C49.9396 50.9297 56.1574 48.2558 60.7465 43.555C70.4364 33.544 70.4364 17.3418 60.6346 7.44555V7.44579Z" fill="white"></path>
@@ -315,14 +338,16 @@ function ServicesHero(){
 </div>
 
 <div>
-    <h1 className="text-white  text-xl">Graphic Design</h1>
-    <p className="text-[#969696] w-65 text-sm">Add as many design requests to your board  as you'd like.</p>
+    <h1 className="text-white  text-lg font-semibold">Graphic Design</h1>
+    <p className="text-[#969696] w-55 text-sm">Add as many design requests to your board  as you'd like.</p>
 </div>
 </div>
 
+</div>
 
+<div className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-85 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
 
-<div className=" flex border mx-auto lg:mx-0 lg:w-105 w-85 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
+<div  className="flex items-center justify-center w-full h-full bg-[#101110] rounded-xl lg:gap-8 gap-5 px-4">
     <div >
   <svg class="services_icon" viewBox="0 0 56 56" className="w-15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1545_144)">
@@ -338,15 +363,17 @@ function ServicesHero(){
 </div>
 
 <div>
-    <h1 className="text-white  text-xl">Web Design</h1>
-    <p  className="text-[#969696] w-60 text-sm">Stunning, engaging and high-conversion websites</p>
+    <h1 className="text-white  text-lg font-semibold">Web Design</h1>
+    <p  className="text-[#969696] w-55 text-sm">Stunning, engaging and high-conversion websites.</p>
 </div>
 </div>
 
+</div>
 
 
+<div className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-85 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
 
-<div  className=" flex border mx-auto lg:mx-0 lg:w-105 w-85 bg-[#101110] rounded-xl px-3 lg:gap-8 gap-5 border-white h-30 items-center">
+<div   className="flex items-center justify-center w-full h-full bg-[#101110] rounded-xl lg:gap-8 gap-5 px-4">
     <div >
     <svg class="services_icon" className="w-15" viewBox="0 0 61 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.8848 26.9443C35.8848 29.9382 33.4577 32.3652 30.4639 32.3652C27.47 32.3652 25.043 29.9382 25.043 26.9443C25.043 23.9505 27.47 21.5234 30.4639 21.5234C33.4577 21.5234 35.8848 23.9505 35.8848 26.9443Z" fill="white"></path>
@@ -357,11 +384,11 @@ function ServicesHero(){
 </div>
 
 <div>
-    <h1 className="text-white  text-xl">Software Development</h1>
-    <p className="text-[#969696] w-65 text-sm">Add as many design requests to your board  as you'd like.</p>
+    <h1 className="text-white  text-lg font-semibold">Software Development</h1>
+    <p className="text-[#969696] w-50 text-sm">Custom systems to meet specific needs.</p>
 </div>
 </div>
-
+</div>
 
 
                     </div>

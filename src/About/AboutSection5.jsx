@@ -11,11 +11,11 @@ function AboutSection5() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative flex-col h-110 lg:h-114 col-reverse lg:flex-row flex justify-center items-center h-90 rounded-xl gap-40 bg-gradient-to-r lg:w-320 w-80 from-[#2d8fc8ff] to-[#2ad5d5ff]"
+          className="relative flex-col h-100 lg:h-114 col-reverse lg:flex-row flex justify-center items-center h-90 rounded-xl gap-40 bg-gradient-to-r lg:w-320 w-80 from-[#2d8fc8ff] to-[#2ad5d5ff]"
         >
           <div className="px-3 pt-28">
-            <h1 className="lg:text-6xl text-4xl text-white">It’s been a lot of fun.</h1>
-            <p className="text-3xl text-white mt-6">Now let's do more!</p>
+            <h1 className="lg:text-6xl text-4xl text-white font-semibold">It’s been a lot of fun.</h1>
+            <p className="text-3xl text-white mt-6 font-semibold">Now let's do more!</p>
             <Link to="/talk" className="bg-white flex justify-center items-center w-30 h-10 rounded-full mt-6">
               Talk to us
             </Link>

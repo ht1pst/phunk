@@ -85,13 +85,13 @@ function Section7() {
           viewport={{ once: true, amount: 0.3 }}
           variants={textFade}
         >
-          <h1 className="lg:text-5xl md:text-5xl text-4xl lg:text-center text-start text-white px-4 lg:w-[900px] mx-auto font-semibold ">
+          <h1 className="lg:text-6xl md:text-5xl text-4xl lg:text-center text-start text-white px-4 lg:w-[900px] mx-auto font-semibold ">
             What our clients think of{" "}
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               Phunk.
             </span>
           </h1>
-          <p className="text-sm text-[#969696] font-semibold mt-5 lg:text-center text-start px-4">
+          <p className="text-md text-[#969696] w-85 lg:w-full font-semibold lg:mx-auto lg mt-5 lg:text-center text-start px-4 lg:px-0">
             We’re honest about our skills and abilities — and we’re delighted that our clients agree.
           </p>
         </motion.div>
@@ -110,25 +110,25 @@ function Section7() {
 
           <div
             ref={scrollRef}
-            className="flex gap-10 overflow-x-auto no-scrollbar scroll-smooth"
+            className="flex gap-3 overflow-x-auto no-scrollbar scroll-smooth"
           >
             {testimonials.map((t, idx) => (
               <div
                
-                className="min-w-[300px] h-60 sm:min-w-[300px] lg:min-w-[35%] bg-gradient-to-b from-[#1a1a1a] via-[#111] to-black rounded-xl border border-white"
+                className="min-w-[300px] h-60 lg:h-60 sm:min-w-[300px] lg:min-w-[29%] bg-gradient-to-b from-[#1a1a1a] via-[#111] to-black rounded-xl border border-[#969696]"
               >
-                <div className="py-6 px-4">
-                  <div className="flex lg:gap-4 gap-15  lg:items-center">
+                <div className="py-6 px-4 lg:py-10 lg:px-6">
+                  <div className="flex lg:gap-20 gap-15  lg:items-center">
                    
                     <div>
-                      <h1 className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-2xl  ">
+                      <h1 className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-2xl font-semibold lg:text-3xl lg:w-full  ">
                         {t.name}
                       </h1>
                       <p className="text-sm text-white font-semibold">{t.company}</p>
                     </div>
-                     <img src={t.img} alt={t.name} className="w-12 h-12 rounded-full" />
+                     <img src={t.img} alt={t.name} className="w-12 h-12 lg:w-15 lg:h-15 rounded-full" />
                   </div>
-                  <p className="text-[#969696] text-sm mt-4">{t.text}</p>
+                  <p className="text-[#969696] text-sm mt-4 lg:mt-6">{t.text}</p>
                 </div>
               </div>
             ))}

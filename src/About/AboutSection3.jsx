@@ -10,16 +10,16 @@ function AboutSection3() {
 
   return (
     <section>
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-40 gap-20 lg:pt-44 lg:h-200 h-180">
+      <div className="flex flex-col lg:items-center lg:flex-row justify-center lg:gap-40 gap-20 lg:pt-44 lg:h-200 h-200">
         {/* Text Content */}
-        <div className="px-4 flex flex-col">
+        <div className="px-4 flex flex-col lg:p-0">
           <motion.p
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             transition={{ delay: 0 }}
-            className="text-gray-900 mt-10 lg:text-4xl lg:w-105 text-3xl w-80 font-semibold"
+            className="text-gray-900 mt-35 lg:mt-0 lg:text-4xl lg:w-105 text-3xl w-80 font-semibold"
           >
             After graduating, the Joes took different paths,
           </motion.p>
@@ -56,7 +56,7 @@ function AboutSection3() {
           >
             <Link
               to="/talk"
-              className="flex justify-center items-center w-40 h-11 rounded-full text-white font-semibold 
+              className="flex justify-center text-sm items-center w-38 h-11 rounded-full text-white font-semibold 
                 bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
                 shadow-[0_0_20px_rgba(0,209,255,0.5)] 
                 hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
@@ -76,7 +76,7 @@ function AboutSection3() {
             transition={{ delay: 0.6 }}
           className="px-4 flex"
         >
-          <img src={img} alt="" className="lg:w-115 w-100 object-cover rounded-xl" />
+          <img src={img} alt="" className="lg:w-125 lg:h-140 w-90 h-94 object-cover rounded-xl" />
         </motion.div>
       </div>
     </section>

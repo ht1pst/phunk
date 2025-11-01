@@ -23,10 +23,10 @@ function AboutSection8() {
       transition={{ duration: 0.8 }}
       variants={fadeUp}
         >
-          <h1 className="text-white lg:text-6xl text-4xl w-full lg:flex justify-center lg:mx-auto gap-5">
+          <h1 className="text-white lg:text-6xl text-4xl w-full lg:flex justify-center lg:mx-auto gap-5 font-semibold">
             The <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">people</span> behind the projects.
           </h1>
-          <p className="text-[#969696] text-sm lg:text-center w-80 lg:w-130 mx-auto mt-5">
+          <p className="text-[#969696] text-md lg:text-center w-80 lg:w-130 mx-auto mt-5">
             Phunk works because it’s a genuine collaboration between experts — equality of ideas, cross-pollination of skills and a healthy obsession with quality. Here’s the team that makes it happen.
           </p>
         </motion.div>
@@ -42,18 +42,18 @@ function AboutSection8() {
             variants={fadeUp}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <img src={img1} alt="Joe Crabtree" className="w-80 lg:w-130 mx-auto lg:mx-0" />
-            <h1 className="bg-gradient-to-r mt-7 px-4 from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-3xl">
+            <img src={img1} alt="Joe Crabtree" className="w-75 rounded-xl lg:w-130 mx-auto lg:mx-0" />
+            <h1 className="bg-gradient-to-r mt-7 px-10 lg:px-4 from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-3xl font-semibold">
               Joe Crabtree
             </h1>
-            <div className="px-4">
+            <div className="px-10 lg:px-4">
             <div className="p-[2px] mt-3 rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-42 h-8">
   <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
    Co Founder/Director
   </p>
 </div>
             </div>
-            <p className="text-gray-400 lg:w-120 w-80 mt-7 px-4">
+            <p className="text-[#969696] lg:w-120 w-85 mt-7 px-10 lg:px-4 font-semibold">
               Meet Joe, our lead designer here at Phunk. Joe has 10 years of experience in graphic design, working with some of the world’s biggest brands. Specialising in branding and graphics, Joe relishes the challenge of building a brand from the ground up.
             </p>
           </motion.div>
@@ -64,8 +64,8 @@ function AboutSection8() {
             variants={fadeUp}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <img src={img2} alt="Joe Murray" className="lg:w-130 lg:h-95 w-90 object-cover rounded-xl" />
-            <h1 className="bg-gradient-to-r mt-7 px-4 from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-3xl">
+            <img src={img2} alt="Joe Murray" className="lg:w-130 lg:h-95 w-75 h-55 object-cover rounded-xl mx-auto lg:mx-0" />
+            <h1 className="bg-gradient-to-r mt-7 px-5 from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent text-3xl font-semibold">
               Joe Murray
             </h1>
             <div className="px-4">
@@ -75,7 +75,7 @@ function AboutSection8() {
   </p>
 </div>
             </div>
-            <p className="text-gray-400 lg:w-120 w-80 mt-7 px-4 ">
+            <p className="text-[#969696] lg:w-120 w-80 mt-7 px-4 font-semibold ">
               Meet Joe, Creative Director. He is a designer with over 10 years experience in the field. Branding, UX and animation are his main skills and, when he’s not working his creative magic, he is usually mountain biking, playing basketball, and getting away into the outdoors in his campervan.
             </p>
           </motion.div>
