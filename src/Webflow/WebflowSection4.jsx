@@ -377,7 +377,7 @@ function WebflowSection4() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               key={index}
-              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-86 border-white rounded-2xl p-6 transition-all duration-300"
+              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-92 border-white rounded-2xl p-6 transition-all duration-300"
             >
                 <div className=" flex items-center gap-4">
               {/* SVG ICON (if exists) */}

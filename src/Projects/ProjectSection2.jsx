@@ -72,7 +72,7 @@ function ProjectSection2(){
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
   return(
-    <section className="bg-black lg:h-1450 h-2350" >
+    <section className="bg-black lg:h-1450 h-2260" >
  {/* 01 */}
    <div className="flex flex-col lg:flex-row  lg:px-0 pt-10  justify-center gap-5 px-4">
 <motion.div
@@ -81,7 +81,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #161515ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #161515ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
     
    <div className="relative lg:w-110  h-60 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -154,7 +154,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-180  rounded-2xl">
     <div className="relative   h-60 overflow-hidden rounded-2xl group ">
       {/* Base image */}
        <img
@@ -392,7 +392,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-180  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-182 rounded-2xl">
     
     <div  className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
