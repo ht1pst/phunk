@@ -10,7 +10,7 @@ function AboutSection6() {
   };
 
   return (
-    <section className="bg-black lg:h-330 h-500 pt-20">
+    <section className="bg-black lg:h-300 h-500 pt-20">
       {/* Section Title */}
       <motion.div
         className="flex justify-center"
@@ -202,7 +202,7 @@ function AboutSection6() {
         variants={fadeUp}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        <div className="flex flex-wrap items-center gap-5 justify-center w-60 lg:full mx-auto">
+        <div className="flex flex-wrap items-center gap-5 justify-center w-60 lg:w-full mx-auto">
           <h1 className="text-white lg:text-6xl text-4xl font-semibold">Webflow</h1>
           <h1 className="text-white lg:text-6xl text-4xl">@</h1>
           <img src={phunk} alt="" className="w-38"  />

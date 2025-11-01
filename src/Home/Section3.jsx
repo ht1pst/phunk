@@ -22,7 +22,7 @@ function Section3() {
     <section className="bg-black lg:h-370 h-560 md:h-350">
       {/* Title */}
       <motion.h1
-        className="text-4xl lg:text-6xl md:text-5xl md:w-175 md:text-center pt-10 text-white lg:w-210 w-80 px-4 font-semibold lg:text-center"
+        className="text-4xl lg:text-6xl md:text-5xl md:w-175 md:text-center pt-10 text-white lg:w-155 w-80 px-4 font-semibold lg:text-center lg:mx-auto"
         custom={0.1}
         variants={fadeUp}
         initial="hidden"
