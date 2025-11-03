@@ -482,7 +482,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
       <img
@@ -808,7 +808,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-185  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-190  rounded-2xl">
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
       <img

@@ -78,7 +78,7 @@ function WebflowSection5() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="absolute w-90 h-50 lg:w-full lg:h-full object-cover "
+              className="absolute w-full h-50 lg:w-full lg:h-full object-cover "
             />
           </AnimatePresence>
 

@@ -323,23 +323,23 @@ const [lastScrollY, setLastScrollY] = useState(0);
 
 <div className="flex flex-col lg:flex-row flex-col-reverse lg:gap-30 gap-10 pt-20 justify-center" >
     <div className="mx-auto lg:mx-0">
-    <form action="" className="bg-white rounded-xl lg:w-200 w-80 h-150 ">
-        <div className="px-[10px]">
+    <form action="" className="bg-white rounded-xl lg:w-200 w-90 h-150 ">
+        <div className="px-[20px]">
 <p className="text-sm font-semibold pt-6 ">Full Name</p>
-<input type="text" placeholder="John Smith" name="" id="" className="border lg:w-190 w-75 h-12 px-3 border-gray-300 rounded-xl text-sm font-semibold" />
+<input type="text" placeholder="John Smith" name="" id="" className="border lg:w-190 w-80 h-12 px-3 border-gray-300 rounded-xl text-sm font-semibold" />
 
 <p className="text-sm font-semibold pt-6">Email</p>
-<input type="text" placeholder="name@email.com" name="" id="" className="border lg:w-190 w-75 h-12 px-3 border-gray-300 rounded-xl text-sm font-semibold" />
+<input type="text" placeholder="name@email.com" name="" id="" className="border lg:w-190 w-80 h-12 px-3 border-gray-300 rounded-xl text-sm font-semibold" />
 
 <p className="text-sm font-semibold pt-6">Phone number</p>
-<input type="text" placeholder="+44 (0)" name="" id="" className="border lg:w-190 w-75 h-12 px-3 border-gray-300 rounded-xl text-sm text-sm font-semibold" />
+<input type="text" placeholder="+44 (0)" name="" id="" className="border lg:w-190 w-80 h-12 px-3 border-gray-300 rounded-xl text-sm text-sm font-semibold" />
 
 <p className="text-sm text-sm font-semibold pt-6">Tell us about  your project</p>
-<textarea type="text" placeholder="What do you want your website to achieve?" name="" id="" className="border lg:w-190 w-75 h-30 px-3 border-gray-300 rounded-xl text-sm font-semibold py-5" />
+<textarea type="text" placeholder="What do you want your website to achieve?" name="" id="" className="border lg:w-190 w-80 h-30 px-3 border-gray-300 rounded-xl text-sm font-semibold py-5" />
 </div>
 
-<div className="px-[10px]">
-<button className="mt-8 lg:w-190 w-75 h-10 rounded-full text-white font-semibold 
+<div className="px-[20px]">
+<button className="mt-8 lg:w-190 w-80 h-10 rounded-full text-white font-semibold 
           bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
           shadow-[0_0_20px_rgba(0,209,255,0.5)] 
           hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 
@@ -352,13 +352,13 @@ const [lastScrollY, setLastScrollY] = useState(0);
     </div>
 
 
-    <div className="border border-white rounded-xl mx-auto lg:mx-0 lg:px-8 px-[20px] py-5 lg:w-120 w-80 h-55 bg-gradient-to-b from-[#191919] to-[#030303]">
+    <div className="border border-white rounded-xl mx-auto lg:mx-0 lg:px-8 px-[20px] py-5 lg:w-120 w-90 h-55 bg-gradient-to-b from-[#191919] to-[#030303]">
         <div className="flex justify-between">
             <h1 className="text-white text-3xl ">Book a call</h1>
             <img src={phone} alt="" />
         </div>
 
-        <p className="text-white lg:w-95 w-75 pt-10">Pick a time and a date that suite you, and we'll set up a voice or video call, whichever works best.</p>
+        <p className="text-white lg:w-95 w-full pt-10">Pick a time and a date that suite you, and we'll set up a voice or video call, whichever works best.</p>
     </div>
 </div>
 

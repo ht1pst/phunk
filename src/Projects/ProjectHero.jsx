@@ -308,7 +308,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
        )}
      </header>
                    <div className="absolute top-50 left-1/2 hidden md:hidden lg:block -translate-x-1/2 w-80 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-70"></div>
-                   <main className="lg:pt-60 pt-30 relative">
+                   <main className="lg:pt-60 pt-30 relative px-[20px]">
                      
                     <div>
                       
@@ -327,14 +327,14 @@ const [lastScrollY, setLastScrollY] = useState(0);
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUp} className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl font-medium ">Dive into{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">the work.</span></motion.h1>
+              variants={fadeUp} className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl font-semibold">Dive into{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">the work.</span></motion.h1>
 
         <motion.p
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              transition={{ delay: 0.2 }} className="text-gray-200 text-md leading-normal mx-auto mt-10 w-[100%] md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</motion.p>
+              transition={{ delay: 0.2 }} className="text-gray-200 text-[15px] leading-normal mx-auto mt-10 w-[100%] md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</motion.p>
 
 
 <motion.div

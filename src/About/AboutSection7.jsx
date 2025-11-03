@@ -72,7 +72,7 @@ function AboutSection7() {
 
   return (
     <motion.section
-      className="bg-black relative overflow-hidden h-200 md:h-150 lg:h-170 pt-20"
+      className="bg-black relative overflow-hidden h-185 md:h-150 lg:h-170 pt-20"
       
     >
 

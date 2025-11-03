@@ -318,7 +318,7 @@ function WebflowSection4() {
   ];
 
   return (
-    <section className=" lg:h-300 h-860 bg-black pt-10 ">
+    <section className=" lg:h-300 h-720 bg-black pt-10 ">
       <div>
         <motion.h1 initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -351,7 +351,7 @@ function WebflowSection4() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               key={index}
-              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-70 border-white rounded-2xl p-[20px] transition-all duration-300"
+              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-75 border-white rounded-2xl p-[20px] transition-all duration-300"
             >
                 <div className=" flex items-center gap-4">
               {/* SVG ICON (if exists) */}
