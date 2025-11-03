@@ -85,13 +85,13 @@ function Section7() {
           viewport={{ once: true, amount: 0.3 }}
           variants={textFade}
         >
-          <h1 className="lg:text-6xl md:text-5xl text-4xl lg:text-center text-start text-white px-4 lg:w-[900px] mx-auto font-semibold ">
+          <h1 className="lg:text-6xl md:text-5xl text-4xl lg:text-center text-start text-white px-[20px] lg:w-[900px] mx-auto font-semibold ">
             What our clients think of{" "}
             <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
               Phunk.
             </span>
           </h1>
-          <p className="text-md text-[#969696] w-85 lg:w-full font-semibold lg:mx-auto lg mt-5 lg:text-center text-start px-4 lg:px-0">
+          <p className="text-md text-[#969696] w-[100%] lg:w-full font-semibold lg:mx-auto lg mt-5 lg:text-center text-start px-[20px] lg:px-0">
             We’re honest about our skills and abilities — and we’re delighted that our clients agree.
           </p>
         </motion.div>
@@ -117,7 +117,7 @@ function Section7() {
                
                 className="min-w-[300px] h-60 lg:h-60 sm:min-w-[300px] lg:min-w-[29%] bg-gradient-to-b from-[#1a1a1a] via-[#111] to-black rounded-xl border border-[#969696]"
               >
-                <div className="py-6 px-4 lg:py-10 lg:px-6">
+                <div className="py-6 px-[20px] lg:py-10 lg:px-6">
                   <div className="flex lg:gap-20 gap-15  lg:items-center">
                    
                     <div>

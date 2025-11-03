@@ -23,11 +23,11 @@ function Section2() {
       <div className="absolute hidden lg:block top-0 right-0 w-40 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-70"></div>
 
       {/* Main content */}
-      <div className="flex flex-col items-center lg:flex-row md:flex-row justify-center lg:gap-35 gap-15 relative z-10 md:px-5">
+      <div className="flex flex-col items-center lg:flex-row md:flex-row justify-center lg:gap-40 gap-15 relative z-10 md:px-5">
         {/* Left text section */}
         <div className="mx-auto lg:mx-0">
           <motion.h1
-            className="lg:text-6xl w-88 lg:w-150 text-4xl md:text-5xl md:w-100 text-white font-semibold leading-tight px-4"
+            className="lg:text-6xl  sm:w-[100%] md:w-[80%] lg:w-140 text-4xl md:text-5xl  text-white font-semibold leading-tight px-[20px] lg:px-0 "
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -41,7 +41,8 @@ function Section2() {
           </motion.h1>
 
           <motion.p
-            className="text-md lg:w-170 md:w-100 w-95 text-[#969696] mt-10 px-4"
+           className=" text-[#969696] text-[16px] font-semibold mt-8 mx-auto lg:mx-0 w-[100%] sm:w-[100%] md:w-[80%] lg:w-140 px-[20px] lg:px-0 text-start"
+
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -54,7 +55,7 @@ function Section2() {
           </motion.p>
 
           <motion.p
-            className="text-md lg:w-170 md:w-100 w-90 text-[#969696] mt-5 px-4"
+             className=" text-[#969696] text-[16px] font-semibold mt-8 mx-auto lg:mx-0 w-[100%] sm:w-[100%] md:w-[80%] lg:w-140 px-[20px] lg:px-0 text-start"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}

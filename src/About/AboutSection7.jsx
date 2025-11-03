@@ -72,19 +72,19 @@ function AboutSection7() {
 
   return (
     <motion.section
-      className="bg-black relative overflow-hidden h-180 md:h-150 lg:h-170 pt-20"
+      className="bg-black relative overflow-hidden h-200 md:h-150 lg:h-170 pt-20"
       
     >
 
       
-      <motion.div   className="flex flex-col  lg:flex-row relative lg:w-330 md:w-170 w-80 lg:h-115 h-180 rounded-xl border  border-gray-700 mx-auto  relative px-6 pt-13 
+      <motion.div   className="flex flex-col  lg:flex-row relative lg:w-330 md:w-170 w-[90%] lg:h-115 h-185 rounded-xl border  border-gray-700 mx-auto  relative  pt-13 
         lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent 
         opacity-95  overflow-hidden "
       >
         <motion.div initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants} className={`flex flex-col lg:flex-row w-100 lg:w-300 md:flex-row lg:items-center lg:justify-center md:justify-start lg:gap-30 gap-20 md:gap-2 transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}>
+      variants={containerVariants} className={`flex flex-col lg:flex-row   lg:w-300 md:flex-row lg:items-center lg:justify-center md:justify-start lg:gap-30 gap-45 md:gap-2 transition-opacity duration-500 ${fade ? "opacity-100" : "opacity-0"}`}>
           
 
            <motion.div
@@ -113,9 +113,9 @@ function AboutSection7() {
           <div className="lg:hidden block absolute bottom-20 left-1/2 -translate-x-1/2 w-[100%] lg:w-[85%] rounded-b-xl md:h-100 max-w-[2100px] h-[600px] bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-100 rounded-t-[40px]"></div>
 
           {/* Text */}
-          <div className="transition-all relative duration-500 ease-in-out pt-10">
-            <h1 className="lg:text-7xl text-4xl text-white lg:w-130 w-60 font-semibold">{title}</h1>
-            <p className="leading-normal md:text-sm lg:w-100 text-md md:w-100 w-70 font-semibold text-[#d7d7d7] mt-7">{text}</p>
+          <div className="transition-all relative duration-500 ease-in-out pt-10 px-[20px]">
+            <h1 className="lg:text-7xl text-4xl text-white lg:w-130 w-[100%] font-semibold">{title}</h1>
+            <p className="leading-normal md:text-sm lg:w-100 text-[16px] md:w-100  f text-[#d7d7d7] mt-7">{text}</p>
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -137,8 +137,8 @@ function AboutSection7() {
           </div>
 
           {/* Image */}
-          <div className="relative md:w-100 lg:w-200 right-10 lg:right-0">
-            <img src={img} alt={title} className="lg:w-120 w-90 lg:h-105 md:h-70 md:w-150 transition-all duration-500" />
+          <div className="relative md:w-100 lg:w-200 right-0  lg:right-0">
+            <img src={img} alt={title} className="lg:w-120 w-full lg:h-105 md:h-70 md:w-150 transition-all duration-500" />
           </div>
         </motion.div>
 

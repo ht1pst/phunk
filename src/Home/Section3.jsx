@@ -39,7 +39,7 @@ function Section3() {
       <motion.div className="mt-10 flex flex-col md:flex-row lg:flex-row justify-center gap-10 lg:gap-5">
         {/* Card 1 */}
         <motion.div
-          className="bg-[#1c1b1b8f] #1c1b1b8f mx-auto lg:mx-0 md:mx-0 hover:bg-neutral-900 transition px-4 lg:px-5 lg:w-135 w-80 pt-10 h-150 lg:h-170 md:h-150 rounded-xl"
+          className="bg-[#1c1b1b8f] #1c1b1b8f mx-auto lg:mx-0 md:mx-0 hover:bg-neutral-900 transition px-[20px]  lg:px-5 lg:w-135 w-80 pt-10 h-150 lg:h-170 md:h-150 rounded-xl"
           custom={0.2}
           variants={fadeUp}
           initial="hidden"
@@ -56,7 +56,7 @@ function Section3() {
           >
             Web Design
           </motion.p>
-          <motion.p className="lg:text-lg font-semibold md:text-sm text-md font-semibold leading-normal lg:w-120 w-70 text-[#969696] mt-5" custom={0.5} variants={fadeUp}>
+          <motion.p className="lg:text-lg font-semibold md:text-sm text-[16px] font-semibold leading-normal lg:w-120 w-[100%] text-[#969696] mt-5" custom={0.5} variants={fadeUp}>
             We create stunning, engaging and high-conversion websites based on the versatile and future-proof Webflow platform. Search engine optimisation and cutting-edge user experience design come as standard, along with exceptional reliability, scalability and performance. Plus, friendly support whenever you need us.
           </motion.p>
           <motion.img src={web} alt="" className="w-120 mt-10" custom={0.6} variants={fadeUp} />
@@ -64,7 +64,7 @@ function Section3() {
 
         {/* Card 2 */}
         <motion.div
-          className="bg-[#1c1b1b8f] mx-auto lg:mx-0 md:mx-0 hover:bg-neutral-900 transition px-8 lg:px-5 lg:w-135 w-80 pt-10 h-150 md:h-150  lg:h-170 rounded-xl"
+           className="bg-[#1c1b1b8f] #1c1b1b8f mx-auto lg:mx-0 md:mx-0 hover:bg-neutral-900 transition px-[20px]  lg:px-5 lg:w-135 w-80 pt-10 h-150 lg:h-170 md:h-150 rounded-xl"
           custom={0.3}
           variants={fadeUp}
           initial="hidden"
@@ -85,8 +85,8 @@ function Section3() {
           >
             Graphic Design
           </motion.p>
-          <motion.p className="lg:text-lg font-semibold md:text-sm text-md font-semibold leading-normal lg:w-120 w-70 text-[#969696] mt-5" custom={0.7} variants={fadeUp}>
-            Access a wealth of experience in logo design, brand identity development, and social media presence, along with signage, packaging and print design. Great design isn’t just about looks. It’s about purpose. At Phunk, you’ll find no end of imaginative design skills. But we also back up the “wow” factor with logical layouts and engaging messaging.
+          <motion.p className="lg:text-lg font-semibold md:text-sm text-[16px] font-semibold leading-normal lg:w-120 w-[100%] text-[#969696] mt-5" custom={0.7} variants={fadeUp}>
+          Whether you’re building a brand from scratch, or developing new assets for your next campaign, we have a wealth of experience in logo design, brand identity development, and social media presence, along with signage, packaging and print design. We’ll support you through the whole journey, from concept to deliverable.
           </motion.p>
           <motion.img src={graphic} alt="" className="w-130 mt-10 block lg:hidden" custom={0.4} variants={fadeUp} />
         </motion.div>
@@ -94,7 +94,7 @@ function Section3() {
 
       {/* Card 3 */}
       <motion.div
-        className="mt-10 flex flex-col md:flex-row lg:flex-row mx-auto justify-center lg:h-100 lg:w-280 px-4 w-80 md:w-170  md:items-center h-150 gap-8 mx-auto bg-[#1c1b1b8f] hover:bg-neutral-900 transition rounded-xl pt-10"
+         className="bg-[#1c1b1b8f] #1c1b1b8f mx-auto lg:mx-0 md:mx-0 hover:bg-neutral-900 transition px-[20px]  lg:px-5 lg:w-135 w-80 pt-10 h-160 lg:h-170 md:h-150 rounded-xl"
         custom={0.4}
         variants={fadeUp}
         initial="hidden"
@@ -112,12 +112,14 @@ function Section3() {
           >
             Custom System Development
           </motion.p>
-          <motion.p className="lg:text-lg font-semibold md:text-sm text-md font-semibold leading-normal lg:w-130 w-70 text-[#969696] mt-5" custom={0.7} variants={fadeUp}>
-            We build user-friendly mobile apps, web portals and SaaS solutions that allow you to optimise workflows and increase efficiency. To create a world-beating app or platform, you need the right mix of skills. That’s exactly what you’ll find at Phunk. High-concept, imaginative design hand in.
+          <motion.p className="lg:text-lg font-semibold md:text-sm text-[16px] font-semibold leading-normal lg:w-120 w-[100%] text-[#969696] mt-5" custom={0.7} variants={fadeUp}>
+           Finding an off-the-shelf app that fits your business model can be tricky. At Phunk we create custom systems to meet specific needs — from customer portals to dashboards, quoting tools, mobile apps, SaaS solutions and more. We have specific experience in HTML, CSS, REACT, NextJS, Laravel, JQuery, Bootstrap, PHP, and MySQL.
           </motion.p>
         </div>
 
+<div className="mt-10">
         <motion.img src={custom} alt="" className="w-130" custom={0.8} variants={fadeUp} />
+        </div>
       </motion.div>
 
       {/* Buttons */}

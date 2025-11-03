@@ -10,16 +10,16 @@ function AboutSection3() {
 
   return (
     <section>
-      <div className="flex flex-col lg:items-center lg:flex-row justify-center lg:gap-40 gap-20 lg:pt-44 lg:h-200 h-200">
+      <div className="flex flex-col lg:items-center lg:flex-row justify-center lg:gap-40 gap-7 pt-15 lg:pt-44 lg:h-200 h-300">
         {/* Text Content */}
-        <div className="px-4 flex flex-col lg:p-0">
+        <div className="px-[20px] flex flex-col lg:p-0">
           <motion.p
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             transition={{ delay: 0 }}
-            className="text-gray-900 mt-35 lg:mt-0 lg:text-4xl lg:w-105 text-3xl w-80 font-semibold"
+            className="text-gray-900 mt-35 lg:mt-0 lg:text-4xl lg:w-105 text-3xl w-[100%]  font-semibold"
           >
             After graduating, the Joes took different paths,
           </motion.p>
@@ -30,7 +30,7 @@ function AboutSection3() {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             transition={{ delay: 0.2 }}
-            className="text-gray-900 mt-10 sm:w-[90%] md:w-170 lg:w-120 font-medium"
+            className="text-gray-900 mt-10 w-[100%] md:w-170 lg:w-120  font-medium text-[16px] "
           >
             JM heading into a marketing agency role focused on web design, branding and animation, and JC working on print design and web advertising for household names like Kellogg's, Fred Perry and Axe/Lynx.
           </motion.p>
@@ -41,7 +41,7 @@ function AboutSection3() {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             transition={{ delay: 0.4 }}
-            className="text-gray-900 mt-10 sm:w-[90%] md:w-170 lg:w-120 font-medium"
+            className="text-gray-900 mt-10 w-[100%]  md:w-170 lg:w-120  font-medium text-[16px]"
           >
             They kept in touch, collaborating on various projects and inevitably moved towards a closer working relationship which made the most of their complementary skills. While the rest of the world transitioned towards remote working during COVID, Joe and Joe decided they’d rather open an office, and Phunk was officially born.
           </motion.p>
@@ -74,9 +74,9 @@ function AboutSection3() {
             viewport={{ once: true, amount: 0.3 }}
             variants={fadeUp}
             transition={{ delay: 0.6 }}
-          className="px-4 flex"
+          className="px-[20px] flex"
         >
-          <img src={img} alt="" className="lg:w-125 lg:h-140 w-90 h-94 object-cover rounded-xl" />
+          <img src={img} alt="" className="lg:w-125 lg:h-140 w-full h-94 object-cover rounded-xl" />
         </motion.div>
       </div>
     </section>

@@ -18,7 +18,7 @@ function Section8(){
       
                 {/* Centered glowing circle */}
                 
-      <div className="absolute block lg:hidden lg:bottom-10 bottom-15 left-1/2 -translate-x-1/2 w-[350px] lg:w-full    object-cover      right- z-0">      
+      <div className="absolute block lg:hidden lg:bottom-10 bottom-15 left-1/2 -translate-x-1/2 w-[320px] lg:w-full    object-cover      right- z-0">      
                   <img src={herocir} alt="" className=" object-cover w-100 h-[350px]   " />
                 </div>
 

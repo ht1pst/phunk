@@ -71,39 +71,13 @@ function WebflowSection4() {
 
 
     {  img: (
-        <svg
-          width="20"
-          height="19"
-          viewBox="0 0 20 19"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M18.75 18.94H11.5C11.09 18.94 10.75 18.6 10.75 18.19C10.75 17.78 11.09 17.44 11.5 17.44H18.75C19.16 17.44 19.5 17.78 19.5 18.19C19.5 18.6 19.16 18.94 18.75 18.94Z"
-            fill="white"
-          />
-          <mask
-            id="mask0_1641_37441"
-            style={{ maskType: "luminance" }}
-            maskUnits="userSpaceOnUse"
-            x="0"
-            y="0"
-            width="18"
-            height="19"
-          >
-            <path d="M17.18 0H0V18.94H17.18V0Z" fill="white" />
-          </mask>
-          <g mask="url(#mask0_1641_37441)">
-            <path
-              d="M1.62065 18.94C1.27065 18.94 0.970647 18.7 0.890647 18.36L0.0606474 14.89C-0.109353 14.18 0.0606473 13.42 0.520647 12.85L9.94065 1.07C10.9906 -0.179997 12.8306 -0.359997 14.1106 0.650003L15.8106 1.98H15.8306C16.4706 2.39 16.9306 3.03 17.1006 3.77C17.2806 4.52 17.1506 5.32 16.7306 5.97C16.7006 6.02 16.6706 6.06 7.14065 17.98C6.68065 18.55 5.99065 18.89 5.25065 18.89L1.61065 18.94H1.62065ZM12.2406 1.5C11.8106 1.5 11.3906 1.69 11.1106 2.02L1.70065 13.79C1.53065 14 1.47065 14.28 1.53065 14.55L2.21065 17.43L5.25065 17.39C5.53065 17.39 5.80065 17.26 5.98065 17.04C9.11065 13.12 15.3306 5.34 15.5006 5.12C15.6706 4.82 15.7306 4.46 15.6406 4.12C15.5506 3.75 15.3206 3.43 14.9906 3.23C14.9306 3.19 13.7306 2.26 13.2106 1.85L13.1806 1.83C12.9106 1.62 12.5806 1.5 12.2406 1.5Z"
-              fill="white"
-            />
-          </g>
-          <path
-            d="M14.2202 8.68C14.0502 8.68 13.8902 8.63 13.7602 8.52L8.31021 4.33C7.98021 4.08 7.91021 3.61 8.15021 3.28C8.40021 2.95 8.87021 2.88 9.20021 3.12C9.20021 3.12 9.22021 3.13 9.22021 3.14L14.6702 7.33C15.0002 7.58 15.0602 8.05 14.8102 8.38C14.6702 8.57 14.4502 8.67 14.2102 8.67"
-            fill="white"
-          />
-        </svg>
+       <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.75 10.95H0.75C0.34 10.95 0 10.61 0 10.2C0 9.79 0.34 9.45 0.75 9.45H21.75C22.16 9.45 22.5 9.79 22.5 10.2C22.5 10.61 22.16 10.95 21.75 10.95Z" fill="white"></path>
+<path d="M19.8795 6.74C19.4695 6.74 19.1295 6.4 19.1295 5.99V4.48C19.1295 2.83 17.7895 1.5 16.1495 1.5H14.9395C14.5295 1.5 14.1895 1.16 14.1895 0.75C14.1895 0.34 14.5295 0 14.9395 0H16.1495C18.6195 0 20.6295 2.01 20.6295 4.48V5.99C20.6295 6.4 20.2895 6.74 19.8795 6.74Z" fill="white"></path>
+<path d="M2.61914 6.74C2.20914 6.74 1.86914 6.4 1.86914 5.99V4.48C1.86914 2.01 3.87914 0 6.34914 0H7.58914C7.99914 0 8.33914 0.34 8.33914 0.75C8.33914 1.16 7.99914 1.5 7.58914 1.5H6.34914C4.69914 1.5 3.36914 2.84 3.36914 4.48V5.99C3.36914 6.4 3.02914 6.74 2.61914 6.74Z" fill="white"></path>
+<path d="M16.1495 18.76H14.9395C14.5295 18.76 14.1895 18.42 14.1895 18.01C14.1895 17.6 14.5295 17.26 14.9395 17.26H16.1495C17.7995 17.26 19.1295 15.92 19.1295 14.28V10.21C19.1295 9.80001 19.4695 9.46001 19.8795 9.46001C20.2895 9.46001 20.6295 9.80001 20.6295 10.21V14.28C20.6295 16.75 18.6195 18.76 16.1495 18.76Z" fill="white"></path>
+<path d="M7.58914 18.76H6.34914C3.87914 18.76 1.86914 16.75 1.86914 14.28V10.21C1.86914 9.80001 2.20914 9.46001 2.61914 9.46001C3.02914 9.46001 3.36914 9.80001 3.36914 10.21V14.28C3.36914 15.93 4.70914 17.26 6.34914 17.26H7.58914C7.99914 17.26 8.33914 17.6 8.33914 18.01C8.33914 18.42 7.99914 18.76 7.58914 18.76Z" fill="white"></path>
+</svg>
       ), title: "Rapid Prototyping", text: "It used to be prohibitively expensive to take more than one design idea past the sketchbook stage. But with Webflow, we can prototype quickly, roundtable with our clients, and bring several ideas through the design process to identify the best brand fit." },
 
 
@@ -349,7 +323,7 @@ function WebflowSection4() {
         <motion.h1 initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-gray-300 mx-auto  font-semibold   lg:text-6xl text-4xl font-medium text-center px-4 lg:px-0">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-gray-300 mx-auto  font-semibold   lg:text-6xl text-4xl font-medium text-center px-[20px] lg:px-0">
           Why choose{" "}
           <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">
             Webflow?
@@ -358,7 +332,7 @@ function WebflowSection4() {
         <motion.p initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-sm leading-relaxed mx-auto lg:w-120 md:w-100 w-80 text-[#969696] mt-10 px-3 text-center">
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} className="text-[15px] leading-relaxed mx-auto lg:w-120 md:w-100 w-[100%] text-[#969696] mt-10 px-3 text-center">
           As an official Webflow partner it should be no surprise that we’re huge
           evangelists for the platform. Here’s a rundown of why we believe it’s
           the best option for any client project.
@@ -377,7 +351,7 @@ function WebflowSection4() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               key={index}
-              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-92 border-white rounded-2xl p-6 transition-all duration-300"
+              className="border lg:w-160 w-80 lg:h-65 lg:h-46 h-70 border-white rounded-2xl p-[20px] transition-all duration-300"
             >
                 <div className=" flex items-center gap-4">
               {/* SVG ICON (if exists) */}
@@ -387,7 +361,7 @@ function WebflowSection4() {
                 {service.title}
               </a>
               </div>
-              <p className="text-[#969696] text-md font-semibold pt-5">{service.text}</p>
+              <p className="text-[#969696] text-[15px] w-[100%] font-semibold pt-5">{service.text}</p>
             </motion.div>
           ))}
         </div>

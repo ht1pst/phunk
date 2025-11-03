@@ -61,7 +61,7 @@ function Section4() {
   const { title, text, img } = slides[index];
 
   return (
-    <section className="bg-black relative overflow-hidden h-255 md:h-150 lg:h-170 pt-20">
+    <section className="bg-black relative overflow-hidden h-293 md:h-150 lg:h-170 pt-20">
 
       {/* === Heading === */}
       <motion.div
@@ -82,19 +82,19 @@ function Section4() {
 
       {/* === Slide container with border === */}
       <motion.div
-        className={`flex lg:w-330 md:w-170 w-80 pt-10 lg:h-115 h-200 border border-gray-700 mx-auto rounded-xl relative px-6 overflow-hidden`}
+        className={`flex lg:w-330 md:w-170 w-[90%] pt-10 lg:h-115 h-200 border border-gray-700 mx-auto rounded-xl relative px-[20px] overflow-hidden`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeUp}
       >
-        <div className="absolute bottom-10 lg:bottom-5 rounded-xl left-1/2 -translate-x-1/2  border-b-white w-[100%] max-w-[2100px] lg:h-[260px] h-200 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
+        <div className="absolute bottom-0 lg:bottom-5 rounded-xl left-1/2 -translate-x-1/2  border-b-white w-[100%] max-w-[2100px] lg:h-[260px] h-200 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl rounded-t-[40px]"></div>
        
 
         {/* Background gradient overlay */}
        
         {/* Stuff1 image behind content */}
-         <div className="absolute left-0 bottom-10 lg:bottom-5 lg:left-0 md:left-11 z-0">
+         <div className="absolute left-0 bottom-0 lg:bottom-5 lg:left-0 md:left-11 z-0">
           <img src={stuff1} alt="" className="w-100 rounded-b-xl pointer-events-none" />
         </div>
 
@@ -108,7 +108,7 @@ function Section4() {
           <div className="transition-all duration-500 ease-in-out pt-10 lg:pt-0">
             
             <h1 className="lg:text-7xl text-4xl text-white font-semibold">{title}</h1>
-            <p className="lg:text-sm text-md md:text-sm lg:w-100  md:w-100 w-70 text-white mt-7">
+            <p className="lg:text-sm text-[16px] leading-snug md:text-sm lg:w-100  md:w-100 w-70 text-white mt-7">
               {text}
             </p>
             <Link
@@ -124,7 +124,7 @@ function Section4() {
           </div>
 
           {/* Image */}
-          <div className="md:w-100 lg:w-200 w-90  bottom-0 left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0  absolute lg:relative  ">
+          <div className="md:w-100 lg:w-200 w-90  bottom-[-30px] left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0  absolute lg:relative  ">
             <img
               src={img}
               alt={title}

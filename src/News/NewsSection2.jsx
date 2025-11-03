@@ -48,7 +48,7 @@ function NewsSection2(){
 
 
 
-<div className="lg:h-150 h-95 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
+<div className="lg:h-150 h-87 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
 <img src={img2} alt="" className="lg:w-135 w-80 object-cover rounded-t-xl" />
 </div>
@@ -96,7 +96,7 @@ function NewsSection2(){
 
 
 
-<div className="lg:h-150 h-105 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
+<div className="lg:h-150 h-95 bg-[#201f1fff] border border-white  mx-auto lg:mx-0 #201f1fff lg:w-135 w-80 rounded-xl">
     <div>
 <img src={img4} alt="" className="lg:w-135 lg:h-85 w-80 h-50 object-cover rounded-t-xl" />
 </div>

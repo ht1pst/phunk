@@ -334,7 +334,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUp}
-              transition={{ delay: 0.2 }} className="text-gray-200 text-md leading-normal mx-auto mt-10 w-75 md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</motion.p>
+              transition={{ delay: 0.2 }} className="text-gray-200 text-md leading-normal mx-auto mt-10 w-[100%] md:w-170 lg:w-140 text-center font-semibold">This is the page we’re most proud of. If you’d like more details on a specific project, want to know more about the thinking behind a design decision, or just want to tell us we’re awesome, get in touch.</motion.p>
 
 
 <motion.div

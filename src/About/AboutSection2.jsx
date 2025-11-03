@@ -10,7 +10,7 @@ function AboutSection2() {
   };
 
   return (
-    <section className="h-160 w-full relative">
+    <section className="lg:h-140 h-125 w-full relative">
       <div className="lg:px-60 lg:pt-30 pt relative">
         {/* Background blur circle */}
         <div className="absolute hidden lg:block top-0 right-0 w-30 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-100"></div>
@@ -54,9 +54,9 @@ function AboutSection2() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
           transition={{ delay: 0.2 }}
-          className="text-gray-900 mt-10 md:w-170 lg:w-160 px-4 font-semibold"
+          className="text-gray-900 mt-7 md:w-170 lg:w-160 w-[100%] px-[20px] font- text-[15px] "
         >
-          The partnership behind Phunk began a long time before the company was officially established. Our founders Joe Murray and Joe Crabtree first met at college, both studying creative and digital media courses never imagining that sharing a first name would make their copywriter’s job unnecessarily difficult at some point in the future.
+         The partnership behind Phunk began a long time before the company was officially established. Our founders Joe Murray and Joe Crabtree first met at college, both studying creative and digital media courses —never imagining that sharing a first name would make their copywriter’s job unnecessarily difficult at some point in the future.
         </motion.p>
 
         {/* Image */}

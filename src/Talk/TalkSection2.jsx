@@ -44,9 +44,9 @@ function TalkSection2() {
 
         {/* content */}
         <div className="relative flex flex-col lg:flex-row justify-center pt-34 lg:gap-60">
-          <div className="px-3 lg:px-0">
-            <h1 className="text-white lg:text-7xl text-6xl">Visit Phunk</h1>
-            <p className="text-[#969696] lg:w-130 w-80 mt-5">
+          <div className="px-[20px] lg:px-0">
+            <h1 className="text-white lg:text-7xl text-5xl font-semibold">Visit Phunk</h1>
+            <p className="text-[#969696] lg:w-130 w-[100%] mt-5">
               Find out more about what makes us tick as a company, why we do what we do,
               and who’s behind the unique work we create.
             </p>
@@ -58,17 +58,17 @@ function TalkSection2() {
           </div>
 
 <div className="flex justify-end lg:justify-start px-3 lg:px-0 mt-10 lg:mt-0">
-          <div className="bg-black w-70 px-3 py-3 h-40 rounded-xl">
-            <p className="text-white w-60">
+          <div className="bg-black w-70 px-3 py-3 h-30 rounded-xl">
+            <p className="text-white w-[100%] text-sm font-semibold">
               Salts Mill, Victoria Rd, Saltaire, Shipley BD18 3LA
             </p>
             <div className="flex items-center gap-10">
               <div>
-                <p className="text-[#969696] pt-6">Get Directions</p>
+                <p className="text-[#969696] text-[13px] pt-">Get Directions</p>
               </div>
               <div>
                 <button
-                  className="mt-8 w-20 h-10 rounded-full text-white font-semibold 
+                  className="mt-2 w-25 h-10 rounded-full text-white font-semibold 
                 bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
                 shadow-[0_0_20px_rgba(0,209,255,0.5)] 
                 hover:shadow-[0_0_30px_rgba(0,209,255,0.8)] 

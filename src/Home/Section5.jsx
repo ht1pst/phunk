@@ -35,7 +35,7 @@ function Section5() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
-          className="text-md md:text-sm hidden lg:block md:block md:w-10 lg:w-140 md:w-100 text-gray-400 mt-5"
+          className="text-[16px] md:text-sm hidden lg:block md:block md:w-10 lg:w-140 md:w-100 text-gray-400 mt-5"
         >
           As creatives ourselves, we know that what you really want to see is
           the work we’ve actually put live. Here’s a showcase of some of our
@@ -43,7 +43,7 @@ function Section5() {
         </motion.p>
       </div>
 
-      <div className="px-4 gap-30 md:gap-20 lg:gap-50  lg:pt-0 flex flex-col">
+      <div className="px-[20px] gap-30 md:gap-20 lg:gap-50  lg:pt-0 flex flex-col">
 
         {/* ---------- DRIVELLODGE ---------- */}
         <motion.div
@@ -83,7 +83,7 @@ function Section5() {
                 Drivelodge
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 w-75 lg:w-140 text-[#969696] mt-6">
+            <p className="text-[16px] md:text-sm md:w-70 w-[95%] lg:w-140 text-[#969696] mt-6">
               Founded as a passion project by enthusiasts David and Joanne,
               Drivelodge has built on its reputation for crafting high-quality
               high-top and elevating camper van roofs to become a 30-strong
@@ -161,7 +161,7 @@ function Section5() {
                 Hacien
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
+            <p className="text-[16px] md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               HACIEN is a premium tequila brand supplying high-end hospitality
               and retail locations worldwide. They approached Phunk to
               undertake a comprehensive design project comprising web,
@@ -247,7 +247,7 @@ function Section5() {
                 Mobilleo
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
+            <p className="text-[16px] md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               Mobilleo is a SaaS solution making it easy for organisations to
               manage global business travel for their employees. The team at
               Mobilleo approached Phunk to provide a range of design and
@@ -320,7 +320,7 @@ function Section5() {
                 Mannson Freight
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
+            <p className="text-[16px] md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.
             </p>
             <div className="mt-5">
@@ -394,7 +394,7 @@ function Section5() {
                 Box iQ
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
+            <p className="text-[16px] md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.
             </p>
             <div className="mt-5">
@@ -460,7 +460,7 @@ function Section5() {
                 The Honest Watch <br /> Dealer
               </a>
             </div>
-            <p className="text-md md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
+            <p className="text-[16px] md:text-sm md:w-70 lg:w-140 text-[#969696] mt-6">
               The Honest Watch Dealer is a luxury watch expert renowned for his popular YouTube channel, as well as founding The Luxury Watch Company. Charlie (his real name) engaged Phunk to develop a brand identity for his channel, with applications across a range of merchandise.
             </p>
             <div className="mt-5">

@@ -52,7 +52,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 
       return(
         
-       <section className="lg:h-300 h-360 bg-black">
+       <section className="lg:h-300 h-340 bg-black">
         {/* ======== Header (Responsive) ======== */}
   <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent bg-gradient-to-t from-transparent via-[#000000ff] #000000ff to-black">
      <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4"> 
@@ -313,18 +313,18 @@ const [lastScrollY, setLastScrollY] = useState(0);
  
                    <main className="lg:pt-40 pt-30 relative">
                      
-                    <div>
+                    <div className="px-[20px]">
                      
 
-        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-5xl w-60 lg:w-150 font-semibold ">Talk to{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">phunk.</span></h1>
+        <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-[55px] leading-none w-[100%] lg:w-150 font-semibold ">Talk to{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">phunk.</span></h1>
 
-        <p className="text-gray-200 text-md leading-normal mx-auto mt-10 w-75 md:w-170 lg:w-135 text-center ">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.</p>
+        <p className="text-gray-200 text-[15px] leading-normal mx-auto mt-10 w-[100%] md:w-170 lg:w-135 text-center ">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.</p>
                     </div>
 
 <div className="flex flex-col lg:flex-row flex-col-reverse lg:gap-30 gap-10 pt-20 justify-center" >
     <div className="mx-auto lg:mx-0">
-    <form action="" className="bg-white rounded-xl lg:w-200 w-85 h-150 ">
-        <div className="px-5">
+    <form action="" className="bg-white rounded-xl lg:w-200 w-80 h-150 ">
+        <div className="px-[10px]">
 <p className="text-sm font-semibold pt-6 ">Full Name</p>
 <input type="text" placeholder="John Smith" name="" id="" className="border lg:w-190 w-75 h-12 px-3 border-gray-300 rounded-xl text-sm font-semibold" />
 
@@ -338,7 +338,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
 <textarea type="text" placeholder="What do you want your website to achieve?" name="" id="" className="border lg:w-190 w-75 h-30 px-3 border-gray-300 rounded-xl text-sm font-semibold py-5" />
 </div>
 
-<div className="px-5">
+<div className="px-[10px]">
 <button className="mt-8 lg:w-190 w-75 h-10 rounded-full text-white font-semibold 
           bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
           shadow-[0_0_20px_rgba(0,209,255,0.5)] 
@@ -352,8 +352,8 @@ const [lastScrollY, setLastScrollY] = useState(0);
     </div>
 
 
-    <div className="border border-white rounded-xl mx-auto lg:mx-0 lg:px-8 px-3 py-5 lg:w-120 w-85 h-55 bg-gradient-to-b from-[#191919] to-[#030303]">
-        <div className="flex lg:gap-45 gap-35">
+    <div className="border border-white rounded-xl mx-auto lg:mx-0 lg:px-8 px-[20px] py-5 lg:w-120 w-80 h-55 bg-gradient-to-b from-[#191919] to-[#030303]">
+        <div className="flex justify-between">
             <h1 className="text-white text-3xl ">Book a call</h1>
             <img src={phone} alt="" />
         </div>

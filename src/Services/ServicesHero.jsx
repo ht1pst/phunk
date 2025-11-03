@@ -316,7 +316,7 @@ function ServicesHero(){
 
         <h1 className="text-gray-300 mx-auto lg:mt-10 mt-5 lg:text-7xl text-center gap-3 text-6xl w-70 lg:w-120 font-semibold ">Our{" "} <span className="bg-gradient-to-r from-[#00d1ff] to-[#004cff] bg-clip-text text-transparent">Services</span></h1>
 
-        <p className="text-gray-200 text-md leading-normal mx-auto mt-5 w-85 md:w-170 lg:w-135 text-center px-5 lg:px-0 ">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.
+        <p className="text-gray-200 text-md leading-normal mx-auto mt-5 w-82 md:w-170 lg:w-135 text-center px-5 lg:px-0 ">Focusing on what we’re good at means we can deliver unrivalled quality every time. Our services fall into three main buckets — web, systems and graphic design. If you’re unsure where your next project would sit, give us a call.
 
 </p>
 
@@ -327,8 +327,8 @@ function ServicesHero(){
                         
                     </div>
 
-                    <div className="flex flex-col lg:flex-row justify-center  gap-10 pt-5 ">
-<div  className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-85 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
+                    <div className="flex flex-col lg:flex-row justify-center  gap-10 pt-5  ">
+<div  className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-82 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
 
 <div className="flex items-center justify-center w-full h-full bg-[#101110] rounded-xl lg:gap-8 gap-5 px-4">
     <div>
@@ -345,7 +345,7 @@ function ServicesHero(){
 
 </div>
 
-<div className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-85 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
+<div className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-82 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
 
 <div  className="flex items-center justify-center w-full h-full bg-[#101110] rounded-xl lg:gap-8 gap-5 px-4">
     <div >
@@ -371,7 +371,7 @@ function ServicesHero(){
 </div>
 
 
-<div className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-85 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
+<div className="flex justify-center mx-auto lg:mx-0 lg:w-105 w-82 h-30 items-center rounded-xl bg-gradient-to-b from-white to-gray-500 p-[1px]">
 
 <div   className="flex items-center justify-center w-full h-full bg-[#101110] rounded-xl lg:gap-8 gap-5 px-4">
     <div >

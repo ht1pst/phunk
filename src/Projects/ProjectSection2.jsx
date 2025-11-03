@@ -74,14 +74,14 @@ function ProjectSection2(){
   return(
     <section className="bg-black lg:h-1450 h-2260" >
  {/* 01 */}
-   <div className="flex flex-col lg:flex-row  lg:px-0 pt-10  justify-center gap-5 px-4">
+   <div className="flex flex-col lg:flex-row  lg:px-0 pt-10  justify-center gap-5 ">
 <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #161515ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #161515ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
     
    <div className="relative lg:w-110  h-60 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -122,7 +122,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff]">
+      <p className="text-[#a9a6a6ff] w-[100%]">
         Founded as a passion project by enthusiasts David and 
         Joanne, Drivelodge has built on its reputation for crafting 
         high-quality high-top and elevating camper van roofs to 
@@ -154,7 +154,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-180  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-180  rounded-2xl">
     <div className="relative   h-60 overflow-hidden rounded-2xl group ">
       {/* Base image */}
        <img
@@ -201,7 +201,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] ">
+      <p className="text-[#a9a6a6ff] w-[100%] ">
        Majenta Solutions is a digital engineering consultancy  working across industries like automotive, manufacturing, construction, and engineering. They provide tailored digital  solutions to improve efficiency, streamline processes, and enhance integration within complex technical environments.
 
       </p>
@@ -239,7 +239,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-175  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-175  rounded-2xl">
     
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -281,7 +281,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] w-75 lg:w-full lg:w-full">
+      <p className="text-[#a9a6a6ff] w-[100%] lg:w-full lg:w-full">
        Dropship.io is a leading platform in the ecommerce space, offering tools for entrepreneurs to find and sell profitable products. With over 500,000 monthly visitors, their site needed a robust digital infrastructure to support this high traffic while delivering a seamless user experience.
       </p>
     </div>
@@ -309,7 +309,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-175  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-175  rounded-2xl">
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
       <img
@@ -356,7 +356,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] w-75 lg:w-full">
+      <p className="text-[#a9a6a6ff] w-[100%] lg:w-full">
       Hacien Tequila is a premium tequila brand that combines bold design with smooth, high-quality spirits. Phunk partnered with Hacien to deliver a visually engaging and technically sound digital experience, handling packaging, 3D models, and digital design assets to strengthen their brand identity.
 
       </p>
@@ -392,7 +392,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-182 rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-182 rounded-2xl">
     
     <div  className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -450,7 +450,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <a href="#" className="text-[#a9a6a6ff]">
+      <a href="#" className="text-[#a9a6a6ff] w-[100%]">
       Mobilleo is a SaaS solution making it easy for organisations to manage global business travel for their employees. The team at Mobilleo approached Phunk to provide a range of design and illustration services, building on their existing brand, for use across their website and app. 
 
 
@@ -482,7 +482,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl">
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
       <img
@@ -531,7 +531,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] w-75 lg:w-full">
+      <p className="text-[#a9a6a6ff] w-[100%] lg:w-full">
     The Honest Watch Dealer is a luxury watch expert renowned for his popular YouTube channel, as well as founding The Luxury Watch Company. Charlie (his real name) engaged Phunk to develop a brand identity for his channel, with applications across a range of merchandise. 
       </p>
     </div>
@@ -564,7 +564,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-170  rounded-2xl">
     
    <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -614,7 +614,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] w-75 lg:w-full">
+      <p className="text-[#a9a6a6ff] w-[100%] lg:w-full">
      Custom campervan brand Bay2 approached Phunk to develop an updated brand identity, new website and merchandise designs to help their growing company stand out from their competitors and communicate the quality of their product range. 
 ‍
       </p>
@@ -643,7 +643,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl">
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
       <img
@@ -692,7 +692,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] w-75 lg:w-full">
+      <p className="text-[#a9a6a6ff] w-[100%] lg:w-full">
    BOXiQ Performance Center in Dubai is a globally recognised boxing gym — hosting icons like Tyson Fury and Oleksandr Usyk. Working with Phunk, they now have a high-quality digital presence to match the prestige of their brand.
       </p>
     </div>
@@ -725,7 +725,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-180  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-180  rounded-2xl">
     
    <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -779,7 +779,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff]">
+      <p className="text-[#a9a6a6ff] w-[100%]">
       Mannson Freight operates import and export consolidation services involving sea freight. They engaged Phunk to rebrand their corporate identity and develop a new higher-performance website, as well as a custom-built portal — MFS Pro— including ongoing support.
       </p>
     </div>
@@ -808,7 +808,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp} className="lg:mt-30">
-  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-185  rounded-2xl">
+  <div className="bg-[#161515ff] #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-185  rounded-2xl">
     <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
       <img
@@ -857,7 +857,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff] #8b8989ff w-75 lg:w-full">
+      <p className="text-[#a9a6a6ff] #8b8989ff w-[100%] lg:w-full ">
    Breaking Bread is a popular conversational podcast fronted by BeardMeatsFood and Josh Gudgeon with over half a million listeners across Spotify, YouTube and Facebook. The founders approached Phunk to develop a unique brand identity for use across web and social media properties, merchandising and live event promotions. 
       </p>
     </div>
@@ -888,7 +888,7 @@ function ProjectSection2(){
           viewport={{ once: true, amount: 0.3 }}
           custom={0}
           variants={cardFadeUp}>
-  <div className="bg-[#161515ff]  #0d0d0d  #737272ff p-[15px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl mt-10">
+  <div className="bg-[#161515ff]  #0d0d0d  #737272ff p-[20px] lg:p-5 lg:p-0 lg:w-110 w-82 group mx-auto lg:mx-0 h-165  rounded-2xl mt-10">
     
    <div className="relative   h-58 overflow-hidden rounded-2xl group ">
       {/* Base image */}
@@ -934,7 +934,7 @@ function ProjectSection2(){
 
     {/* Description */}
     <div className="mt-7">
-      <p className="text-[#a9a6a6ff]">
+      <p className="text-[#a9a6a6ff] w-[100%]">
        Fresh & Go is a challenger brand in the dental alignment industry, providing a range of supporting products for users of orthodontic alignment appliances including cleaning tablets and solutions, specialist toothbrushes and protective storage cases.
       </p>
     </div>
@@ -990,14 +990,14 @@ function ProjectSection2(){
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
                 variants={faqFade}
-                className="border border-gray-300 bg-black lg:rounded-4xl rounded-2xl w-80 lg:w-140 overflow-hidden transition-all duration-300"
+                className="border border-gray-300 bg-black lg:rounded-4xl rounded-2xl  lg:w-140 overflow-hidden transition-all duration-300"
               >
                 {/* Header */}
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center px-4 py-3 bg-black transition"
+                  className="w-full flex justify-between items-center px-[20px] py-3 bg-black transition"
                 >
-                  <span className="font-medium text-[#a9a6a6ff] lg:text-xl text-sm bg-black">
+                  <span className="font-medium text-[#a9a6a6ff] lg:text-xl text-sm bg-black text-start">
                     {faq.question}
                   </span>
                   <span className="transition-all duration-300 text-2xl font-bold text-white">

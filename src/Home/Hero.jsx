@@ -46,9 +46,9 @@ const [lastScrollY, setLastScrollY] = useState(0);
   return (
     <section className="bg-black lg:h-screen h-[680px] md:h-160 relative overflow-hidden">
       <div className="absolute bottom-10 lg:bottom-15 rounded-xl left-1/2 -translate-x-1/2 border-t-transparent border-t-none border-b-white w-[90%] max-w-[2100px] lg:h-[260px] h-90 bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-90 blur-8xl "></div>
-       <main className="lg:pt-35 pt-40 relative"></main>
-      {/* ======== Header (Responsive) ======== */}
-  <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent bg-gradient-to-t from-transparent via-[#000000ff] #000000ff to-black">
+
+
+        <header className="bg-black lg:fixed fixed text-white  top-0 left-0 w-full z-50 bg-transparent bg-gradient-to-t from-transparent via-[#000000ff] #000000ff to-black">
     <div className="flex items-center justify-between lg:px-6 px-3 md:px-20 lg:py-6 py-4"> 
       {/* Logo */}
       <div   className={`flex items-center lg:gap-2 transition-all duration-500 ${
@@ -301,15 +301,19 @@ const [lastScrollY, setLastScrollY] = useState(0);
     )}
   </header>
 
+       <main className="lg:pt-35 pt-25 relative"></main>
+      {/* ======== Header (Responsive) ======== */}
+ 
+
       {/* ======== Hero Background Effects ======== */}
       <div className="absolute top-60 left-1/2 hidden md:hidden lg:block -translate-x-1/2 w-80 h-80 bg-[#00bfff] rounded-full blur-[120px] opacity-70"></div>
      
 
       {/* Stars & Logo Circle */}
-      <div className="absolute lg:bottom-28 bottom-60 md:bottom-40 w-60 md:w-150 lg:w-200 left-1/2 -translate-x-1/2 z-30">
+      <div className="absolute lg:bottom-28 bottom-55 md:bottom-40 w-50 md:w-150 lg:w-200 left-1/2 -translate-x-1/2 z-30">
         <img src={star} alt="" className="w-200" />
       </div>
-      <div className="absolute lg:bottom-15 bottom-10 w-180 left-1/2 -translate-x-1/2 z-20">
+      <div className="absolute lg:bottom-15 bottom-10 w-130 left-1/2 -translate-x-1/2 z-20">
         <img src={herocir} alt="" />
       </div>
       <div className="absolute bottom-0 lg:bottom-5 md:bottom-2  left-1/2 -translate-x-1/2 z-30">
@@ -328,7 +332,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </div>
 
       {/* ======== Main Hero Text ======== */}
-      <main className="lg:pt-20  relative z-10 text-center w-full z-40">
+      <main className="lg:pt-20  relative z-10 text-center w-full z-40 ">
     <div className="p-[2px] rounded-full  bg-gradient-to-r from-[#00d1ff] to-[#004cff] w-52 h-8 mx-auto">
   <p className="rounded-xl bg-black text-white text-sm flex justify-center px-2 py-1">
     Introducing Phunk Creative
@@ -344,14 +348,14 @@ const [lastScrollY, setLastScrollY] = useState(0);
           </span>
         </h1>
 
-        <p className="text-gray-200 mt-7 w-90 md:w-170 lg:leading-normal px-10 lg:w-150 text-center font-semibold text-sm  mx-auto ">
+        <p className="text-gray-200 mt-5 w-[80%] md:w-170 lg:leading-normal  lg:w-150 text-center  text-[16px]  mx-auto ">
           We transform your brand vision into tangible web, graphic and video
           experiences that stop prospective clients in their tracks.
         </p>
 
      <MotionLink
   to="/talk"
-  className="mt-8 w-40 h-10 mx-auto flex items-center justify-center
+  className="mt-8 w-40 h-10 mx-auto flex text-sm items-center justify-center
   rounded-full text-white font-semibold 
   bg-gradient-to-r from-[#00d1ff] to-[#004cff] 
   shadow-[0_0_20px_rgba(0,209,255,0.5)] 

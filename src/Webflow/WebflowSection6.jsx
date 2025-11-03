@@ -38,9 +38,9 @@ function WebflowSection6() {
         </div>
 
         {/* === Content Box === */}
-        <div className="flex lg:w-330 md:w-170 w-80 lg:h-105 h-125 border border-gray-700 mx-auto rounded-b-xl relative 
+        <div className="flex lg:w-330 md:w-170 w-80 lg:h-105 h-125 border border-gray-700 mx-auto  relative 
           lg:bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent 
-          opacity-95 rounded-t-[40px] overflow-hidden ">
+          opacity-95 rounded-xl overflow-hidden ">
 
              <div className="absolute bottom-0 lg:left-0 md:left-11 z-10">
         <img src={stuff1} alt="" className="w-90 rounded-b-xl" />
@@ -50,12 +50,12 @@ function WebflowSection6() {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[100%] lg:w-[85%] rounded-b-xl md:h-100 h-100 max-w-[2100px] lg:-[200px] bg-gradient-to-t from-[#1fb8ff] via-[#001122] to-transparent opacity-80 rounded-t-[40px]"></div>
 
 
-          <div className="flex relative  flex-col md:flex-row px-4 lg:px-10 lg:flex-row lg:items-center lg:justify-center md:justify-start lg:gap-20 gap-10 md:gap-2 transition-opacity duration-500">
+          <div className="flex relative  flex-col md:flex-row px-[25px] lg:px-10 lg:flex-row lg:items-center lg:justify-center md:justify-start lg:gap-20 gap-10 md:gap-2 transition-opacity duration-500">
             
             {/* Text */}
             <div className="transition-all duration-500 ease-in-out  pt-10">
               <h1 className="lg:text-6xl lg:w-140 w-0 text-4xl text-white font-semibold">{title}</h1>
-              <p className="text-md md:text-sm lg:w-100 lg:font-semibold md:w-100 w-70 text-white mt-7">{text}</p>
+              <p className="text-md md:text-sm lg:w-100 lg:font-semibold md:w-100 w-[100%] text-white mt-7">{text}</p>
               <button className=" relative w-38 md:w-32 h-10 md:h-9 rounded-full text-black 
                 bg-white hover:bg-transparent hover:text-white
               
