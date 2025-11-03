@@ -59,7 +59,7 @@ function TalkSection3() {
   };
 
   return(
-     <section className="bg-black lg:h-170 h-240 pt-10 lg:pt-20">
+     <section className="bg-black lg:h-170 h-310 pt-10 lg:pt-20">
    <div className="pt-30 px-5 lg:px-0">
       <h1 className="text-white flex justify-center text-4xl font-semibold text-center">
         Frequently asked questions

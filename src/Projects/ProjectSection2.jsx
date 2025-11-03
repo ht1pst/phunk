@@ -72,7 +72,7 @@ function ProjectSection2(){
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
   return(
-    <section className="bg-black lg:h-1450 h-2260" >
+    <section className="bg-black lg:h-1450 h-2310" >
  {/* 01 */}
    <div className="flex flex-col lg:flex-row  lg:px-0 pt-10  justify-center gap-5 ">
 <motion.div
